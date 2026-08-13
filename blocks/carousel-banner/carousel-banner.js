@@ -134,7 +134,15 @@ export default async function decorate(block) {
       const indicator = document.createElement('li');
       indicator.classList.add('carousel-banner-slide-indicator');
       indicator.dataset.targetSlide = idx;
-      indicator.innerHTML = `<button type="button" aria-label="Show Slide ${idx + 1} of ${rows.length}"></button>`;
+      const heading = slide.querySelector('h1, h2, h3, h4, h5, h6');
+      const label = heading ? heading.textContent.trim() : '';
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-label', label
+        ? `Show Slide ${idx + 1} of ${rows.length}: ${label}`
+        : `Show Slide ${idx + 1} of ${rows.length}`);
+      button.textContent = label;
+      indicator.append(button);
       slideIndicators.append(indicator);
     }
     row.remove();
