@@ -80,6 +80,7 @@
 }
 
 /* Body copy paragraph */
+/* stylelint-disable-next-line no-descending-specificity */
 .accordion-featured .accordion-featured-item-body p {
   margin: 0 0 24px;
   color: var(--text-color);                    /* #4b4b4b */
@@ -90,6 +91,7 @@
 }
 
 /* "Learn more" arrow link */
+/* stylelint-disable-next-line no-descending-specificity */
 .accordion-featured .accordion-featured-item-body p:last-child {
   margin-bottom: 0;
 }

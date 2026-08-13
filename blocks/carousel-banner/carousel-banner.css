@@ -141,9 +141,8 @@ main .carousel-banner .carousel-banner-slide-content a:focus-visible {
   text-decoration: none;
 }
 
-/* --- Bottom label-strip navigation --- */
-/* Source: centered floating white rounded bar (bottom 32px, radius 4px). */
-
+/* --- Bottom label-strip navigation ---
+   Source: centered floating white rounded bar (bottom 32px, radius 4px). */
 .carousel-banner .carousel-banner-slide-indicators {
   position: absolute;
   left: 16px;
