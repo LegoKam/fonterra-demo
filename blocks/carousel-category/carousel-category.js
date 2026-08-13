@@ -1,73 +1,88 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
-function updateActiveSlide(slide) {
-  const block = slide.closest('.carousel-category');
-  const slideIndex = parseInt(slide.dataset.slideIndex, 10);
+/**
+ * Finds the slide whose horizontal center is closest to the track's center.
+ * @param {Element} track the scrolling slides container
+ * @returns {number} index of the centered slide
+ */
+function getCenteredIndex(track) {
+  const slides = [...track.querySelectorAll('.carousel-category-slide')];
+  const trackCenter = track.scrollLeft + track.clientWidth / 2;
+  let best = 0;
+  let bestDist = Infinity;
+  slides.forEach((slide, idx) => {
+    const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+    const dist = Math.abs(slideCenter - trackCenter);
+    if (dist < bestDist) {
+      bestDist = dist;
+      best = idx;
+    }
+  });
+  return best;
+}
+
+/**
+ * Marks the given slide index as the active (center-emphasised) one:
+ * reveals its description + CTA and keeps hidden links out of the tab order.
+ */
+function updateActiveSlide(block, slideIndex) {
+  if (block.dataset.activeSlide === String(slideIndex)) return;
   block.dataset.activeSlide = slideIndex;
 
   const slides = block.querySelectorAll('.carousel-category-slide');
-
-  slides.forEach((aSlide, idx) => {
-    aSlide.setAttribute('aria-hidden', idx !== slideIndex);
-    aSlide.querySelectorAll('a').forEach((link) => {
-      if (idx !== slideIndex) {
-        link.setAttribute('tabindex', '-1');
-      } else {
-        link.removeAttribute('tabindex');
-      }
+  slides.forEach((slide, idx) => {
+    const isActive = idx === slideIndex;
+    slide.classList.toggle('carousel-category-slide-active', isActive);
+    // Description + CTA links only render on the active card, so keep the
+    // links of non-active cards out of the keyboard tab order.
+    slide.querySelectorAll('.carousel-category-slide-body a').forEach((link) => {
+      if (isActive) link.removeAttribute('tabindex');
+      else link.setAttribute('tabindex', '-1');
     });
-  });
-
-  const indicators = block.querySelectorAll('.carousel-category-slide-indicator');
-  indicators.forEach((indicator, idx) => {
-    if (idx !== slideIndex) {
-      indicator.querySelector('button').removeAttribute('disabled');
-    } else {
-      indicator.querySelector('button').setAttribute('disabled', 'true');
-    }
   });
 }
 
+/**
+ * Scrolls the track so that the slide at slideIndex is centered.
+ */
 export function showSlide(block, slideIndex = 0, behavior = 'smooth') {
-  const slides = block.querySelectorAll('.carousel-category-slide');
-  let realSlideIndex = slideIndex < 0 ? slides.length - 1 : slideIndex;
-  if (slideIndex >= slides.length) realSlideIndex = 0;
-  const activeSlide = slides[realSlideIndex];
-
-  activeSlide.querySelectorAll('a').forEach((link) => link.removeAttribute('tabindex'));
-  block.querySelector('.carousel-category-slides').scrollTo({
-    top: 0,
-    left: activeSlide.offsetLeft,
-    behavior,
-  });
+  const track = block.querySelector('.carousel-category-slides');
+  const slides = track.querySelectorAll('.carousel-category-slide');
+  let realIndex = slideIndex < 0 ? slides.length - 1 : slideIndex;
+  if (slideIndex >= slides.length) realIndex = 0;
+  const slide = slides[realIndex];
+  const left = slide.offsetLeft - (track.clientWidth - slide.clientWidth) / 2;
+  track.scrollTo({ left, behavior });
 }
 
 function bindEvents(block) {
-  const slideIndicators = block.querySelector('.carousel-category-slide-indicators');
-  if (!slideIndicators) return;
+  const track = block.querySelector('.carousel-category-slides');
 
-  slideIndicators.querySelectorAll('button').forEach((button) => {
-    button.addEventListener('click', (e) => {
-      const slideIndicator = e.currentTarget.parentElement;
-      showSlide(block, parseInt(slideIndicator.dataset.targetSlide, 10));
+  const prev = block.querySelector('.slide-prev');
+  const next = block.querySelector('.slide-next');
+  if (prev) {
+    prev.addEventListener('click', () => {
+      showSlide(block, parseInt(block.dataset.activeSlide, 10) - 1);
     });
-  });
-
-  block.querySelector('.slide-prev').addEventListener('click', () => {
-    showSlide(block, parseInt(block.dataset.activeSlide, 10) - 1);
-  });
-  block.querySelector('.slide-next').addEventListener('click', () => {
-    showSlide(block, parseInt(block.dataset.activeSlide, 10) + 1);
-  });
-
-  const slideObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) updateActiveSlide(entry.target);
+  }
+  if (next) {
+    next.addEventListener('click', () => {
+      showSlide(block, parseInt(block.dataset.activeSlide, 10) + 1);
     });
-  }, { threshold: 0.5 });
-  block.querySelectorAll('.carousel-category-slide').forEach((slide) => {
-    slideObserver.observe(slide);
-  });
+  }
+
+  // Track which card is centered as the user scrolls / drags.
+  let ticking = false;
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      updateActiveSlide(block, getCenteredIndex(track));
+      ticking = false;
+    });
+  };
+  track.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', () => updateActiveSlide(block, getCenteredIndex(track)));
 }
 
 function createSlide(row, slideIndex, carouselId) {
@@ -81,8 +96,29 @@ function createSlide(row, slideIndex, carouselId) {
     slide.append(column);
   });
 
+  const content = slide.querySelector('.carousel-category-slide-content');
+  if (content) {
+    const heading = content.querySelector('h1, h2, h3, h4, h5, h6');
+    // Everything below the title (description + CTA) is grouped so it can be
+    // revealed only on the active/center card, matching the source.
+    const body = document.createElement('div');
+    body.classList.add('carousel-category-slide-body');
+    [...content.children].forEach((child) => {
+      if (child !== heading) body.append(child);
+    });
+    if (body.childElementCount) content.append(body);
+
+    // Tag the CTA link so it renders as the white "Explore" pill.
+    const cta = body.querySelector('a');
+    if (cta) {
+      cta.classList.add('carousel-category-cta');
+      const wrapper = cta.closest('p');
+      if (wrapper) wrapper.classList.add('carousel-category-cta-container');
+    }
+  }
+
   const labeledBy = slide.querySelector('h1, h2, h3, h4, h5, h6');
-  if (labeledBy) {
+  if (labeledBy && labeledBy.id) {
     slide.setAttribute('aria-labelledby', labeledBy.getAttribute('id'));
   }
 
@@ -104,24 +140,14 @@ export default async function decorate(block) {
 
   const slidesWrapper = document.createElement('ul');
   slidesWrapper.classList.add('carousel-category-slides');
-  block.prepend(slidesWrapper);
 
-  let slideIndicators;
   if (!isSingleSlide) {
-    const slideIndicatorsNav = document.createElement('nav');
-    slideIndicatorsNav.setAttribute('aria-label', 'Carousel Slide Controls');
-    slideIndicators = document.createElement('ol');
-    slideIndicators.classList.add('carousel-category-slide-indicators');
-    slideIndicatorsNav.append(slideIndicators);
-    block.append(slideIndicatorsNav);
-
     const slideNavButtons = document.createElement('div');
     slideNavButtons.classList.add('carousel-category-navigation-buttons');
     slideNavButtons.innerHTML = `
-      <button type="button" class= "slide-prev" aria-label="Previous Slide"></button>
+      <button type="button" class="slide-prev" aria-label="Previous Slide"></button>
       <button type="button" class="slide-next" aria-label="Next Slide"></button>
     `;
-
     container.append(slideNavButtons);
   }
 
@@ -129,14 +155,6 @@ export default async function decorate(block) {
     const slide = createSlide(row, idx, carouselId);
     moveInstrumentation(row, slide);
     slidesWrapper.append(slide);
-
-    if (slideIndicators) {
-      const indicator = document.createElement('li');
-      indicator.classList.add('carousel-category-slide-indicator');
-      indicator.dataset.targetSlide = idx;
-      indicator.innerHTML = `<button type="button" aria-label="Show Slide ${idx + 1} of ${rows.length}"></button>`;
-      slideIndicators.append(indicator);
-    }
     row.remove();
   });
 
@@ -146,4 +164,9 @@ export default async function decorate(block) {
   if (!isSingleSlide) {
     bindEvents(block);
   }
+
+  // Establish initial active (centered) card once layout has settled.
+  requestAnimationFrame(() => {
+    updateActiveSlide(block, getCenteredIndex(slidesWrapper));
+  });
 }
