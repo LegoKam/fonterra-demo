@@ -4,9 +4,18 @@
 /**
  * Transformer: NZMP section boundaries + section metadata.
  *
- * Runs in afterTransform only. Reads payload.template.sections and, for each
- * section (processed in reverse so earlier insertions do not shift the DOM
- * positions of not-yet-processed sections):
+ * Runs in beforeTransform (NOT afterTransform). The section anchors for
+ * single-block sections (`.verticalCarousel`, `.emailsubscription.esBar`) are the
+ * exact elements the block parsers replace via element.replaceWith(); if this
+ * transformer ran afterTransform those anchors would already be gone and their
+ * section breaks/metadata would be skipped, collapsing them into the previous
+ * section. Running beforeTransform inserts the <hr> breaks and Section Metadata
+ * blocks while every original anchor still exists. The inserted <hr>/metadata are
+ * plain siblings the parsers never touch (parsers querySelector within their own
+ * block element), so they survive parsing intact.
+ *
+ * For each section (processed in reverse so earlier insertions do not shift the
+ * DOM positions of not-yet-processed sections):
  *   - inserts a section break (<hr>) before the section anchor for every
  *     non-first section (expected: sections.length - 1 = 4 breaks);
  *   - creates a Section Metadata block after the section anchor when the
@@ -45,7 +54,7 @@ function resolveSectionElement(element, selector) {
 }
 
 export default function transform(hookName, element, payload) {
-  if (hookName === TransformHook.afterTransform) {
+  if (hookName === TransformHook.beforeTransform) {
     const template = payload && payload.template;
     const sections = template && Array.isArray(template.sections) ? template.sections : [];
     if (sections.length < 2) return;

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en.html",
+  "path": "global/en",
+  "timestamp": "2026-08-13T04:55:14.569Z",
+  "title": "World Leading Dairy Ingredients & Solutions | NZMP.com",
+  "template": "home-page",
+  "blocks": [
+    "carousel-banner",
+    "carousel-category",
+    "accordion-featured",
+    "carousel-news",
+    "form"
+  ]
+}

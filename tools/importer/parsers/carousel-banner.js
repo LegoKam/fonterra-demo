@@ -9,16 +9,43 @@
  *   Cell 1 -> media_image (background image; media_imageAlt collapses into the img alt attribute)
  *   Cell 2 -> content_text (title heading, optional description, CTA link) as richtext
  */
-// Slick carousels lazy-load slide images; promote the real URL into src so extraction works
-// against both the scraped DOM and a freshly-loaded live page.
-function normalizeLazyImg(img) {
-  if (!img) return img;
-  const real = img.getAttribute('data-src') || img.getAttribute('data-lazy')
-    || img.getAttribute('data-lazy-src') || img.getAttribute('data-original');
-  if (real && (!img.getAttribute('src') || img.getAttribute('src').trim() === '')) {
-    img.setAttribute('src', real);
+// Extract a background-image URL from an element's inline style.
+function bgUrl(el) {
+  if (!el) return '';
+  const style = el.getAttribute('style') || '';
+  const m = style.match(/background-image\s*:\s*url\((['"]?)([^'")]+)\1\)/i);
+  return m ? m[2].trim() : '';
+}
+
+// Resolve a slide/card image robustly. The scraped DOM (cleaned.html) carries real <img>
+// tags, but the live page renders these images as CSS background-image on <div>s and slick
+// lazy-loads them. Try a real <img> first (normalizing lazy attrs), then fall back to a
+// background-image element, synthesizing an <img> so WebImporter.rules.adjustImageUrls can
+// absolutize the URL downstream.
+function resolveImage(scope, document, { imgSel, bgSel, alt }) {
+  const img = imgSel ? scope.querySelector(imgSel) : null;
+  if (img) {
+    const real = img.getAttribute('data-src') || img.getAttribute('data-lazy')
+      || img.getAttribute('data-lazy-src') || img.getAttribute('data-original');
+    if (real && (!img.getAttribute('src') || img.getAttribute('src').trim() === '')) {
+      img.setAttribute('src', real);
+    }
+    if (img.getAttribute('src') && img.getAttribute('src').trim()) {
+      if (alt && !img.getAttribute('alt')) img.setAttribute('alt', alt);
+      return img;
+    }
   }
-  return img;
+  let url = '';
+  const bgEls = bgSel ? Array.from(scope.querySelectorAll(bgSel)) : [];
+  for (let i = 0; i < bgEls.length && !url; i += 1) url = bgUrl(bgEls[i]);
+  if (!url) url = bgUrl(scope);
+  if (url) {
+    const newImg = document.createElement('img');
+    newImg.setAttribute('src', url);
+    if (alt) newImg.setAttribute('alt', alt);
+    return newImg;
+  }
+  return null;
 }
 
 export default function parse(element, { document }) {
@@ -29,13 +56,18 @@ export default function parse(element, { document }) {
   const cells = [];
 
   slides.forEach((slide) => {
-    // INPUT: banner renders duplicate desktop/mobile images with the same src; take one.
-    const img = slide.querySelector('.homeBanner__image--desktop img, .homeBanner__image img, img');
-
     // INPUT: title, optional description, and CTA link.
     const title = slide.querySelector('.homeBanner__title, .title h1, h1, h2');
     const desc = slide.querySelector('.homeBanner__desc, .copy p');
     const cta = slide.querySelector('a.nzmpBtn, .homeBanner__content a, a.button-link, a');
+
+    // INPUT: banner image. Live page uses background-image on .homeBanner__image--desktop;
+    // scraped DOM uses <img>. Prefer desktop variant to avoid the duplicate mobile image.
+    const img = resolveImage(slide, document, {
+      imgSel: '.homeBanner__image--desktop img, .homeBanner__image img, img',
+      bgSel: '.homeBanner__image--desktop, .homeBanner__image',
+      alt: title ? title.textContent.trim() : '',
+    });
 
     // Cell 1: media_image (media_imageAlt is a collapsed field -> img alt attribute, no hint)
     let imageCell = '';

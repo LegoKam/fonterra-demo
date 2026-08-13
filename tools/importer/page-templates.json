@@ -13,23 +13,36 @@
       "blocks": [
         {
           "name": "carousel-banner",
-          "instances": [".homeBanner__container"]
+          "instances": [
+            ".homeBanner__container"
+          ]
         },
         {
           "name": "carousel-category",
-          "instances": [".horizontalCategoryCarousel__container", ".horizontalCategoryCarousel.duskBlue"]
+          "instances": [
+            ".horizontalCategoryCarousel__container",
+            ".horizontalCategoryCarousel.duskBlue"
+          ]
         },
         {
           "name": "accordion-featured",
-          "instances": [".verticalCarousel", ".cmp-featured-tile"]
+          "instances": [
+            ".verticalCarousel",
+            ".cmp-featured-tile"
+          ]
         },
         {
           "name": "carousel-news",
-          "instances": [".slickCarouselArticles__slick", ".pageTeaser__wrapper.slickCarouselArticles"]
+          "instances": [
+            ".slickCarouselArticles__slick",
+            ".pageTeaser__wrapper.slickCarouselArticles"
+          ]
         },
         {
           "name": "form",
-          "instances": [".emailsubscription.esBar"]
+          "instances": [
+            ".emailsubscription.esBar"
+          ]
         }
       ],
       "sections": [
@@ -38,23 +51,34 @@
           "name": "Hero banner carousel",
           "selector": ".homeBanner__container",
           "style": null,
-          "blocks": ["carousel-banner"],
+          "blocks": [
+            "carousel-banner"
+          ],
           "defaultContent": []
         },
         {
           "id": "section-2",
           "name": "Applications category carousel",
-          "selector": [".horizontalCategoryCarousel.duskBlue", ".pageTeaser.list.parbase"],
+          "selector": [
+            ".horizontalCategoryCarousel.duskBlue",
+            ".pageTeaser.list.parbase"
+          ],
           "style": "dark-blue",
-          "blocks": ["carousel-category"],
-          "defaultContent": [".horizontalCategoryCarousel__title"]
+          "blocks": [
+            "carousel-category"
+          ],
+          "defaultContent": [
+            ".horizontalCategoryCarousel__title"
+          ]
         },
         {
           "id": "section-3",
           "name": "We can help you featured list",
           "selector": ".verticalCarousel",
           "style": null,
-          "blocks": ["accordion-featured"],
+          "blocks": [
+            "accordion-featured"
+          ],
           "defaultContent": []
         },
         {
@@ -62,15 +86,22 @@
           "name": "Read the latest from NZMP",
           "selector": ".responsivegrid-centered",
           "style": null,
-          "blocks": ["carousel-news"],
-          "defaultContent": [".title-arrows", ".ctabutton"]
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": [
+            ".title-arrows",
+            ".ctabutton"
+          ]
         },
         {
           "id": "section-5",
           "name": "Email subscription bar",
           "selector": ".emailsubscription.esBar",
           "style": "blue",
-          "blocks": ["form"],
+          "blocks": [
+            "form"
+          ],
           "defaultContent": []
         }
       ]

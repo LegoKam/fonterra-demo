@@ -32,6 +32,12 @@ export default function transform(hookName, element, payload) {
       '#modelRedirectModal',
       '#chinaRedirectModal',
       '#surestart-terms',
+      // AEM authoring placeholders and hidden trigger buttons that are not
+      // authorable content but render as stray text in the import:
+      //   .author-only            -> "Please Drag & Drop Background Image..." authoring hint
+      //   button.surestart-terms  -> hidden "Open Modal" trigger button
+      '.author-only',
+      'button.surestart-terms',
     ]);
   }
 
