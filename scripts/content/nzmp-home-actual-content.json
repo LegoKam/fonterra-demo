@@ -1,0 +1,189 @@
+{
+  "title": "NZMP - World Leading Dairy Ingredients and Solutions",
+  "description": "NZMP offers high quality, high performance dairy ingredients and solutions for global food and beverage manufacturers",
+  "sections": [
+    {
+      "type": "hero",
+      "title": "World Leading Dairy Ingredients and Solutions",
+      "description": "",
+      "image": "/content/dam/fonterra-demo/images/homepage/hero-main.jpg",
+      "cta": {
+        "text": "Explore More",
+        "url": "#applications"
+      }
+    },
+    {
+      "type": "cards",
+      "title": "Why Choose NZMP",
+      "variant": "four-pillars",
+      "cards": [
+        {
+          "title": "World Leading Dairy Expertise",
+          "description": "Position as industry leader with deep knowledge across dairy ingredient innovation and application",
+          "image": null,
+          "link": "/global/en/about-nzmp.html",
+          "linkText": "Learn More"
+        },
+        {
+          "title": "High Quality Dairy Ingredients",
+          "description": "High quality, high performance dairy ingredients across extensive portfolio",
+          "image": null,
+          "link": "/global/en/ingredients.html",
+          "linkText": "Learn More"
+        },
+        {
+          "title": "Sustainability",
+          "description": "New Zealand is our home, one of the best countries in the world to farm grass-fed dairy",
+          "image": null,
+          "link": "/global/en/sustainability.html",
+          "linkText": "Learn More"
+        },
+        {
+          "title": "Support Services",
+          "description": "Industry leading technical, commercial and support services",
+          "image": null,
+          "link": "/global/en/solutions.html",
+          "linkText": "Learn More"
+        }
+      ]
+    },
+    {
+      "type": "applications-grid",
+      "title": "Applications We Serve",
+      "applications": [
+        {
+          "title": "Yoghurts and Cultured Products",
+          "description": "Premium yoghurt and cultured ingredients to keep you ahead.",
+          "image": "/content/dam/fonterra-demo/images/applications/yoghurts.jpg",
+          "link": "/global/en/applications/yoghurts-and-cultured-products.html",
+          "linkText": "Explore"
+        },
+        {
+          "title": "Consumer Milk Powders",
+          "description": "Tailored for end consumer use, ready for blending or direct repack.",
+          "image": "/content/dam/fonterra-demo/images/applications/milk-powders.jpg",
+          "link": "/global/en/applications/consumer-milk-powders.html",
+          "linkText": "Explore"
+        },
+        {
+          "title": "Food Manufacture",
+          "description": "Make the best food using the best ingredients.",
+          "image": "/content/dam/fonterra-demo/images/applications/food-manufacture.jpg",
+          "link": "/global/en/applications/food-manufacture.html",
+          "linkText": "Explore"
+        },
+        {
+          "title": "Organic Dairy Nutrition",
+          "description": "Made with premium milk from 365 day grass-fed, pasture-raised cows.",
+          "image": "/content/dam/fonterra-demo/images/applications/organic-dairy.jpg",
+          "link": "/global/en/applications/organic-dairy.html",
+          "linkText": "Explore"
+        },
+        {
+          "title": "Beverages",
+          "description": "Meet increasing consumer demand for standard and functional beverages.",
+          "image": "/content/dam/fonterra-demo/images/applications/beverages.jpg",
+          "link": "/global/en/applications/beverages.html",
+          "linkText": "Explore"
+        },
+        {
+          "title": "Paediatric Nutrition",
+          "description": "Our vision is for SureStart™ to be the world's most trusted source of Paediatric ingredients.",
+          "image": "/content/dam/fonterra-demo/images/applications/paediatric.jpg",
+          "link": "/global/en/applications/infant-nutrition.html",
+          "linkText": "Explore"
+        }
+      ]
+    },
+    {
+      "type": "cards",
+      "title": "Our Support Services",
+      "variant": "support-services",
+      "cards": [
+        {
+          "title": "Innovation and Expertise",
+          "description": "Discover how our experts are continually innovating for you.",
+          "image": null,
+          "link": "/global/en/solutions/innovation-and-ingenuity.html",
+          "linkText": "Learn more"
+        },
+        {
+          "title": "Food Safety & Quality",
+          "description": "World class quality controls and processes ensuring the safety and quality of our ingredients.",
+          "image": null,
+          "link": "/global/en/about-nzmp/safety-and-quality.html",
+          "linkText": "Learn more"
+        },
+        {
+          "title": "How to Buy",
+          "description": "Explore our purchasing channels to find the way to buy that best suits your business's needs.",
+          "image": null,
+          "link": "/global/en/how-to-buy.html",
+          "linkText": "Learn more"
+        }
+      ]
+    },
+    {
+      "type": "news-feed",
+      "title": "Latest News & Insights",
+      "articles": [
+        {
+          "title": "Success for NZMP™ at the International Cheese & Dairy Awards",
+          "date": "26 Jun 2026",
+          "excerpt": "NZMP recognized for excellence in dairy ingredient innovation and quality",
+          "image": "/content/dam/fonterra-demo/images/news/news-1.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        },
+        {
+          "title": "NZMP at the International Cheese & Dairy Expo",
+          "date": "01 Jun 2026",
+          "excerpt": "Meet our team and discover our latest product innovations",
+          "image": "/content/dam/fonterra-demo/images/news/news-2.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        },
+        {
+          "title": "On farm with Nestlé: Partnership in action",
+          "date": "20 May 2026",
+          "excerpt": "Exploring sustainable dairy farming practices with leading global partner",
+          "image": "/content/dam/fonterra-demo/images/news/news-3.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        },
+        {
+          "title": "The importance of homegrown feed in New Zealand",
+          "date": "26 Feb 2026",
+          "excerpt": "How local feed sources support our commitment to sustainable dairy production",
+          "image": "/content/dam/fonterra-demo/images/news/news-4.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        },
+        {
+          "title": "How sustainability is shaping our future",
+          "date": "28 Nov 2025",
+          "excerpt": "Our vision for sustainable dairy ingredients and responsible business practices",
+          "image": "/content/dam/fonterra-demo/images/news/news-5.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        },
+        {
+          "title": "The high protein trend keeps buzzing",
+          "date": "26 Nov 2025",
+          "excerpt": "Understanding consumer demand for high-protein dairy solutions",
+          "image": "/content/dam/fonterra-demo/images/news/news-6.jpg",
+          "link": "/global/en/news.html",
+          "linkText": "Read More"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "extractedFrom": "https://www.nzmp.com/global/en.html",
+    "extractedDate": "2026-08-13",
+    "totalSections": 5,
+    "totalCards": 13,
+    "totalArticles": 6,
+    "author": "NZMP Content Migration"
+  }
+}
