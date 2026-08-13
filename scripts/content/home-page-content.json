@@ -1,0 +1,137 @@
+{
+  "title": "NZMP - New Zealand Milk Products",
+  "description": "Global dairy protein solutions from New Zealand",
+  "heros": [
+    {
+      "title": "NZMP: Global Dairy Protein Excellence",
+      "description": "Trusted by leading food manufacturers worldwide for innovative dairy protein solutions.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/hero-expertise.jpg",
+      "cta": {
+        "text": "Explore Solutions",
+        "url": "/en/solutions"
+      }
+    },
+    {
+      "title": "Quality You Can Trust",
+      "description": "The highest quality dairy proteins from New Zealand's grass-fed pastures.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/hero-quality.jpg",
+      "cta": {
+        "text": "View Certifications",
+        "url": "/en/certifications"
+      }
+    },
+    {
+      "title": "Sustainable from Pasture to Product",
+      "description": "Committed to environmental responsibility in every step of production.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/hero-sustainability.jpg",
+      "cta": {
+        "text": "Learn About Sustainability",
+        "url": "/en/sustainability"
+      }
+    },
+    {
+      "title": "Expert Support for Your Success",
+      "description": "Our team is here to help you find the right solution for your application.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/hero-support.jpg",
+      "cta": {
+        "text": "Contact Us",
+        "url": "/en/contact"
+      }
+    }
+  ],
+  "applications": [
+    {
+      "title": "Yogurts & Fermented Products",
+      "description": "From creamy full-fat yogurts to protein-enriched varieties, NZMP delivers the perfect protein base for your fermented dairy products.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/yogurts.jpg",
+      "link": "/en/applications/yogurts",
+      "linkText": "Explore Yogurt Solutions"
+    },
+    {
+      "title": "Milk Powder & Infant Formula",
+      "description": "Premium dairy powders formulated to meet the strictest nutritional and safety standards for powdered milk and infant formula applications.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/milk-powder.jpg",
+      "link": "/en/applications/milk-powder",
+      "linkText": "Learn About Milk Powder"
+    },
+    {
+      "title": "Food Manufacturing & Nutrition Bars",
+      "description": "Versatile protein ingredients for nutrition bars, functional foods, and specialized nutrition products.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/food-manufacturing.jpg",
+      "link": "/en/applications/food-manufacturing",
+      "linkText": "View Food Manufacturing Solutions"
+    },
+    {
+      "title": "Formulated Products & Beverages",
+      "description": "Complete protein solutions for sports beverages, protein drinks, and functional food formulations.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/formulated-products.jpg",
+      "link": "/en/applications/beverages",
+      "linkText": "Explore Beverages & Formulations"
+    },
+    {
+      "title": "Ingredients for Food Service",
+      "description": "Reliable, cost-effective dairy protein ingredients for commercial foodservice applications.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/foodservice.jpg",
+      "link": "/en/applications/foodservice",
+      "linkText": "Discover Foodservice Solutions"
+    },
+    {
+      "title": "Regional Distribution & Partnerships",
+      "description": "Strategic partnerships and distribution networks to deliver NZMP products to markets worldwide.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/images/regional-distribution.jpg",
+      "link": "/en/distribution",
+      "linkText": "View Distribution Network"
+    }
+  ],
+  "news": [
+    {
+      "title": "NZMP Launches New Whey Protein Concentrate for Sports Nutrition",
+      "date": "Aug 13, 2024",
+      "excerpt": "New WPC 550 product offers enhanced solubility and foaming properties for sports beverage applications.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-1.jpg",
+      "link": "/en/news/wpc-550-launch",
+      "linkText": "Read Full Article"
+    },
+    {
+      "title": "Fonterra Expands Protein Capacity in Response to Global Demand",
+      "date": "Aug 10, 2024",
+      "excerpt": "Investment in production facilities to meet growing demand for sustainable dairy proteins in Asia Pacific and Europe.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-2.jpg",
+      "link": "/en/news/capacity-expansion",
+      "linkText": "Read Full Article"
+    },
+    {
+      "title": "NZMP Achieves Carbon Neutral Status in Protein Production",
+      "date": "Aug 5, 2024",
+      "excerpt": "Sustainability milestone reached through renewable energy and methane reduction initiatives at manufacturing facilities.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-3.jpg",
+      "link": "/en/news/carbon-neutral",
+      "linkText": "Read Full Article"
+    },
+    {
+      "title": "Industry Report: The Future of Dairy Proteins in Functional Foods",
+      "date": "Jul 28, 2024",
+      "excerpt": "NZMP research contributes to understanding emerging trends in functional food formulation and consumer preferences.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-4.jpg",
+      "link": "/en/news/functional-foods-report",
+      "linkText": "Read Full Article"
+    },
+    {
+      "title": "New Partnership with Leading Asian Food Manufacturer",
+      "date": "Jul 20, 2024",
+      "excerpt": "Strategic collaboration to develop innovative protein solutions for regional market expansion.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-5.jpg",
+      "link": "/en/news/asia-partnership",
+      "linkText": "Read Full Article"
+    },
+    {
+      "title": "NZMP Protein Solutions Guide Published",
+      "date": "Jul 15, 2024",
+      "excerpt": "Comprehensive technical guide now available for food manufacturers selecting NZMP protein ingredients.",
+      "image": "https://www.nzmp.com/content/dam/fonterra/nzmp/global/en/news/news-6.jpg",
+      "link": "/en/news/solutions-guide",
+      "linkText": "Read Full Article"
+    }
+  ],
+  "notes": "This JSON structure maps to the blocks created in Phase 1. Each section corresponds to a block type (hero, applications-grid, news-feed). The image URLs should point to optimized images stored in /content/dam/fonterra-demo/images/. Replace placeholder URLs with real NZMP.com image URLs after scraping."
+}
