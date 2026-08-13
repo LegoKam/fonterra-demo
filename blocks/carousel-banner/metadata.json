@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-banner",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en.html",
+    "originPage": "NZMP global homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "hero-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + CTA per slide",
+    "slideCount": 5,
+    "buttonCount": 1,
+    "imageCount": 5
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "top-of-page hero banner carousels",
+      "full-bleed image slides with overlaid headline and single CTA",
+      "brand/marketing landing intros"
+    ],
+    "notSuitableFor": [
+      "card-style category carousels with per-slide descriptions",
+      "article/news teaser carousels showing multiple cards at once",
+      "single static hero (use hero block)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

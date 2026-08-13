@@ -83,6 +83,38 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion Featured",
+          "id": "accordion-featured",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion Featured",
+                  "filter": "accordion-featured"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion Featured Item",
+          "id": "accordion-featured-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Featured Item",
+                  "model": "accordion-featured-item",
+                  "summary": "Lorem Ipsum",
+                  "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet ...</p>"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Cards",
           "id": "cards",
           "plugins": {
@@ -107,6 +139,96 @@
                 "template": {
                   "name": "Card",
                   "model": "card"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Banner",
+          "id": "carousel-banner",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel Banner",
+                  "filter": "carousel-banner"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Banner Slide",
+          "id": "carousel-banner-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Banner Slide",
+                  "model": "carousel-banner-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Category",
+          "id": "carousel-category",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel Category",
+                  "filter": "carousel-category"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Category Slide",
+          "id": "carousel-category-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Category Slide",
+                  "model": "carousel-category-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel News",
+          "id": "carousel-news",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel News",
+                  "filter": "carousel-news"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel News Slide",
+          "id": "carousel-news-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel News Slide",
+                  "model": "carousel-news-item"
                 }
               }
             }

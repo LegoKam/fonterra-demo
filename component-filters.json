@@ -19,9 +19,33 @@
     ]
   },
   {
+    "id": "accordion-featured",
+    "components": [
+      "accordion-featured-item"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "carousel-banner",
+    "components": [
+      "carousel-banner-item"
+    ]
+  },
+  {
+    "id": "carousel-category",
+    "components": [
+      "carousel-category-item"
+    ]
+  },
+  {
+    "id": "carousel-news",
+    "components": [
+      "carousel-news-item"
     ]
   },
   {

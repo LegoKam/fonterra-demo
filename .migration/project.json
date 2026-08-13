@@ -1,0 +1,14 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "fonterra-demo": {
+      "previewOrg": "legokam",
+      "previewSite": "fonterra-demo",
+      "aemSitePath": "/content/fonterra-demo",
+      "aemAssetsFolderPath": "/content/dam/fonterra-demo",
+      "aemSiteName": "fonterra-demo",
+      "aemSiteTitle": "fonterra-demo",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "home-page",
+      "urls": [
+        "https://www.nzmp.com/global/en.html"
+      ],
+      "coverageGaps": [],
+      "description": "NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, article teaser carousel, contact form, and email subscription bar",
+      "blocks": [
+        {
+          "name": "carousel-banner",
+          "instances": [".homeBanner__container"]
+        },
+        {
+          "name": "carousel-category",
+          "instances": [".horizontalCategoryCarousel__container", ".horizontalCategoryCarousel.duskBlue"]
+        },
+        {
+          "name": "accordion-featured",
+          "instances": [".verticalCarousel", ".cmp-featured-tile"]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [".slickCarouselArticles__slick", ".pageTeaser__wrapper.slickCarouselArticles"]
+        },
+        {
+          "name": "form",
+          "instances": [".emailsubscription.esBar"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero banner carousel",
+          "selector": ".homeBanner__container",
+          "style": null,
+          "blocks": ["carousel-banner"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Applications category carousel",
+          "selector": [".horizontalCategoryCarousel.duskBlue", ".pageTeaser.list.parbase"],
+          "style": "dark-blue",
+          "blocks": ["carousel-category"],
+          "defaultContent": [".horizontalCategoryCarousel__title"]
+        },
+        {
+          "id": "section-3",
+          "name": "We can help you featured list",
+          "selector": ".verticalCarousel",
+          "style": null,
+          "blocks": ["accordion-featured"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Read the latest from NZMP",
+          "selector": ".responsivegrid-centered",
+          "style": null,
+          "blocks": ["carousel-news"],
+          "defaultContent": [".title-arrows", ".ctabutton"]
+        },
+        {
+          "id": "section-5",
+          "name": "Email subscription bar",
+          "selector": ".emailsubscription.esBar",
+          "style": "blue",
+          "blocks": ["form"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

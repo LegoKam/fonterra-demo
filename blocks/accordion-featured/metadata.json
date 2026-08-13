@@ -1,0 +1,40 @@
+{
+  "variantName": "accordion-featured",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en.html",
+    "originPage": "NZMP global homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "featured-list",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "title + body paragraph + Learn more CTA per item (optional companion image)",
+    "itemCount": 3,
+    "buttonCount": 3,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "'we can help you' style expandable featured lists",
+      "vertical expand/collapse sections with a title, body copy, and a learn-more link per item",
+      "topic lists where one item is expanded at a time"
+    ],
+    "notSuitableFor": [
+      "dense FAQ lists of pure Q&A text (use base accordion)",
+      "tabbed content switchers (use tabs)",
+      "grids of repeating cards (use cards)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

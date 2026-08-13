@@ -1,0 +1,40 @@
+{
+  "variantName": "carousel-news",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en.html",
+    "originPage": "NZMP global homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "wide",
+    "purpose": "news-teasers",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + category tag + headline + date per slide",
+    "slideCount": 6,
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news / blog / article teaser carousels",
+      "light-background horizontal card carousels with category tag + headline + date",
+      "'read the latest' / newsfeed sections"
+    ],
+    "notSuitableFor": [
+      "hero banner intros",
+      "dark category tile carousels with CTA buttons",
+      "single static feature"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}
