@@ -66,12 +66,6 @@
   transition: opacity 0.2s, color 0.2s;
 }
 
-/* Collapsed hover: lift the fade slightly for affordance */
-.accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:hover p,
-.accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:focus-visible p {
-  opacity: 0.5;
-}
-
 /* Title text (open / active): brand arrow-blue, weight 800, full opacity */
 .accordion-featured .accordion-featured-item[open] .accordion-featured-item-label p {
   color: var(--brand-arrow-blue);              /* #5091cd */
@@ -126,6 +120,14 @@
 
 .accordion-featured .accordion-featured-item-body a:hover::after {
   transform: translateX(4px);
+}
+
+/* Collapsed hover: lift the fade slightly for affordance.
+   Placed last to satisfy no-descending-specificity ordering. */
+/* stylelint-disable-next-line no-descending-specificity */
+.accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:hover p,
+.accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:focus-visible p {
+  opacity: 0.5;
 }
 
 /* Desktop: left text column matching the source panel body (~456px) */
