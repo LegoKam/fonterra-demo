@@ -294,64 +294,6 @@ var CustomImportScript = (() => {
     element.replaceWith(block);
   }
 
-  // tools/importer/parsers/form.js
-  function parse5(element, { document }) {
-    const contentCell = [];
-    const title = element.querySelector(".emailsubscription__title, h2");
-    if (title && title.textContent.trim()) {
-      const h = document.createElement("h2");
-      h.textContent = title.textContent.trim();
-      contentCell.push(h);
-    }
-    const labels = Array.from(element.querySelectorAll(".form-group .input-label")).map((el) => el.textContent.replace(/\s+/g, " ").trim()).filter((t) => t.length > 0);
-    const consent = element.querySelector(".checkbox-label, .form-group--checkbox label");
-    const submit = element.querySelector('.send-button span, .send-button, button[type="submit"], .form-group--submit-btn button');
-    const submitText = submit ? submit.textContent.replace(/\s+/g, " ").trim() : "";
-    if (labels.length) {
-      const ul = document.createElement("ul");
-      labels.forEach((labelText) => {
-        const li = document.createElement("li");
-        li.textContent = labelText;
-        ul.appendChild(li);
-      });
-      contentCell.push(ul);
-    }
-    if (consent && consent.textContent.trim()) {
-      const p = document.createElement("p");
-      p.append(...consent.cloneNode(true).childNodes);
-      contentCell.push(p);
-    }
-    if (submitText) {
-      const p = document.createElement("p");
-      const strong = document.createElement("strong");
-      strong.textContent = submitText;
-      p.appendChild(strong);
-      contentCell.push(p);
-    }
-    const result = element.querySelector(".result.modalEmailSubscription, .result");
-    if (result) {
-      const confirmTitle = result.querySelector(".title h3, h3");
-      if (confirmTitle && confirmTitle.textContent.trim()) {
-        const h = document.createElement("h3");
-        h.textContent = confirmTitle.textContent.replace(/\s+/g, " ").trim();
-        contentCell.push(h);
-      }
-      const confirmMsg = result.querySelector(".title p, p");
-      if (confirmMsg && confirmMsg.textContent.trim()) {
-        const p = document.createElement("p");
-        p.textContent = confirmMsg.textContent.replace(/\s+/g, " ").trim();
-        contentCell.push(p);
-      }
-    }
-    if (contentCell.length === 0) {
-      element.replaceWith(...element.childNodes);
-      return;
-    }
-    const cells = [[contentCell]];
-    const block = WebImporter.Blocks.createBlock(document, { name: "form", cells });
-    element.replaceWith(block);
-  }
-
   // tools/importer/transformers/nzmp-cleanup.js
   var TransformHook = { beforeTransform: "beforeTransform", afterTransform: "afterTransform" };
   function transform(hookName, element, payload) {
@@ -368,7 +310,12 @@ var CustomImportScript = (() => {
         //   .author-only            -> "Please Drag & Drop Background Image..." authoring hint
         //   button.surestart-terms  -> hidden "Open Modal" trigger button
         ".author-only",
-        "button.surestart-terms"
+        "button.surestart-terms",
+        // Email subscription form. Removed by request: it imported as a base `form`
+        // block, but there is no `form` component in the project, so md2jcr errors with
+        // "The component 'Form' does not exist." Dropping the whole section keeps the
+        // import clean until a real form component/handling is available.
+        ".emailsubscription.esBar"
       ]);
     }
     if (hookName === TransformHook.afterTransform) {
@@ -426,7 +373,7 @@ var CustomImportScript = (() => {
   // tools/importer/import-home-page.js
   var PAGE_TEMPLATE = {
     name: "home-page",
-    description: "NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, article teaser carousel, contact form, and email subscription bar",
+    description: "NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, and article teaser carousel",
     urls: [
       "https://www.nzmp.com/global/en.html"
     ],
@@ -446,10 +393,6 @@ var CustomImportScript = (() => {
       {
         name: "carousel-news",
         instances: [".slickCarouselArticles__slick", ".pageTeaser__wrapper.slickCarouselArticles"]
-      },
-      {
-        name: "form",
-        instances: [".emailsubscription.esBar"]
       }
     ],
     sections: [
@@ -484,14 +427,6 @@ var CustomImportScript = (() => {
         style: null,
         blocks: ["carousel-news"],
         defaultContent: [".title-arrows", ".ctabutton"]
-      },
-      {
-        id: "section-5",
-        name: "Email subscription bar",
-        selector: ".emailsubscription.esBar",
-        style: "blue",
-        blocks: ["form"],
-        defaultContent: []
       }
     ]
   };
@@ -499,8 +434,7 @@ var CustomImportScript = (() => {
     "carousel-banner": parse,
     "carousel-category": parse2,
     "accordion-featured": parse3,
-    "carousel-news": parse4,
-    form: parse5
+    "carousel-news": parse4
   };
   var transformers = [
     transform,

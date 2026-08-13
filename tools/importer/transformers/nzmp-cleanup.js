@@ -38,6 +38,11 @@ export default function transform(hookName, element, payload) {
       //   button.surestart-terms  -> hidden "Open Modal" trigger button
       '.author-only',
       'button.surestart-terms',
+      // Email subscription form. Removed by request: it imported as a base `form`
+      // block, but there is no `form` component in the project, so md2jcr errors with
+      // "The component 'Form' does not exist." Dropping the whole section keeps the
+      // import clean until a real form component/handling is available.
+      '.emailsubscription.esBar',
     ]);
   }
 

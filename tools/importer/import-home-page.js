@@ -6,7 +6,6 @@ import carouselBannerParser from './parsers/carousel-banner.js';
 import carouselCategoryParser from './parsers/carousel-category.js';
 import accordionFeaturedParser from './parsers/accordion-featured.js';
 import carouselNewsParser from './parsers/carousel-news.js';
-import formParser from './parsers/form.js';
 
 // TRANSFORMER IMPORTS
 import cleanupTransformer from './transformers/nzmp-cleanup.js';
@@ -15,7 +14,7 @@ import sectionsTransformer from './transformers/nzmp-sections.js';
 // PAGE TEMPLATE CONFIGURATION - Embedded from page-templates.json
 const PAGE_TEMPLATE = {
   name: 'home-page',
-  description: 'NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, article teaser carousel, contact form, and email subscription bar',
+  description: 'NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, and article teaser carousel',
   urls: [
     'https://www.nzmp.com/global/en.html',
   ],
@@ -35,10 +34,6 @@ const PAGE_TEMPLATE = {
     {
       name: 'carousel-news',
       instances: ['.slickCarouselArticles__slick', '.pageTeaser__wrapper.slickCarouselArticles'],
-    },
-    {
-      name: 'form',
-      instances: ['.emailsubscription.esBar'],
     },
   ],
   sections: [
@@ -74,14 +69,6 @@ const PAGE_TEMPLATE = {
       blocks: ['carousel-news'],
       defaultContent: ['.title-arrows', '.ctabutton'],
     },
-    {
-      id: 'section-5',
-      name: 'Email subscription bar',
-      selector: '.emailsubscription.esBar',
-      style: 'blue',
-      blocks: ['form'],
-      defaultContent: [],
-    },
   ],
 };
 
@@ -91,7 +78,6 @@ const parsers = {
   'carousel-category': carouselCategoryParser,
   'accordion-featured': accordionFeaturedParser,
   'carousel-news': carouselNewsParser,
-  form: formParser,
 };
 
 // TRANSFORMER REGISTRY - Array of transformer functions

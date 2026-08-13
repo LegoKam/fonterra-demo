@@ -37,12 +37,6 @@
             ".slickCarouselArticles__slick",
             ".pageTeaser__wrapper.slickCarouselArticles"
           ]
-        },
-        {
-          "name": "form",
-          "instances": [
-            ".emailsubscription.esBar"
-          ]
         }
       ],
       "sections": [
@@ -93,16 +87,6 @@
             ".title-arrows",
             ".ctabutton"
           ]
-        },
-        {
-          "id": "section-5",
-          "name": "Email subscription bar",
-          "selector": ".emailsubscription.esBar",
-          "style": "blue",
-          "blocks": [
-            "form"
-          ],
-          "defaultContent": []
         }
       ]
     }

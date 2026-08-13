@@ -1,0 +1,42 @@
+/*
+ * NZMP brand design tokens
+ * Extracted from https://www.nzmp.com/global/en.html
+ *
+ * Fonts: MarkOffcPro / MarkOffcPro-Heavy are NZMP's licensed brand fonts and are
+ * not available on Google Fonts or Adobe Fonts. They are listed first so they are
+ * used where licensed; a geometric-sans fallback stack renders elsewhere.
+ */
+:root {
+  /* fonts */
+  --body-font-family: "MarkOffcPro", "Helvetica Neue", helvetica, arial, sans-serif;
+  --heading-font-family: "MarkOffcPro-Heavy", "MarkOffcPro", "Helvetica Neue", helvetica, arial, sans-serif;
+  --heading-font-weight: 900;
+  --heading-letter-spacing: -0.3px;
+
+  /* brand colors */
+  --brand-dark-blue: #263e81;   /* duskBlue band, primary buttons, accent text */
+  --brand-blue: #00539a;        /* email subscription band */
+  --brand-arrow-blue: #5091cd;  /* "Learn more" arrow links */
+
+  /* base colors */
+  --background-color: #fff;
+  --light-color: #eaeaeb;
+  --dark-color: #263e81;
+  --text-color: #4b4b4b;
+  --heading-color: #2d2d2d;
+  --muted-color: #6d6e71;
+  --link-color: #263e81;
+  --link-hover-color: #0a58ca;
+
+  /* spacing */
+  --content-max-width: 1320px;
+  --nav-height: 64px;
+
+  /* heading sizes (desktop) */
+  --heading-size-xxl: 64px;
+  --heading-size-xl: 31px;
+  --heading-size-l: 26px;
+  --heading-size-m: 22px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}
