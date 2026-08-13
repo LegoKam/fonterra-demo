@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-720.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-720",
+  "timestamp": "2026-08-13T21:29:20.067Z",
+  "title": "NZMP™ Lactic Acid Casein 720 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

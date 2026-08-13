@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-optibar.html",
+  "path": "global/en/ingredients/proteins/whey-protein-isolates/nzmp-optibar",
+  "timestamp": "2026-08-13T21:35:47.659Z",
+  "title": "NZMP™ Whey Protein Isolate 894 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

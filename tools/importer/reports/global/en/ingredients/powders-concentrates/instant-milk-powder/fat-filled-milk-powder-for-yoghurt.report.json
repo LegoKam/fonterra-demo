@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder-for-yoghurt.html",
+  "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder-for-yoghurt",
+  "timestamp": "2026-08-13T21:22:45.947Z",
+  "title": "Fat Filled Milk Powder for Yoghurt | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

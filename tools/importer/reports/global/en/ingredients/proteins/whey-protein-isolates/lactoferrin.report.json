@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/lactoferrin.html",
+  "path": "global/en/ingredients/proteins/whey-protein-isolates/lactoferrin",
+  "timestamp": "2026-08-13T21:35:11.675Z",
+  "title": "Lactoferrin - NZMP Dairy Ingredients | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

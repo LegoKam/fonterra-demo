@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-385.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-385",
+  "timestamp": "2026-08-13T21:29:44.925Z",
+  "title": "NZMP™ Calcium Caseinate 385 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

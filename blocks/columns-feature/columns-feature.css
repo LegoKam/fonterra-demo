@@ -1,0 +1,69 @@
+/*
+ * Columns Feature -- "Explore applications" two-column block.
+ * LEFT: lifestyle food photo. RIGHT: heading + applications list.
+ * Values extracted from source .imageTextOverlay computed styles (nzmp.com).
+ * Source (desktop): flex row, 50/50, align-items:center, 32px gap,
+ * image frame 547.5x370 (aspect 1.48), background-cover.
+ */
+
+/* Mobile-first: stack, image on top */
+.columns-feature > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-feature > div > .columns-feature-img-col {
+  order: 0;
+}
+
+.columns-feature > div > div {
+  order: 1;
+}
+
+/* Image fills its column, cropped to the source aspect ratio */
+.columns-feature .columns-feature-img-col img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 548 / 370; /* source image frame 547.5 x 370 */
+  object-fit: cover;
+}
+
+/* Heading (source h4: 22px, color #2d2d2d, margin 0) */
+.columns-feature h4 {
+  margin-top: 0;
+  color: var(--heading-color);
+}
+
+/* Applications list (source ul: padding-left 30px, disc bullets) */
+.columns-feature ul {
+  margin: 16px 0 20px;
+  padding-left: 30px;
+  list-style: disc;
+}
+
+/* List items (source li: 16px / line-height 24px / #2d2d2d) */
+.columns-feature li {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--heading-color);
+}
+
+/* Links inside list (source: #263e81, underlined) */
+.columns-feature li a {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  .columns-feature > div {
+    flex-direction: row;
+    align-items: center; /* text vertically centered against taller image */
+    gap: 32px; /* source right column padding-left */
+  }
+
+  .columns-feature > div > div,
+  .columns-feature > div > .columns-feature-img-col {
+    flex: 1 1 0; /* 50 / 50 split */
+    order: unset;
+  }
+}

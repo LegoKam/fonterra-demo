@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates/nzmp-whey-protein-hydrolysate-821.html",
+  "path": "global/en/ingredients/proteins/hydrolysates/nzmp-whey-protein-hydrolysate-821",
+  "timestamp": "2026-08-13T21:30:39.060Z",
+  "title": "NZMP™ Whey Protein Hydrolysate 821 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-uht-gdt.html",
+  "path": "global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-uht-gdt",
+  "timestamp": "2026-08-13T21:22:26.857Z",
+  "title": "Regular Buttermilk Powder for UHT Milk GDT Specification | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,89 @@
+/*
+ * cards-benefit -- icon + bold title + short description "benefit" items.
+ * Source: NZMP "Key benefits" row (.textIconCard x3). Values extracted from
+ * source computed styles (see migration-work/cards-benefit-extracted.css).
+ *
+ * Each benefit is authored as its own cards-benefit block; the block JS groups
+ * the consecutive wrappers into .cards-benefit-row so they line up in a row on
+ * desktop and stack on mobile. The row is a direct .section > div child, so it
+ * inherits the global centered content inset (max-width/padding) from styles.css.
+ */
+
+/* Row: stacked on mobile, three-up on desktop */
+.cards-benefit-row {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Single benefit item -- no card chrome on the source (transparent, borderless) */
+.cards-benefit > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-benefit > ul > li {
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+/* Icon: small (36x32), sits on top with a 24px gap before the title.
+   The image is wrapped in a <p> by EDS -- flatten that wrapper's spacing. */
+.cards-benefit .cards-benefit-card-image {
+  line-height: 0;
+}
+
+.cards-benefit .cards-benefit-card-image p {
+  margin: 0;
+}
+
+.cards-benefit .cards-benefit-card-image img {
+  width: 36px;
+  height: 32px;
+  margin: 0 0 24px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+/* Text block */
+.cards-benefit .cards-benefit-card-body {
+  margin: 0;
+}
+
+/* Title */
+.cards-benefit .cards-benefit-card-body h3 {
+  margin: 0 0 16px;
+  color: var(--heading-color);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+/* Description */
+.cards-benefit .cards-benefit-card-body p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (width >= 900px) {
+  .cards-benefit-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .cards-benefit-row > .cards-benefit-wrapper {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0; /* neutralize wrapper margin inherited before grouping */
+  }
+}

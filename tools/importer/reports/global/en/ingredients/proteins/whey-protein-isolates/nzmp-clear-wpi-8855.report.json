@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-clear-wpi-8855.html",
+  "path": "global/en/ingredients/proteins/whey-protein-isolates/nzmp-clear-wpi-8855",
+  "timestamp": "2026-08-13T21:35:22.459Z",
+  "title": "NZMP™ Whey Protein Isolate 8855 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

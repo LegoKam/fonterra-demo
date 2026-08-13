@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-yoghurt.html",
+  "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-yoghurt",
+  "timestamp": "2026-08-13T21:28:48.780Z",
+  "title": "Regular Whole Milk Powder for Yoghurt | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

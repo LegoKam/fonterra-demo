@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "projectType": "xwalk"
+  },
+  "templates": [
+    {
+      "name": "home-page",
+      "urls": [
+        "https://www.nzmp.com/global/en.html"
+      ],
+      "coverageGaps": [],
+      "description": "NZMP global homepage with hero banner carousel, category carousel, featured tiles/vertical carousel, article teaser carousel, contact form, and email subscription bar",
+      "blocks": [
+        {
+          "name": "carousel-banner",
+          "instances": [
+            ".homeBanner__container"
+          ]
+        },
+        {
+          "name": "carousel-category",
+          "instances": [
+            ".horizontalCategoryCarousel__container",
+            ".horizontalCategoryCarousel.duskBlue"
+          ]
+        },
+        {
+          "name": "accordion-featured",
+          "instances": [
+            ".verticalCarousel",
+            ".cmp-featured-tile"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".slickCarouselArticles__slick",
+            ".pageTeaser__wrapper.slickCarouselArticles"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero banner carousel",
+          "selector": ".homeBanner__container",
+          "style": null,
+          "blocks": [
+            "carousel-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Applications category carousel",
+          "selector": [
+            ".horizontalCategoryCarousel.duskBlue",
+            ".pageTeaser.list.parbase"
+          ],
+          "style": "dark-blue",
+          "blocks": [
+            "carousel-category"
+          ],
+          "defaultContent": [
+            ".horizontalCategoryCarousel__title"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "We can help you featured list",
+          "selector": ".verticalCarousel",
+          "style": null,
+          "blocks": [
+            "accordion-featured"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Read the latest from NZMP",
+          "selector": ".responsivegrid-centered",
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": [
+            ".title-arrows",
+            ".ctabutton"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "category-landing",
+      "urls": [
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-australian-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-european-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-global-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-new-zealand-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-north-american-ingredients.html",
+        "https://www.nzmp.com/global/en/about-nzmp/news.html",
+        "https://www.nzmp.com/global/en/about-nzmp/our-way-of-farming.html",
+        "https://www.nzmp.com/global/en/about-nzmp/safety-and-quality.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle.html",
+        "https://www.nzmp.com/global/en/applications/beverages.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture.html",
+        "https://www.nzmp.com/global/en/applications/medical-nutrition.html",
+        "https://www.nzmp.com/global/en/applications/organic-dairy/organic-product-claims.html",
+        "https://www.nzmp.com/global/en/applications/organic-dairy/organic-supply.html",
+        "https://www.nzmp.com/global/en/applications/paediatric-nutrition.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cream-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/european-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/new-zealand-cheeses.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/repack-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/repack-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/uht-cream.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/lactose.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whey-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-730.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/functional-proteins.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4424-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-470-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4861-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4862-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4867.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4882-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-shortbar-milk-protein-concentrate-4857.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/nzmp-dpc.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-flexbar.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-surestart-whey-protein-concentrate-392.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-wpc-gelling-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-shortbar-825.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-817.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-shortbar-911.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/lactose.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics/surestart-galacto-oligosaccharide-gos.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise/china-dairy-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise/europe-dairy-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise/middle-east-africa-dairy-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise/south-southeast-asia-dairy-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-protein-expertise.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/the-fonterra-research-and-development-centre.html",
+        "https://www.nzmp.com/global/en/solutions/price-risk-management.html",
+        "https://www.nzmp.com/global/en/solutions/third-party-manufacturing.html",
+        "https://www.nzmp.com/global/en/solutions/third-party-manufacturing/private-label-solutions.html"
+      ],
+      "coverageGaps": [],
+      "description": "Mid-level category/landing layout with intro banner and a grid of child cards linking to sub-pages.",
+      "blocks": []
+    },
+    {
+      "name": "about-landing",
+      "urls": [
+        "https://www.nzmp.com/global/en/about-nzmp.html",
+        "https://www.nzmp.com/global/en/solutions.html"
+      ],
+      "coverageGaps": [],
+      "description": "About-section landing layout with intro content and feature blocks.",
+      "blocks": []
+    },
+    {
+      "name": "application-concept-detail",
+      "urls": [
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-cookies.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-energy-balls.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-muffin-mix.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-pancake-mix.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/all-the-whey-crunch-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/all-the-whey-dough-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/granola-protein-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/low-sugar-high-protein-dough-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/nougat-protein-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/oatmeal-cookie-dough-bar.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/stress-buster-nutritional-bars.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/ready-to-mix/brain-and-body-protein-powder.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/immunity.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/sarcopenia.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/stress-mood-enhancement.html",
+        "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms/elevated-experiences.html",
+        "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms/everyday-nutrition.html",
+        "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms/fuel.html",
+        "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms/functional-wellness.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/bone-teeth-health.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/cognitive-health-wellbeing.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/everyday-active-bodies-minds.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/healthy-ageing.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/immunity.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/kids-growth-development.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/targeted-health.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/bakery.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/ice-cream.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/meals-and-snacks.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/better-ingredients-better-cheese.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/mozzarella-a-rising-star.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/why-is-nzmp-iqf-naturally-good.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/why-mozzarella-best-cheese-for-pizza-topping.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/processed-cheese.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications/processed-cream-cheese.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms/elevated-experiences.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms/everyday-nutrition.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms/fuel.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms/functional-wellness.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/nzmp-rennet-casein-gold.html",
+        "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-protein-expertise/protein-innovation-timeline.html",
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/pricecollar.html",
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/priceindex.html",
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/pricelock.html"
+      ],
+      "coverageGaps": [],
+      "description": "Application concept/recipe detail layout with hero, description sections, and related-ingredient cards.",
+      "blocks": []
+    },
+    {
+      "name": "section-landing",
+      "urls": [
+        "https://www.nzmp.com/global/en/applications.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/ready-to-drink.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/ready-to-mix.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/supplements.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms.html",
+        "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms.html",
+        "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms.html",
+        "https://www.nzmp.com/global/en/applications/food-manufacture/applications.html",
+        "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms.html",
+        "https://www.nzmp.com/global/en/ingredients.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/surestart-mfgm-lipid-100.html"
+      ],
+      "coverageGaps": [],
+      "description": "Top-level section landing layout (e.g. Applications) with hero banner and category tile grid.",
+      "blocks": []
+    },
+    {
+      "name": "application-product-detail",
+      "urls": [
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars.html"
+      ],
+      "coverageGaps": [],
+      "description": "Application product-detail variant layout with hero and content sections.",
+      "blocks": []
+    },
+    {
+      "name": "application-concepts-index",
+      "urls": [
+        "https://www.nzmp.com/global/en/applications/medical-nutrition/concepts.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/surestart-mfgm-lipid-70.html"
+      ],
+      "coverageGaps": [],
+      "description": "Index layout listing application concepts as a card grid.",
+      "blocks": []
+    },
+    {
+      "name": "application-article",
+      "urls": [
+        "https://www.nzmp.com/global/en/applications/medical-nutrition/low-lactose-dairy-nutrition-with-nzmp.html"
+      ],
+      "coverageGaps": [],
+      "description": "Long-form article layout under applications with heading hierarchy and body copy.",
+      "blocks": []
+    },
+    {
+      "name": "ingredient-product-detail",
+      "urls": [
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-frozen.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-manufacturing.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/coloured-cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/frozen-functional-cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/mature-cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-cheddar-cheese-frozen.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-mature-cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-mild-cheddar-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/strong-cheddar-cheese-manufacturing.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/young-cheddar-cheese-manufacturing-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/easy-shred-mozzarella-nz.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/frozen-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/iqf-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/lower-salt-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/medium-fat-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/mozzarella-curd.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/mozzarella-frozen-au.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/mozzarella-frozen-nz.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/premium-chilled-mozzarella.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/new-zealand-cheeses/egmont-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/new-zealand-cheeses/noble-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/colby-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/edam-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/gouda-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/parmesan-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/swiss-style-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/anhydrous-milk-fat-15l-convenience-pack.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/anhydrous-milk-fat-premium-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/anhydrous-milk-fat-premium.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/anhydrous-milk-fat-regular-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/anhydrous-milk-fat-regular.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat/organic-anhydrous-milk-fat-premium.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/lactic-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/organic-salted-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/organic-unsalted-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/organic-unsalted-lactic-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/salted-creamery-butter-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/salted-creamery-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/unsalted-butter-convenience-pack.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/unsalted-creamery-butter-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/unsalted-creamery-butter.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-cheese/cream-cheese-traditional.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-powder/cream-powder-55.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-au.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-uht-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder-for-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/gold-instant-whole-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/instant-skim-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/instant-whole-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-fortified-plus-instant-wmp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-gold-instant-wmp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-low-cost-pure-instant-dairy-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-nutriwhite-dairy-based-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-protein-plus-instant-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/super-fortified-instant-smp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/whole-milk-powder-instant-fortified.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/nzmp-frozen-wholemilk-concentrate.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-demineralised-whey-powder-90.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-regular-skim-milk-powder-wetapp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-regular-whole-milk-powder-wetapp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/organic-skim-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-high-heat-hs-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-high-heat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-low-heat-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-low-heat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-medium-heat-au.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-medium-heat-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-medium-heat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/smp-for-uht.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/super-fortified-instant-smp.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/surestart-regular-smp-low-heat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whey-powder/nzmp-whey-powder-621.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/organic-regular-whole-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-gdt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-high-heat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-repack.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-uht-28-fat.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-uht.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-blending.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-tea.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-yoghurt.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/whole-milk-powder-recombined-evaporated-milk.html",
+        "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/wmp-uht-perform.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/acid-casein-741.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-720.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/calcium-caseinate-380.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-309.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-385.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-sodium-caseinate-166.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-sodium-caseinate-167.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-sodium-caseinate-180.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/nzmp-rennet-casein-771.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/sureprotein-rennet-casein-779.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates/nzmp-whey-protein-hydrolysate-7051.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates/nzmp-whey-protein-hydrolysate-821.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates/nzmp-whey-protein-hydrolysate-917.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-milk-protein-concentrate-470.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-milk-protein-concentrate-485.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4851.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4861.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4882.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4887.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-sureprotein-mpc-4881.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/organic-milk-protein-concentrate-485.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-isolates/nzmp-milk-protein-isolate-4900.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-isolates/nzmp-softbar-1000.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/total-milk-proteins/nzmp-total-milk-protein-shortbar-1104.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-bioactive-whey-protein.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-dairy-protein-crisps-crispbar.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-flex-wpc-515.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-flow-wpc-510.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-instant-whey-protein-concentrate-450.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-pro-optima-wpc-567.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-132.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-162.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-322.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-352.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-356.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-392.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-397.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-457-decolorized.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-472.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-480-instantised.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-7009.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-wpc-550.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/organic-whey-protein-concentrate-392.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/lactoferrin.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-clear-wpi-8855.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-instant-whey-protein-isolate-894.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-instant-whey-protein-isolate-895.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-optibar.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-wpi-895.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/milk-phospholipids.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/surestart-mfgm-lipids.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-softbar-917.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin/nzmp-lactoferrin.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin/surestart-lactoferrin.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics/galacto-oligosaccharide-gos-prebiotic-fibre.html"
+      ],
+      "coverageGaps": [],
+      "description": "Deep product-detail layout for a single ingredient (breadcrumb, hero, spec/benefit sections, related items). Largest family.",
+      "blocks": []
+    },
+    {
+      "name": "ingredient-category",
+      "urls": [
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/blends.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-cheese.html",
+        "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/frozen-cream.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-isolates.html",
+        "https://www.nzmp.com/global/en/ingredients/proteins/total-milk-proteins.html"
+      ],
+      "coverageGaps": [],
+      "description": "Ingredient subcategory layout listing product variants within a family (e.g. dairy fats/cream blends).",
+      "blocks": []
+    },
+    {
+      "name": "resources-listing",
+      "urls": [
+        "https://www.nzmp.com/global/en/ingredients/resources.html"
+      ],
+      "coverageGaps": [],
+      "description": "Resources listing layout with downloadable/linked resource cards.",
+      "blocks": []
+    },
+    {
+      "name": "ingredient-listing",
+      "urls": [
+        "https://www.nzmp.com/global/en/ingredients/specialty/probiotics.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/probiotics/nzmp-bifidob-hn019.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/probiotics/nzmp-surestart-bifidob-hn019.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/probiotics/nzmp-surestart-lactob-hn001.html"
+      ],
+      "coverageGaps": [],
+      "description": "Ingredient listing layout with a filterable/grid set of product cards under a specialty group.",
+      "blocks": []
+    },
+    {
+      "name": "solution-detail",
+      "urls": [
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/double-cap-collar.html",
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/pricebreak.html"
+      ],
+      "coverageGaps": [],
+      "description": "Solutions detail layout with hero, descriptive body sections, and supporting content.",
+      "blocks": []
+    },
+    {
+      "name": "solution-landing",
+      "urls": [
+        "https://www.nzmp.com/global/en/solutions/sustainability-solutions.html"
+      ],
+      "coverageGaps": [],
+      "description": "Solutions landing layout with hero banner and multi-section feature content.",
+      "blocks": []
+    }
+  ]
+}

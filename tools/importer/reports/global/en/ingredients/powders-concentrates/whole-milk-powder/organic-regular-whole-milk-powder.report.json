@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/organic-regular-whole-milk-powder.html",
+  "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/organic-regular-whole-milk-powder",
+  "timestamp": "2026-08-13T21:27:35.578Z",
+  "title": "Organic Whole Milk Powder | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}
