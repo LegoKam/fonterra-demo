@@ -16,6 +16,10 @@ main .section > .carousel-banner-wrapper {
   position: relative;
 }
 
+.carousel-banner {
+  position: relative;
+}
+
 .carousel-banner .carousel-banner-slides,
 .carousel-banner .carousel-banner-slide-indicators {
   list-style: none;
@@ -138,25 +142,30 @@ main .carousel-banner .carousel-banner-slide-content a:focus-visible {
 }
 
 /* --- Bottom label-strip navigation --- */
+/* Source: centered floating white rounded bar (bottom:32px, radius 4px). */
 .carousel-banner .carousel-banner-slide-indicators {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
   z-index: 3;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 0;
-  background-color: rgb(255 255 255 / 92%);
+  border-radius: 4px;
+  background-color: #fff;
   line-height: normal;
+  overflow: hidden;
 }
 
 .carousel-banner .carousel-banner-slide-indicator {
   display: flex;
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .carousel-banner .carousel-banner-slide-indicator button {
+  width: 100%;
   margin: 0;
   border: 0;
   padding: 12px 16px;
@@ -167,6 +176,9 @@ main .carousel-banner .carousel-banner-slide-content a:focus-visible {
   font-weight: 400;
   line-height: 1.4;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -252,6 +264,14 @@ main .carousel-banner .carousel-banner-slide-content a:focus-visible {
   .carousel-banner .carousel-banner-navigation-buttons {
     left: 40px;
     right: 40px;
+  }
+
+  .carousel-banner .carousel-banner-slide-indicators {
+    left: 50%;
+    right: auto;
+    bottom: 32px;
+    width: min(921px, calc(100% - 80px));
+    transform: translateX(-50%);
   }
 
   .carousel-banner .carousel-banner-slide-indicator button {
