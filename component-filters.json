@@ -19,6 +19,12 @@
     ]
   },
   {
+    "id": "applications-grid",
+    "components": [
+      "application"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -37,6 +43,12 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "news-feed",
+    "components": [
+      "news-article"
     ]
   }
 ]

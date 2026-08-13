@@ -1,0 +1,82 @@
+{
+  "definitions": [
+    {
+      "title": "Applications Grid",
+      "id": "applications-grid",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Applications Grid",
+              "filter": "applications-grid"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Application",
+      "id": "application",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Application",
+              "model": "application"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "application",
+      "fields": [
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Application Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "label": "Application Title",
+          "required": true
+        },
+        {
+          "component": "richtext",
+          "valueType": "string",
+          "name": "description",
+          "label": "Application Description"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "link",
+          "label": "Link URL"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "linkText",
+          "label": "Link Text",
+          "value": "Learn More"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "applications-grid",
+      "components": [
+        "application"
+      ]
+    }
+  ]
+}
