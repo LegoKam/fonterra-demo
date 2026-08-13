@@ -1,9 +1,24 @@
 # Your Project's Title...
 Your project's description...
 
-## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+## Environments details
+Content Endpoint:
+https://author-p152232-e1579634.adobeaemcloud.com/bin/franklin.delivery/LegoKam/fonterra-demo/main
+
+Code:
+https://github.com/LegoKam/fonterra-demo
+
+Content location
+https://author-p152232-e1579634.adobeaemcloud.com/content/fonterra-demo
+
+Live site:
+https://main--fonterra-demo--legokam.aem.live/
+
+Preview site:
+https://main--fonterra-demo--legokam.aem.page/
+
+Config:
+https://admin.hlx.page/config/legokam/sites/fonterra-demo/public.json
 
 ## Documentation
 
