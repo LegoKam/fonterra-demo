@@ -1,153 +1,169 @@
-.carousel-category .carousel-category-slides-container {
+/*
+ * carousel-category — NZMP "Applications" category tile carousel.
+ * Values extracted from https://www.nzmp.com/global/en.html
+ * (.horizontalCategoryCarousel.duskBlue). The dark-blue band is provided by the
+ * section-metadata "dark-blue" style at the section level, so the block itself
+ * stays transparent.
+ *
+ * Center-mode carousel: 3-up on desktop, image + dark gradient overlay, white
+ * card title always visible, description + white "Explore" pill revealed on the
+ * active (centered) card.
+ */
+
+.carousel-category {
+  /* card size — source: 360 x 560 (9:14) */
+  --card-width: min(80vw, 320px);
+
   position: relative;
 }
 
-.carousel-category .carousel-category-slides,
-.carousel-category .carousel-category-slide-indicators {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Slides container breaks out of the section content column to bleed the cards
+   edge-to-edge across the full-width dark-blue band, like the source slick. */
+.carousel-category .carousel-category-slides-container {
+  position: relative;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
 }
 
 .carousel-category .carousel-category-slides {
+  list-style: none;
   display: flex;
+  gap: 16px;
+  margin: 0;
+  padding-block: 0;
+
+  /* leading/trailing space so the first and last card can center */
+  padding-inline: calc(50% - var(--card-width) / 2);
+  overflow: auto hidden;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  overflow: scroll clip;
+  scrollbar-width: none;
 }
 
 .carousel-category .carousel-category-slides::-webkit-scrollbar {
   display: none;
 }
 
+/* card */
 .carousel-category .carousel-category-slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   position: relative;
-  width: 100%;
-  min-height: min(50vw, calc(100dvh - var(--header-height)));
+  flex: 0 0 var(--card-width);
+  width: var(--card-width);
+  aspect-ratio: 360 / 560;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  scroll-snap-align: center;
 }
 
-.carousel-category .carousel-category-slide:has(.carousel-category-slide-content[data-align='center']) {
-  align-items: center;
-}
-
-.carousel-category .carousel-category-slide:has(.carousel-category-slide-content[data-align='right']) {
-  align-items: flex-end;
+/* image fills the card */
+.carousel-category .carousel-category-slide .carousel-category-slide-image {
+  position: absolute;
+  inset: 0;
+  margin: 0;
 }
 
 .carousel-category .carousel-category-slide .carousel-category-slide-image picture {
   position: absolute;
   inset: 0;
+  display: block;
 }
 
-.carousel-category .carousel-category-slide .carousel-category-slide-image picture > img {
-  height: 100%;
+.carousel-category .carousel-category-slide .carousel-category-slide-image img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.carousel-category .carousel-category-slide .carousel-category-slide-content {
-  z-index: 1;
-  margin: 68px;
-  padding: 16px;
-  color: white;
-  background-color: rgb(19 19 19 / 75%);
-  position: relative;
-  width: var(--slide-content-width, auto);
-}
-
-.carousel-category .carousel-category-slide-indicators {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  padding: 12px;
-  background-color: var(--light-color);
-  line-height: 0;
-}
-
-.carousel-category .carousel-category-slide-indicator button {
-  width: 24px;
-  height: 24px;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  background-color: #dadada;
-  transition: background-color 0.2s;
-}
-
-.carousel-category .carousel-category-slide-indicator button:disabled,
-.carousel-category .carousel-category-slide-indicator button:hover,
-.carousel-category .carousel-category-slide-indicator button:focus-visible {
-  background-color: var(--text-color);
-}
-
-.carousel-category .carousel-category-navigation-buttons {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 12px;
-  right: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-/* stylelint-disable-next-line no-descending-specificity */
-.carousel-category .carousel-category-navigation-buttons button {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  border-radius: 50%;
-  padding: 0;
-  background-color: rgb(19 19 19 / 25%);
-  transition: background-color 0.2s;
-}
-
-.carousel-category .carousel-category-navigation-buttons button:hover,
-.carousel-category .carousel-category-navigation-buttons button:focus-visible {
-  background-color: rgb(19 19 19 / 75%);
-}
-
-.carousel-category .carousel-category-navigation-buttons button::after {
-  display: block;
+/* dark gradient overlay — source: linear-gradient(transparent, rgba(0,0,0,.5)) */
+.carousel-category .carousel-category-slide::after {
   content: '';
-  border: 2px solid;
-  border-bottom: 0;
-  border-left: 0;
-  height: 12px;
-  width: 12px;
   position: absolute;
-  top: 50%;
-  left: calc(50% + 2px);
-  transform: translate(-50%, -50%) rotate(-135deg);
+  inset: 0;
+  background-image: linear-gradient(rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 50%) 100%);
+  z-index: 1;
 }
 
-.carousel-category .carousel-category-navigation-buttons button.slide-next::after {
-  transform: translate(-50%, -50%) rotate(45deg);
-  left: calc(50% - 2px);
+/* content anchored to the bottom, centered white text */
+.carousel-category .carousel-category-slide .carousel-category-slide-content {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0 32px 32px;
+  color: #fff;
+  text-align: center;
 }
 
-@media (width >= 600px) {
-  .carousel-category .carousel-category-navigation-buttons {
-    left: 24px;
-    right: 24px;
-  }
+/* card title — always visible. source: 31px / 900, lh 34.1px */
+.carousel-category .carousel-category-slide-content h2 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 31px;
+  font-weight: 900;
+  line-height: 34.1px;
+  letter-spacing: -0.3px;
+}
 
-  .carousel-category .carousel-category-slide .carousel-category-slide-content {
-    --slide-content-width: calc((100% - 184px) / 2);
+/* description + CTA — revealed only on the active (centered) card */
+.carousel-category .carousel-category-slide-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s linear;
+}
 
-    margin: 92px;
-  }
+.carousel-category .carousel-category-slide-active .carousel-category-slide-body {
+  max-height: 600px;
+}
 
-  .carousel-category .carousel-category-slide .carousel-category-slide-content[data-align='justify'] {
-    --slide-content-width: auto;
+.carousel-category .carousel-category-slide-content p {
+  margin: 0 0 24px;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.carousel-category .carousel-category-slide-content p.carousel-category-cta-container {
+  margin: 0;
+}
+
+/* white "Explore" pill — source: bg #fff, text #263e81, radius 100px, 18px/700 */
+main .section .carousel-category a.carousel-category-cta:any-link {
+  display: inline-block;
+  margin: 0;
+  padding: 15px 68px;
+  border: 0;
+  border-radius: 100px;
+  background-color: #fff;
+  color: var(--brand-dark-blue);
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.96px;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+main .section .carousel-category a.carousel-category-cta:hover,
+main .section .carousel-category a.carousel-category-cta:focus-visible {
+  background-color: #fff;
+  color: var(--brand-blue);
+  text-decoration: none;
+}
+
+/* source carousel exposes no visible arrows/dots — drag / scroll only */
+.carousel-category .carousel-category-navigation-buttons,
+.carousel-category .carousel-category-slide-indicators {
+  display: none;
+}
+
+@media (width >= 900px) {
+  .carousel-category {
+    --card-width: 360px;
   }
 }
