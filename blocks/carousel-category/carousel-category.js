@@ -165,8 +165,13 @@ export default async function decorate(block) {
     bindEvents(block);
   }
 
-  // Establish initial active (centered) card once layout has settled.
+  // Establish initial active (centered) card once layout has settled. With 3+
+  // slides, start centered on the second card so a full card sits either side
+  // of the active one — mirroring the source's centre-mode 3-up layout (the
+  // source fills the flanks with cloned slides, which EDS content cannot).
+  const startIndex = rows.length >= 3 ? 1 : 0;
   requestAnimationFrame(() => {
+    if (startIndex > 0) showSlide(block, startIndex, 'auto');
     updateActiveSlide(block, getCenteredIndex(slidesWrapper));
   });
 }

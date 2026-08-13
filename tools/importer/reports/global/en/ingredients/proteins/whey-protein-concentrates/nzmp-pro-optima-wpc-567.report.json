@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-pro-optima-wpc-567.html",
+  "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-pro-optima-wpc-567",
+  "timestamp": "2026-08-13T21:33:14.959Z",
+  "title": "NZMP™ Pro-Optima™ Whey Protein Concentrate | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

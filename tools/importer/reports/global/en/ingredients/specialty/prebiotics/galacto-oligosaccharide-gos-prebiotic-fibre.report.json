@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics/galacto-oligosaccharide-gos-prebiotic-fibre.html",
+  "path": "global/en/ingredients/specialty/prebiotics/galacto-oligosaccharide-gos-prebiotic-fibre",
+  "timestamp": "2026-08-13T21:36:47.087Z",
+  "title": "Galacto-oligosaccharide (GOS) Prebiotic Fibre | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

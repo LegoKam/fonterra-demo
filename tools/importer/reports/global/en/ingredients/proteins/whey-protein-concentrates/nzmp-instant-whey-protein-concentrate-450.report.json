@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-instant-whey-protein-concentrate-450.html",
+  "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-instant-whey-protein-concentrate-450",
+  "timestamp": "2026-08-13T21:33:05.241Z",
+  "title": "NZMP™ Instant Whey Protein Concentrate 450 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

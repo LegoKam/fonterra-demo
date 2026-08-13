@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-392.html",
+  "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-392",
+  "timestamp": "2026-08-13T21:34:03.101Z",
+  "title": "NZMP™ Whey Protein Concentrate 392 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

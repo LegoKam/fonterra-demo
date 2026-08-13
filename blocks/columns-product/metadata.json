@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-product",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html",
+    "originPage": "NZMP ingredient product-detail page (Cheddar Cheese AU)",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "product-summary",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text cell (H1 + intro + features list + status/sustainability tag pills + CTA) | product image cell (image + small disclaimer)",
+    "columnCount": 2,
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "product/ingredient detail summary heroes (rich text beside a single foreground product render)",
+      "two-column intros where the left cell carries the H1, an intro paragraph, a spec/feature list, tag pills and a primary CTA",
+      "top-of-page product summaries on a white background"
+    ],
+    "notSuitableFor": [
+      "full-bleed background-image hero banners (use hero / carousel-banner)",
+      "grids of repeating items (use cards)",
+      "informational image+list features without an H1/CTA (use columns-feature)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

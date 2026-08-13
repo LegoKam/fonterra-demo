@@ -1,0 +1,20 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/sureprotein-rennet-casein-779.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/sureprotein-rennet-casein-779",
+  "timestamp": "2026-08-13T21:30:22.578Z",
+  "title": "NZMP™ Rennet Casein 779 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

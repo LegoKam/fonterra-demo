@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-isolates/nzmp-softbar-1000.html",
+  "path": "global/en/ingredients/proteins/milk-protein-isolates/nzmp-softbar-1000",
+  "timestamp": "2026-08-13T21:32:19.837Z",
+  "title": "SureProtein™ Milk Protein Isolate SoftBar 1000 | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

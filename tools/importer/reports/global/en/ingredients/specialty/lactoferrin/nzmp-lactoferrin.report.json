@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin/nzmp-lactoferrin.html",
+  "path": "global/en/ingredients/specialty/lactoferrin/nzmp-lactoferrin",
+  "timestamp": "2026-08-13T21:36:30.370Z",
+  "title": "Lactoferrin - NZMP Dairy Ingredients | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

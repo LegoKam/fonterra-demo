@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht.html",
+  "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht",
+  "timestamp": "2026-08-13T21:26:55.557Z",
+  "title": "Regular Skim Milk Powder for UHT Milk | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

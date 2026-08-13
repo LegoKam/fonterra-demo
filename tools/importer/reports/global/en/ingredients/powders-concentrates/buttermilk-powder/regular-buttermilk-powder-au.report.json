@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-au.html",
+  "path": "global/en/ingredients/powders-concentrates/buttermilk-powder/regular-buttermilk-powder-au",
+  "timestamp": "2026-08-13T21:22:20.527Z",
+  "title": "Regular Buttermilk Powder (Australia Specification) | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}

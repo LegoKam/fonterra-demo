@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-demineralised-whey-powder-90.html",
+  "path": "global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-demineralised-whey-powder-90",
+  "timestamp": "2026-08-13T21:24:31.261Z",
+  "title": "SureStart™ Demineralised Whey Powder 90% | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "carousel-news"
+  ]
+}

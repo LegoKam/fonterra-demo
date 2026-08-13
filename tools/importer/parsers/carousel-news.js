@@ -52,7 +52,68 @@ function resolveImage(scope, document, { imgSel, bgSel, alt }) {
   return null;
 }
 
+// Tile-carousel variant (e.g. related-products on ingredient pages):
+// `.tileCarousel__slick--tile` items, each an <a class="link"> wrapping an <img>
+// plus `.tileCarousel__slick--contents` (a `.small` category + `.headline` title).
+// Same carousel-news block/model as the news teaser, different source DOM.
+function parseTileCarousel(element, document) {
+  const seen = new Set();
+  const tiles = Array.from(element.querySelectorAll('.tileCarousel__slick--tile'))
+    .filter((tile) => !tile.classList.contains('slick-cloned'))
+    .filter((tile) => {
+      const href = (tile.querySelector('a[href]') || {}).href || '';
+      const title = (tile.querySelector('.headline, h5, h4, h3') || {}).textContent || '';
+      const key = `${href}::${title.trim()}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+
+  const cells = [];
+  tiles.forEach((tile) => {
+    const category = tile.querySelector('.small p, .small, .categoryTitle');
+    const title = tile.querySelector('.headline, h5, h4, h3');
+    const link = tile.querySelector('a[href]');
+    const img = resolveImage(tile, document, {
+      imgSel: 'img',
+      bgSel: '.tileCarousel__slick--image, [class*="image"]',
+      alt: title ? title.textContent.trim() : '',
+    });
+
+    let imageCell = '';
+    if (img) imageCell = [document.createComment(' field:media_image '), img];
+
+    const contentNodes = [document.createComment(' field:content_text ')];
+    if (category && category.textContent.trim()) contentNodes.push(category);
+    if (title && title.textContent.trim()) contentNodes.push(title);
+    if (link) {
+      const a = document.createElement('a');
+      a.setAttribute('href', link.getAttribute('href'));
+      a.textContent = title ? title.textContent.trim() : link.getAttribute('href');
+      contentNodes.push(a);
+    }
+    if (img || title) cells.push([imageCell, contentNodes]);
+  });
+
+  if (cells.length === 0) {
+    element.replaceWith(...element.childNodes);
+    return;
+  }
+  const block = WebImporter.Blocks.createBlock(document, { name: 'carousel-news', cells });
+  element.replaceWith(block);
+}
+
 export default function parse(element, { document }) {
+  // Two supported source structures share the carousel-news block:
+  //   1. `.latestNews__box` news teasers (homepage "Read the latest")
+  //   2. `.tileCarousel__slick--tile` product tiles (ingredient related-products)
+  // If there are no news boxes but there are tiles, use the tile path.
+  const hasNewsBoxes = element.querySelector('.latestNews__box');
+  if (!hasNewsBoxes && element.querySelector('.tileCarousel__slick--tile')) {
+    parseTileCarousel(element, document);
+    return;
+  }
+
   // Slick duplicates every article (`.slick-cloned` + repeated infinite clones).
   // Drop tagged clones, then dedupe by identity (article href + headline).
   const seen = new Set();

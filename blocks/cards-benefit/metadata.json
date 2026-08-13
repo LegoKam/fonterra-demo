@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-benefit",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html",
+    "originPage": "NZMP ingredient product-detail page (Cheddar Cheese AU) - 'Key benefits'",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "benefit-cards",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "icon image + text (bold title + short description) per card; no per-card CTA",
+    "itemCount": 3,
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "icon-led benefit / feature grids (small icon + short title + one-line description)",
+      "'key benefits' / 'why choose' sets of 2-4 uniform items on a white background",
+      "value-proposition callouts without a per-item CTA"
+    ],
+    "notSuitableFor": [
+      "teaser cards with large photos and links (use carousel-news / a photo-card variant)",
+      "side-by-side single features (use columns-feature)",
+      "expandable featured lists (use accordion-featured)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

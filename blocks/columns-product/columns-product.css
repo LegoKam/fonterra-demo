@@ -1,0 +1,185 @@
+/* Columns Product — product detail hero
+   Values extracted from source .productDetailBanner computed styles. */
+
+.columns-product {
+  color: var(--heading-color); /* #2d2d2d */
+}
+
+/* Row: single row, two cells. Section provides the 64px vertical rhythm on the
+   source (.productDetailBanner__wrapper padding: 64px 0). */
+.columns-product > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Media first on mobile, content below (source stacks image under text on narrow
+   screens); reordered to two columns at desktop. */
+.columns-product .columns-product-media {
+  order: 0;
+}
+
+.columns-product .columns-product-content {
+  order: 1;
+}
+
+/* --- Title --- */
+.columns-product h1 {
+  margin: 0;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-weight: 900;
+  font-size: 37px;
+  line-height: 41.07px;
+  letter-spacing: -0.3px;
+}
+
+/* --- Body copy --- */
+.columns-product .columns-product-content p {
+  margin: 24px 0 0;
+  color: var(--heading-color);
+  font-family: var(--body-font-family);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Hide the source "See more details / See less details" toggle (not shown on original). */
+.columns-product .columns-product-toggle {
+  display: none;
+}
+
+/* --- Feature list --- */
+.columns-product .columns-product-content .columns-product-features-label {
+  margin: 16px 0 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.columns-product ul.columns-product-features {
+  margin: 4px 0 16px;
+  padding: 0 0 0 15px;
+  list-style: disc;
+}
+
+.columns-product ul.columns-product-features > li {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* --- Status / sustainability tag groups --- */
+.columns-product .columns-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.columns-product .columns-product-status {
+  margin: 16px 32px 8px 0;
+}
+
+.columns-product .columns-product-content .columns-product-status-label {
+  margin: 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.columns-product ul.columns-product-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.columns-product ul.columns-product-tag-list > li {
+  margin: 0;
+  padding: 4px 8px;
+  border-radius: 100px;
+  background-color: rgb(45 45 45 / 10%);
+  color: var(--heading-color);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.columns-product ul.columns-product-tag-list > li a:any-link {
+  color: var(--heading-color);
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* --- CTA button --- */
+.columns-product .columns-product-cta {
+  margin: 24px 0 0;
+}
+
+.columns-product a.button:any-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 12px 30px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: var(--brand-arrow-blue); /* #5091cd */
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.columns-product a.button:any-link:hover,
+.columns-product a.button:any-link:focus-visible {
+  background-color: var(--brand-blue); /* #00539a */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --- Media column --- */
+.columns-product .columns-product-media p {
+  margin: 0;
+}
+
+.columns-product .columns-product-media picture {
+  display: block;
+}
+
+.columns-product .columns-product-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Disclaimer under the image (small, italic, muted). */
+.columns-product .columns-product-media p:last-child {
+  margin: 32px 0 0;
+  color: var(--text-color); /* #4b4b4b */
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18.06px;
+}
+
+/* --- Desktop: two 50/50 columns --- */
+@media (width >= 900px) {
+  .columns-product > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .columns-product .columns-product-content,
+  .columns-product .columns-product-media {
+    flex: 1 1 0;
+    order: unset;
+  }
+}

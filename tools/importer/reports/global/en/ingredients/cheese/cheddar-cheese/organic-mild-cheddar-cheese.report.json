@@ -1,0 +1,21 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-mild-cheddar-cheese.html",
+  "path": "global/en/ingredients/cheese/cheddar-cheese/organic-mild-cheddar-cheese",
+  "timestamp": "2026-08-13T21:16:30.171Z",
+  "title": "Organic Mild Cheddar Cheese | NZMP.com",
+  "template": "ingredient-product-detail",
+  "blocks": [
+    "breadcrumb",
+    "columns-product",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "cards-benefit",
+    "carousel-news"
+  ]
+}
