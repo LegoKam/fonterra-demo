@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/fat-filled-milk-powder",
-  "timestamp": "2026-08-13T21:22:54.960Z",
+  "timestamp": "2026-08-14T01:42:58.923Z",
   "title": "Fat Filled Milk Powder Instant Fortified | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",
