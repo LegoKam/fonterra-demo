@@ -151,6 +151,16 @@ export default async function decorate(block) {
   container.append(slidesWrapper);
   block.prepend(container);
 
+  // LCP: the hero banner is the largest above-the-fold element, but slide images
+  // are lazy by default (and slick-style reorder leaves them lazy), which makes
+  // Lighthouse unable to measure LCP (Performance 0). Eager-load the first slide's
+  // image with high fetch priority so it is the measurable LCP element.
+  const firstImg = slidesWrapper.querySelector('.carousel-banner-slide img');
+  if (firstImg) {
+    firstImg.setAttribute('loading', 'eager');
+    firstImg.setAttribute('fetchpriority', 'high');
+  }
+
   if (!isSingleSlide) {
     bindEvents(block);
   }
