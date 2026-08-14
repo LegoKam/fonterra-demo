@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/colby-cheese.html",
   "path": "global/en/ingredients/cheese/parmesan-and-popular-cheeses/colby-cheese",
-  "timestamp": "2026-08-13T21:18:30.160Z",
+  "timestamp": "2026-08-14T01:39:18.624Z",
   "title": "Colby Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

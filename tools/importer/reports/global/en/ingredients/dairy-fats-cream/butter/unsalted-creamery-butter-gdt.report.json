@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/unsalted-creamery-butter-gdt.html",
   "path": "global/en/ingredients/dairy-fats-cream/butter/unsalted-creamery-butter-gdt",
-  "timestamp": "2026-08-13T21:20:55.505Z",
+  "timestamp": "2026-08-14T01:41:36.846Z",
   "title": "Unsalted Creamery Butter GDT Specification | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",
