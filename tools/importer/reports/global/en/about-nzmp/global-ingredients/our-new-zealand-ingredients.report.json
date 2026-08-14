@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-new-zealand-ingredients.html",
   "path": "global/en/about-nzmp/global-ingredients/our-new-zealand-ingredients",
-  "timestamp": "2026-08-13T23:46:18.260Z",
+  "timestamp": "2026-08-14T01:58:57.736Z",
   "title": "Our New Zealand Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "cards-value"
   ]

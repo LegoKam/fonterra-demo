@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-gdt.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-gdt",
-  "timestamp": "2026-08-13T21:27:43.681Z",
+  "timestamp": "2026-08-14T01:47:50.696Z",
   "title": "Regular Whole Milk Powder GDT Specification | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

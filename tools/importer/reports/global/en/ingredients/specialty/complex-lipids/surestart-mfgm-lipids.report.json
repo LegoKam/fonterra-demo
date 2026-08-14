@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/surestart-mfgm-lipids.html",
   "path": "global/en/ingredients/specialty/complex-lipids/surestart-mfgm-lipids",
-  "timestamp": "2026-08-13T21:36:11.920Z",
+  "timestamp": "2026-08-14T01:57:08.825Z",
   "title": "SureStart™ MFGM Lipids | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

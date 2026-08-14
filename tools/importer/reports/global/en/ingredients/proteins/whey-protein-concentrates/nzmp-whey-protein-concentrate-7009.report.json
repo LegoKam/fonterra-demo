@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-7009.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-7009",
-  "timestamp": "2026-08-13T21:34:44.423Z",
+  "timestamp": "2026-08-14T01:54:58.322Z",
   "title": "NZMP™ Whey Protein Concentrate 7009 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

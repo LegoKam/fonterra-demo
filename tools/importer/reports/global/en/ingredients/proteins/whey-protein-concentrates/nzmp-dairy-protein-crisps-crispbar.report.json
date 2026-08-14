@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-dairy-protein-crisps-crispbar.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-dairy-protein-crisps-crispbar",
-  "timestamp": "2026-08-13T21:32:43.023Z",
+  "timestamp": "2026-08-14T01:52:54.158Z",
   "title": "NZMP™ Dairy Protein Crisps 600 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

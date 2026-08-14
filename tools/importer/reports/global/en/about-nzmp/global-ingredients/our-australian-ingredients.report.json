@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients/our-australian-ingredients.html",
   "path": "global/en/about-nzmp/global-ingredients/our-australian-ingredients",
-  "timestamp": "2026-08-13T23:45:46.523Z",
+  "timestamp": "2026-08-14T01:58:27.322Z",
   "title": "Our Australian Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "cards-value"
   ]

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-480-instantised.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-480-instantised",
-  "timestamp": "2026-08-13T21:34:36.615Z",
+  "timestamp": "2026-08-14T01:54:50.322Z",
   "title": "NZMP™ Instant Whey Protein Concentrate 480 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

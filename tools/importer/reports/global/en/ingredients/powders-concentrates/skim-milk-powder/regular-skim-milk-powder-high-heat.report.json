@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-high-heat.html",
   "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-high-heat",
-  "timestamp": "2026-08-13T21:25:12.820Z",
+  "timestamp": "2026-08-14T01:45:17.860Z",
   "title": "Regular Skim Milk Powder High Heat | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

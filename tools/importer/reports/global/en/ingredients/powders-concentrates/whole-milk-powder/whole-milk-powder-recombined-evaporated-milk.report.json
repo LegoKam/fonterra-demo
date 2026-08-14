@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/whole-milk-powder-recombined-evaporated-milk.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/whole-milk-powder-recombined-evaporated-milk",
-  "timestamp": "2026-08-13T21:28:55.898Z",
+  "timestamp": "2026-08-14T01:49:05.260Z",
   "title": "Whole Milk Powder for Recombined Evaporated Milk | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht-gdt.html",
   "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-uht-gdt",
-  "timestamp": "2026-08-13T21:26:47.775Z",
+  "timestamp": "2026-08-14T01:46:51.521Z",
   "title": "Regular Skim Milk Powder for UHT Milk GDT Specification | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

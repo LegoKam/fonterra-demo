@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/super-fortified-instant-smp.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/super-fortified-instant-smp",
-  "timestamp": "2026-08-13T21:24:10.156Z",
+  "timestamp": "2026-08-14T01:44:16.966Z",
   "title": "Super Fortified Instant Skim Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

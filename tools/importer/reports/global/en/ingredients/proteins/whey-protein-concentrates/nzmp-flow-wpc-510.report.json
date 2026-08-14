@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-flow-wpc-510.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-flow-wpc-510",
-  "timestamp": "2026-08-13T21:32:58.520Z",
+  "timestamp": "2026-08-14T01:53:08.822Z",
   "title": "NZMP™ Whey Protein Concentrate 510 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

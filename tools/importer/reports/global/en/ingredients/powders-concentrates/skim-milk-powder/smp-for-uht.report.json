@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/smp-for-uht.html",
   "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/smp-for-uht",
-  "timestamp": "2026-08-13T21:27:02.437Z",
+  "timestamp": "2026-08-14T01:47:07.992Z",
   "title": "Regular Skim Milk Powder for UHT Milk | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

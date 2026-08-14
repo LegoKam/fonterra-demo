@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4861.html",
   "path": "global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4861",
-  "timestamp": "2026-08-13T21:31:23.524Z",
+  "timestamp": "2026-08-14T01:51:33.624Z",
   "title": "NZMP™ Milk Protein Concentrate 4861 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-low-heat.html",
   "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/regular-skim-milk-powder-low-heat",
-  "timestamp": "2026-08-13T21:26:14.609Z",
+  "timestamp": "2026-08-14T01:46:18.662Z",
   "title": "Regular Skim Milk Powder Low Heat | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

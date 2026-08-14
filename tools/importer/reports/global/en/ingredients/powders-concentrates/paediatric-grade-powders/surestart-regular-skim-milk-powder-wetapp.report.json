@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-regular-skim-milk-powder-wetapp.html",
   "path": "global/en/ingredients/powders-concentrates/paediatric-grade-powders/surestart-regular-skim-milk-powder-wetapp",
-  "timestamp": "2026-08-13T21:24:39.058Z",
+  "timestamp": "2026-08-14T01:44:47.024Z",
   "title": "Paediatric Grade Regular Skim Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

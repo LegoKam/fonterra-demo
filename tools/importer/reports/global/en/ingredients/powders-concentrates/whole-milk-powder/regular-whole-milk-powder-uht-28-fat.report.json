@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-uht-28-fat.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-uht-28-fat",
-  "timestamp": "2026-08-13T21:28:07.505Z",
+  "timestamp": "2026-08-14T01:48:16.238Z",
   "title": "Regular Whole Milk Powder 28% Fat for UHT | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

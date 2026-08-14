@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-repack.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-repack",
-  "timestamp": "2026-08-13T21:27:58.959Z",
+  "timestamp": "2026-08-14T01:48:07.619Z",
   "title": "Regular Whole Milk Powder for Repack | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

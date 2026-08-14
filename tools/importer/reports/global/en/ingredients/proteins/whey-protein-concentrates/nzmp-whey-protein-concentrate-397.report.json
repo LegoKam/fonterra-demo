@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-397.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-397",
-  "timestamp": "2026-08-13T21:34:12.338Z",
+  "timestamp": "2026-08-14T01:54:23.819Z",
   "title": "NZMP™ Whey Protein Concentrate 397 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

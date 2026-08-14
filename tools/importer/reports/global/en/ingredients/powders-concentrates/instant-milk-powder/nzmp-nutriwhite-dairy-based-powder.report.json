@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-nutriwhite-dairy-based-powder.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-nutriwhite-dairy-based-powder",
-  "timestamp": "2026-08-13T21:23:52.280Z",
+  "timestamp": "2026-08-14T01:43:58.900Z",
   "title": "NutriWhite Dairy-Based Powder | NZMP Dairy Ingredients | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

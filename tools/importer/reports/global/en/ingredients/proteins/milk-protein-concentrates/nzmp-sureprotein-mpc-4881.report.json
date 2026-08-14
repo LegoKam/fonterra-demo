@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-sureprotein-mpc-4881.html",
   "path": "global/en/ingredients/proteins/milk-protein-concentrates/nzmp-sureprotein-mpc-4881",
-  "timestamp": "2026-08-13T21:31:55.459Z",
+  "timestamp": "2026-08-14T01:52:04.114Z",
   "title": "SureProtein™ Milk Protein Concentrate 4881 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "carousel-news"
   ]

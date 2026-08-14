@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/specialty/complex-lipids/milk-phospholipids.html",
   "path": "global/en/ingredients/specialty/complex-lipids/milk-phospholipids",
-  "timestamp": "2026-08-13T21:36:03.923Z",
+  "timestamp": "2026-08-14T01:56:59.960Z",
   "title": "Milk Phospholipids | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

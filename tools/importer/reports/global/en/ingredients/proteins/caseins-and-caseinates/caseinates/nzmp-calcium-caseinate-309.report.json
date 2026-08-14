@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-309.html",
   "path": "global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-calcium-caseinate-309",
-  "timestamp": "2026-08-13T21:29:38.385Z",
+  "timestamp": "2026-08-14T01:49:43.201Z",
   "title": "NZMP™ Calcium Caseinate 309 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

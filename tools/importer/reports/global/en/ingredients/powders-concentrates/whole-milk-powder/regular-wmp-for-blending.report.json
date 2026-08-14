@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-blending.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-wmp-for-blending",
-  "timestamp": "2026-08-13T21:28:32.225Z",
+  "timestamp": "2026-08-14T01:48:40.406Z",
   "title": "Regular Whole Milk Powder for Blending | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

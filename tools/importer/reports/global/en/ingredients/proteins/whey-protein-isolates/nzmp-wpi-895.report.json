@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates/nzmp-wpi-895.html",
   "path": "global/en/ingredients/proteins/whey-protein-isolates/nzmp-wpi-895",
-  "timestamp": "2026-08-13T21:35:54.879Z",
+  "timestamp": "2026-08-14T01:56:06.224Z",
   "title": "NZMP™ Whey Protein Isolate 895 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",
