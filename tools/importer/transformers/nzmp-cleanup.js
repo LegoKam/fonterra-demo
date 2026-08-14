@@ -43,6 +43,14 @@ export default function transform(hookName, element, payload) {
       // "The component 'Form' does not exist." Dropping the whole section keeps the
       // import clean until a real form component/handling is available.
       '.emailsubscription.esBar',
+      // Breadcrumb navigation. Removed by request: it imported as a `breadcrumb`
+      // block, but there is no `Breadcrumb` component in the project, so md2jcr errors
+      // with "The component 'Breadcrumb' does not exist." Breadcrumbs are navigation
+      // chrome (regenerable from the page path), not authored content, so dropping
+      // them at import is the correct fix.
+      '.comp__breadcrumbs',
+      '.page.breadcrumbs',
+      '.breadcrumb',
     ]);
   }
 

@@ -41,34 +41,6 @@ var CustomImportScript = (() => {
     default: () => import_category_landing_default
   });
 
-  // tools/importer/parsers/breadcrumb.js
-  function parse(element, { document }) {
-    const items = Array.from(element.querySelectorAll("ol.breadcrumb > li, .breadcrumb > li"));
-    const list = document.createElement("ul");
-    items.forEach((li) => {
-      const anchor = li.querySelector("a[href]");
-      const outLi = document.createElement("li");
-      if (anchor) {
-        const label = anchor.textContent.trim() || anchor.getAttribute("title") || "";
-        const a = document.createElement("a");
-        a.setAttribute("href", anchor.getAttribute("href"));
-        a.textContent = label;
-        outLi.appendChild(a);
-      } else {
-        const label = (li.textContent || "").trim();
-        outLi.textContent = label;
-      }
-      if (outLi.textContent.trim()) list.appendChild(outLi);
-    });
-    if (!list.childNodes.length) {
-      element.replaceWith(...element.childNodes);
-      return;
-    }
-    const cells = [[[list]]];
-    const block = WebImporter.Blocks.createBlock(document, { name: "breadcrumb", cells });
-    element.replaceWith(block);
-  }
-
   // tools/importer/parsers/columns-banner.js
   function bgUrl(el) {
     if (!el) return "";
@@ -99,7 +71,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse2(element, { document }) {
+  function parse(element, { document }) {
     const heading = element.querySelector(".categoryBanner__row--left .headline h1, .categoryBanner__row--left h1, .headline h1, h1, h2");
     const copy = element.querySelector(".categoryBanner__row--left .copy p, .categoryBanner__row--left .copy, .copy p");
     const img = resolveImage(element, document, {
@@ -151,7 +123,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse3(element, { document }) {
+  function parse2(element, { document }) {
     const title = element.querySelector(".image-badge__v2-contents .title, .pageIntro__row--right .title, h4, h3, h2");
     const copy = element.querySelector(".image-badge__v2-contents .copy, .pageIntro__row--right .copy");
     const img = resolveImage2(element, document, {
@@ -203,7 +175,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse4(element, { document }) {
+  function parse3(element, { document }) {
     const headline = element.querySelector(".cmp-multicolumn-grid__headline");
     if (!headline) {
       element.replaceWith(...element.childNodes);
@@ -247,7 +219,7 @@ var CustomImportScript = (() => {
   }
 
   // tools/importer/parsers/cards-value.js
-  function parse5(element, { document }) {
+  function parse4(element, { document }) {
     if (element.querySelector(".cmp-multicolumn-grid__headline")) {
       element.replaceWith(...element.childNodes);
       return;
@@ -304,7 +276,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse6(element, { document }) {
+  function parse5(element, { document }) {
     const tiles = Array.from(element.querySelectorAll(".twoColStack__row--tile")).filter((tile) => tile.textContent.trim() || tile.querySelector("img"));
     const cells = [];
     tiles.forEach((tile) => {
@@ -371,7 +343,15 @@ var CustomImportScript = (() => {
         // block, but there is no `form` component in the project, so md2jcr errors with
         // "The component 'Form' does not exist." Dropping the whole section keeps the
         // import clean until a real form component/handling is available.
-        ".emailsubscription.esBar"
+        ".emailsubscription.esBar",
+        // Breadcrumb navigation. Removed by request: it imported as a `breadcrumb`
+        // block, but there is no `Breadcrumb` component in the project, so md2jcr errors
+        // with "The component 'Breadcrumb' does not exist." Breadcrumbs are navigation
+        // chrome (regenerable from the page path), not authored content, so dropping
+        // them at import is the correct fix.
+        ".comp__breadcrumbs",
+        ".page.breadcrumbs",
+        ".breadcrumb"
       ]);
     }
     if (hookName === TransformHook.afterTransform) {
@@ -432,7 +412,8 @@ var CustomImportScript = (() => {
     description: "Mid-level category/landing layout with intro banner and a grid of child cards",
     urls: ["https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html"],
     blocks: [
-      { name: "breadcrumb", instances: [".comp__breadcrumbs"] },
+      // NOTE: breadcrumb removed — no `Breadcrumb` component in the project (md2jcr
+      // errored). Breadcrumbs are nav chrome and are stripped by nzmp-cleanup.
       { name: "columns-banner", instances: [".cq-dd-image.categoryBanner"] },
       { name: "columns-feature", instances: [".imageTextOverlay"] },
       // cards-category and cards-value both originate from .multicolumn-grid, distinguished
@@ -445,18 +426,16 @@ var CustomImportScript = (() => {
       // form + newsletter removed by nzmp-cleanup (no form component).
     ],
     sections: [
-      { id: "section-1", name: "Breadcrumb", selector: ".comp__breadcrumbs", style: null, blocks: ["breadcrumb"], defaultContent: [] },
       { id: "section-2", name: "Category intro banner", selector: ".cq-dd-image.categoryBanner", style: null, blocks: ["columns-banner"], defaultContent: [] },
       { id: "section-3", name: "Content holder", selector: [".contentHolder"], style: null, blocks: ["columns-feature", "cards-value", "cards-category", "cards-teaser"], defaultContent: [] }
     ]
   };
   var parsers = {
-    breadcrumb: parse,
-    "columns-banner": parse2,
-    "columns-feature": parse3,
-    "cards-category": parse4,
-    "cards-value": parse5,
-    "cards-teaser": parse6
+    "columns-banner": parse,
+    "columns-feature": parse2,
+    "cards-category": parse3,
+    "cards-value": parse4,
+    "cards-teaser": parse5
   };
   var transformers = [
     transform,

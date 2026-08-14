@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-cheddar-cheese-frozen.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/organic-cheddar-cheese-frozen",
-  "timestamp": "2026-08-13T21:16:13.023Z",
+  "timestamp": "2026-08-14T01:37:02.427Z",
   "title": "Organic Frozen Cheddar Cheese, Reduced Salt  | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

@@ -2,7 +2,6 @@
 /* global WebImporter */
 
 // PARSER IMPORTS
-import breadcrumbParser from './parsers/breadcrumb.js';
 import columnsProductParser from './parsers/columns-product.js';
 import columnsFeatureParser from './parsers/columns-feature.js';
 import cardsBenefitParser from './parsers/cards-benefit.js';
@@ -20,7 +19,8 @@ const PAGE_TEMPLATE = {
     'https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html',
   ],
   blocks: [
-    { name: 'breadcrumb', instances: ['.comp__breadcrumbs'] },
+    // NOTE: breadcrumb removed — no `Breadcrumb` component exists in the project
+    // (md2jcr errored). Breadcrumbs are nav chrome and are stripped by nzmp-cleanup.
     { name: 'columns-product', instances: ['.productDetailBanner'] },
     { name: 'columns-feature', instances: ['.imageTextOverlay'] },
     { name: 'cards-benefit', instances: ['.textIconCard'] },
@@ -32,7 +32,6 @@ const PAGE_TEMPLATE = {
     // not exist"), matching the home-page treatment.
   ],
   sections: [
-    { id: 'section-1', name: 'Breadcrumb', selector: '.comp__breadcrumbs', style: null, blocks: ['breadcrumb'], defaultContent: [] },
     { id: 'section-2', name: 'Product hero', selector: '.productDetailBanner', style: null, blocks: ['columns-product'], defaultContent: [] },
     { id: 'section-3', name: 'Product content grid', selector: ['.page-content-product > div.row'], style: null, blocks: ['columns-feature', 'cards-benefit', 'carousel-news'], defaultContent: [] },
   ],
@@ -40,7 +39,6 @@ const PAGE_TEMPLATE = {
 
 // PARSER REGISTRY
 const parsers = {
-  breadcrumb: breadcrumbParser,
   'columns-product': columnsProductParser,
   'columns-feature': columnsFeatureParser,
   'cards-benefit': cardsBenefitParser,

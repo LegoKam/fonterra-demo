@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au",
-  "timestamp": "2026-08-13T21:15:15.215Z",
+  "timestamp": "2026-08-14T01:35:22.896Z",
   "title": "Cheddar Cheese (Australia Specification) | NZMP Dairy Ingredients | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

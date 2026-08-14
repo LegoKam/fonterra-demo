@@ -2,7 +2,6 @@
 /* global WebImporter */
 
 // PARSER IMPORTS
-import breadcrumbParser from './parsers/breadcrumb.js';
 import columnsBannerParser from './parsers/columns-banner.js';
 import columnsFeatureParser from './parsers/columns-feature.js';
 import cardsCategoryParser from './parsers/cards-category.js';
@@ -19,7 +18,8 @@ const PAGE_TEMPLATE = {
   description: 'Mid-level category/landing layout with intro banner and a grid of child cards',
   urls: ['https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html'],
   blocks: [
-    { name: 'breadcrumb', instances: ['.comp__breadcrumbs'] },
+    // NOTE: breadcrumb removed — no `Breadcrumb` component in the project (md2jcr
+    // errored). Breadcrumbs are nav chrome and are stripped by nzmp-cleanup.
     { name: 'columns-banner', instances: ['.cq-dd-image.categoryBanner'] },
     { name: 'columns-feature', instances: ['.imageTextOverlay'] },
     // cards-category and cards-value both originate from .multicolumn-grid, distinguished
@@ -32,14 +32,12 @@ const PAGE_TEMPLATE = {
     // form + newsletter removed by nzmp-cleanup (no form component).
   ],
   sections: [
-    { id: 'section-1', name: 'Breadcrumb', selector: '.comp__breadcrumbs', style: null, blocks: ['breadcrumb'], defaultContent: [] },
     { id: 'section-2', name: 'Category intro banner', selector: '.cq-dd-image.categoryBanner', style: null, blocks: ['columns-banner'], defaultContent: [] },
     { id: 'section-3', name: 'Content holder', selector: ['.contentHolder'], style: null, blocks: ['columns-feature', 'cards-value', 'cards-category', 'cards-teaser'], defaultContent: [] },
   ],
 };
 
 const parsers = {
-  breadcrumb: breadcrumbParser,
   'columns-banner': columnsBannerParser,
   'columns-feature': columnsFeatureParser,
   'cards-category': cardsCategoryParser,

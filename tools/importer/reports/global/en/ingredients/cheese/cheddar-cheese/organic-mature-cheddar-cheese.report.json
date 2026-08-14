@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/organic-mature-cheddar-cheese.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/organic-mature-cheddar-cheese",
-  "timestamp": "2026-08-13T21:16:20.559Z",
+  "timestamp": "2026-08-14T01:37:10.659Z",
   "title": "Organic Mature Cheddar Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

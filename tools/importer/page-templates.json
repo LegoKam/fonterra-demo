@@ -173,12 +173,6 @@
       "description": "Mid-level category/landing layout with intro banner and a grid of child cards linking to sub-pages.",
       "blocks": [
         {
-          "name": "breadcrumb",
-          "instances": [
-            ".comp__breadcrumbs"
-          ]
-        },
-        {
           "name": "columns-banner",
           "instances": [
             ".cq-dd-image.categoryBanner"
@@ -210,16 +204,6 @@
         }
       ],
       "sections": [
-        {
-          "id": "section-1",
-          "name": "Breadcrumb",
-          "selector": ".comp__breadcrumbs",
-          "style": null,
-          "blocks": [
-            "breadcrumb"
-          ],
-          "defaultContent": []
-        },
         {
           "id": "section-2",
           "name": "Category intro banner",
@@ -529,12 +513,6 @@
       "description": "Deep product-detail layout for a single ingredient (breadcrumb, hero, spec/benefit sections, related items). Largest family.",
       "blocks": [
         {
-          "name": "breadcrumb",
-          "instances": [
-            ".comp__breadcrumbs"
-          ]
-        },
-        {
           "name": "columns-product",
           "instances": [
             ".productDetailBanner"
@@ -566,16 +544,6 @@
         }
       ],
       "sections": [
-        {
-          "id": "section-1",
-          "name": "Breadcrumb",
-          "selector": ".comp__breadcrumbs",
-          "style": null,
-          "blocks": [
-            "breadcrumb"
-          ],
-          "defaultContent": []
-        },
         {
           "id": "section-2",
           "name": "Product hero",

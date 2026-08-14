@@ -35,10 +35,11 @@
   "usage": {
     "pagesUsing": [
       "/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au",
-      "/global/en/about-nzmp/global-ingredients"
+      "/global/en/about-nzmp/global-ingredients",
+      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix"
     ],
-    "reuseCount": 2,
-    "reuseNote": "Reused on the category-landing page for the 'Our network is your advantage' image/video + heading + text intro (media-left/text-right).",
-    "lastUsed": "2026-08-13T00:00:00.000Z"
+    "reuseCount": 3,
+    "reuseNote": "Reused on the category-landing page for the 'Our network is your advantage' image/video + heading + text intro (media-left/text-right). | application-concept-detail (high-protein-brownie-mix): Reused for the Ask an Expert CTA band (lifestyle photo beside heading + paragraph + CTA link).",
+    "lastUsed": "2026-08-14T00:00:00.000Z"
   }
 }

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/frozen-functional-cheddar-cheese.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/frozen-functional-cheddar-cheese",
-  "timestamp": "2026-08-13T21:15:56.362Z",
+  "timestamp": "2026-08-14T01:36:47.626Z",
   "title": "Frozen Functional Cheddar Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

@@ -41,34 +41,6 @@ var CustomImportScript = (() => {
     default: () => import_ingredient_product_detail_default
   });
 
-  // tools/importer/parsers/breadcrumb.js
-  function parse(element, { document }) {
-    const items = Array.from(element.querySelectorAll("ol.breadcrumb > li, .breadcrumb > li"));
-    const list = document.createElement("ul");
-    items.forEach((li) => {
-      const anchor = li.querySelector("a[href]");
-      const outLi = document.createElement("li");
-      if (anchor) {
-        const label = anchor.textContent.trim() || anchor.getAttribute("title") || "";
-        const a = document.createElement("a");
-        a.setAttribute("href", anchor.getAttribute("href"));
-        a.textContent = label;
-        outLi.appendChild(a);
-      } else {
-        const label = (li.textContent || "").trim();
-        outLi.textContent = label;
-      }
-      if (outLi.textContent.trim()) list.appendChild(outLi);
-    });
-    if (!list.childNodes.length) {
-      element.replaceWith(...element.childNodes);
-      return;
-    }
-    const cells = [[[list]]];
-    const block = WebImporter.Blocks.createBlock(document, { name: "breadcrumb", cells });
-    element.replaceWith(block);
-  }
-
   // tools/importer/parsers/columns-product.js
   function bgUrl(el) {
     if (!el) return "";
@@ -99,7 +71,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse2(element, { document }) {
+  function parse(element, { document }) {
     const cols = Array.from(element.querySelectorAll(":scope .productDetailBanner__col"));
     const headline = element.querySelector(".main-headline h1, .main-headline h2, .headline h1, h1");
     const description = element.querySelector(".copy, .copyWrapper");
@@ -168,7 +140,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse3(element, { document }) {
+  function parse2(element, { document }) {
     const title = element.querySelector(".image-badge__v2-contents .title, .pageIntro__row--right .title, h4, h3, h2");
     const copy = element.querySelector(".image-badge__v2-contents .copy, .pageIntro__row--right .copy");
     const img = resolveImage2(element, document, {
@@ -220,7 +192,7 @@ var CustomImportScript = (() => {
     }
     return null;
   }
-  function parse4(element, { document }) {
+  function parse3(element, { document }) {
     const parent = element.parentElement || element;
     let cards = Array.from(parent.querySelectorAll(":scope > .textIconCard"));
     if (!cards.length) cards = [element];
@@ -327,7 +299,7 @@ var CustomImportScript = (() => {
     const block = WebImporter.Blocks.createBlock(document, { name: "carousel-news", cells });
     element.replaceWith(block);
   }
-  function parse5(element, { document }) {
+  function parse4(element, { document }) {
     const hasNewsBoxes = element.querySelector(".latestNews__box");
     if (!hasNewsBoxes && element.querySelector(".tileCarousel__slick--tile")) {
       parseTileCarousel(element, document);
@@ -400,7 +372,15 @@ var CustomImportScript = (() => {
         // block, but there is no `form` component in the project, so md2jcr errors with
         // "The component 'Form' does not exist." Dropping the whole section keeps the
         // import clean until a real form component/handling is available.
-        ".emailsubscription.esBar"
+        ".emailsubscription.esBar",
+        // Breadcrumb navigation. Removed by request: it imported as a `breadcrumb`
+        // block, but there is no `Breadcrumb` component in the project, so md2jcr errors
+        // with "The component 'Breadcrumb' does not exist." Breadcrumbs are navigation
+        // chrome (regenerable from the page path), not authored content, so dropping
+        // them at import is the correct fix.
+        ".comp__breadcrumbs",
+        ".page.breadcrumbs",
+        ".breadcrumb"
       ]);
     }
     if (hookName === TransformHook.afterTransform) {
@@ -463,7 +443,8 @@ var CustomImportScript = (() => {
       "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au.html"
     ],
     blocks: [
-      { name: "breadcrumb", instances: [".comp__breadcrumbs"] },
+      // NOTE: breadcrumb removed — no `Breadcrumb` component exists in the project
+      // (md2jcr errored). Breadcrumbs are nav chrome and are stripped by nzmp-cleanup.
       { name: "columns-product", instances: [".productDetailBanner"] },
       { name: "columns-feature", instances: [".imageTextOverlay"] },
       { name: "cards-benefit", instances: [".textIconCard"] },
@@ -475,17 +456,15 @@ var CustomImportScript = (() => {
       // not exist"), matching the home-page treatment.
     ],
     sections: [
-      { id: "section-1", name: "Breadcrumb", selector: ".comp__breadcrumbs", style: null, blocks: ["breadcrumb"], defaultContent: [] },
       { id: "section-2", name: "Product hero", selector: ".productDetailBanner", style: null, blocks: ["columns-product"], defaultContent: [] },
       { id: "section-3", name: "Product content grid", selector: [".page-content-product > div.row"], style: null, blocks: ["columns-feature", "cards-benefit", "carousel-news"], defaultContent: [] }
     ]
   };
   var parsers = {
-    breadcrumb: parse,
-    "columns-product": parse2,
-    "columns-feature": parse3,
-    "cards-benefit": parse4,
-    "carousel-news": parse5
+    "columns-product": parse,
+    "columns-feature": parse2,
+    "cards-benefit": parse3,
+    "carousel-news": parse4
   };
   var transformers = [
     transform,
