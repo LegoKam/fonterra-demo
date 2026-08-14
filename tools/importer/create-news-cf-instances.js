@@ -41,15 +41,16 @@ const MODEL = opt('model', null); // required to commit
 const PARENT = (opt('parent', '/content/dam/fonterra-demo/news')).replace(/\/$/, '');
 const LIMIT = opt('limit', null) ? parseInt(opt('limit'), 10) : Infinity;
 const COMMIT = args.includes('--commit');
+const EMIT = args.includes('--emit');
 const OVERWRITE = args.includes('--overwrite');
 const CONCURRENCY = opt('concurrency', null) ? parseInt(opt('concurrency'), 10) : 4;
 
 // Map a CF-data record to the AEM Assets API "create content fragment" payload.
 // Field property names must match the CF Model field names in cf-model-spec.md.
-function toPayload(rec) {
+function toPayloadWithModel(rec, model) {
   return {
     properties: {
-      cq_model: MODEL,
+      cq_model: model,
       title: rec.title || rec.slug,
       description: rec.summary || '',
       elements: {
@@ -67,6 +68,11 @@ function toPayload(rec) {
       },
     },
   };
+}
+
+// Convenience wrapper using the module-scope MODEL (used by the commit/dry-run paths).
+function toPayload(rec) {
+  return toPayloadWithModel(rec, MODEL);
 }
 
 function cfUrl(slug) {
@@ -114,10 +120,32 @@ async function main() {
   console.log(`  author:  ${AUTHOR}`);
   console.log(`  parent:  ${PARENT}`);
   console.log(`  model:   ${MODEL || '(NOT SET — required for --commit)'}`);
-  console.log(`  mode:    ${COMMIT ? 'COMMIT' : 'DRY-RUN (pass --commit to write)'}`);
+  console.log(`  mode:    ${COMMIT ? 'COMMIT' : (EMIT ? 'EMIT-PAYLOADS' : 'DRY-RUN (pass --commit to write)')}`);
   if (COMMIT && !MODEL) {
     console.error('\n❌ --model is required to commit. Aborting.');
     process.exit(1);
+  }
+
+  // EMIT mode: write one ready-to-POST payload JSON per article to disk (no network,
+  // no prerequisites). Lets you inspect/diff every payload and hand them to any CF
+  // creation tool. Uses MODEL if provided, else a placeholder to fill in later.
+  if (EMIT) {
+    const outDir = 'migration-work/news-cf/payloads';
+    fs.mkdirSync(outDir, { recursive: true });
+    const modelForEmit = MODEL || '__SET_CF_MODEL_PATH__';
+    const prevModel = MODEL;
+    let ok = 0;
+    records.forEach((rec) => {
+      const payload = toPayloadWithModel(rec, modelForEmit);
+      fs.writeFileSync(`${outDir}/${rec.slug}.json`, JSON.stringify(payload, null, 2));
+      ok += 1;
+    });
+    fs.writeFileSync(`${outDir}/_index.json`, JSON.stringify(
+      records.map((r) => ({ slug: r.slug, path: `${PARENT}/${r.slug}`, title: r.title })), null, 2,
+    ));
+    console.log(`\nEmitted ${ok} payload files → ${outDir}/`);
+    console.log(`Model in payloads: ${modelForEmit}${prevModel ? '' : '  (placeholder — re-run with --model to bake in the real path)'}`);
+    return;
   }
 
   const results = [];

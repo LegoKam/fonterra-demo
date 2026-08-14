@@ -300,7 +300,10 @@
         "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-protein-expertise/protein-innovation-timeline.html",
         "https://www.nzmp.com/global/en/solutions/price-risk-management/pricecollar.html",
         "https://www.nzmp.com/global/en/solutions/price-risk-management/priceindex.html",
-        "https://www.nzmp.com/global/en/solutions/price-risk-management/pricelock.html"
+        "https://www.nzmp.com/global/en/solutions/price-risk-management/pricelock.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/muscle-health.html",
+        "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/weight-management.html",
+        "https://www.nzmp.com/global/en/applications/organic-dairy.html"
       ],
       "coverageGaps": [],
       "description": "Application concept/recipe detail layout with hero, description sections, and related-ingredient cards.",
@@ -638,7 +641,8 @@
         "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-softbar-917.html",
         "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin/nzmp-lactoferrin.html",
         "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin/surestart-lactoferrin.html",
-        "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics/galacto-oligosaccharide-gos-prebiotic-fibre.html"
+        "https://www.nzmp.com/global/en/ingredients/specialty/prebiotics/galacto-oligosaccharide-gos-prebiotic-fibre.html",
+        "https://www.nzmp.com/global/en/ingredients/specialty/probiotics/nzmp-lactob-hn001.html"
       ],
       "coverageGaps": [],
       "description": "Deep product-detail layout for a single ingredient (breadcrumb, hero, spec/benefit sections, related items). Largest family.",

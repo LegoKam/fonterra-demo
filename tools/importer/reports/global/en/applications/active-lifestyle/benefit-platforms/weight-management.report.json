@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/weight-management.html",
+  "path": "global/en/applications/active-lifestyle/benefit-platforms/weight-management",
+  "timestamp": "2026-08-14T03:55:46.131Z",
+  "title": "Weight Management | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}
