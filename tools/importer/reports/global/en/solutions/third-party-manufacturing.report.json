@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/third-party-manufacturing.html",
+  "path": "global/en/solutions/third-party-manufacturing",
+  "timestamp": "2026-08-13T23:55:26.273Z",
+  "title": "Third Party Manufacturing | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value"
+  ]
+}

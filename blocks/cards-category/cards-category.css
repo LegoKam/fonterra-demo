@@ -1,0 +1,128 @@
+/*
+ * cards-category -- navigational category/team cards grid.
+ * Source: NZMP "Discover our ingredient sourcing locations" (4 region cards)
+ * and "Meet some of our global market experts" (4 team cards).
+ * Each card: full-width circular icon/portrait (the circle is baked into the
+ * PNG artwork, not a CSS crop) + centered title + optional short description +
+ * a solid-blue "Learn more" pill CTA. Static light-background grid.
+ * Values extracted from source computed styles -- see
+ * migration-work/cards-category-extracted.css.
+ */
+
+.cards-category > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 30px;
+}
+
+.cards-category > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Icon / portrait -- fills the card width; circular look comes from the image. */
+.cards-category .cards-category-card-image {
+  margin: 0 0 20px;
+  line-height: 0;
+  text-align: center;
+}
+
+.cards-category .cards-category-card-image p {
+  margin: 0;
+}
+
+.cards-category .cards-category-card-image img {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 0;
+}
+
+/* Card text */
+.cards-category .cards-category-card-body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Title (h3 for locations, h4 for teams -- both styled the same) */
+.cards-category .cards-category-card-body h3,
+.cards-category .cards-category-card-body h4 {
+  margin: 0;
+  color: #333;
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: var(--heading-font-size-l); /* 24px mobile / 26px desktop */
+  line-height: 1.12;
+  text-align: center;
+}
+
+/* Optional short description */
+.cards-category .cards-category-card-body p {
+  margin: 0;
+  color: #2d2d2d;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s); /* 16px */
+  line-height: 1.5; /* 24px */
+  text-align: center;
+}
+
+/* "Learn more" CTA -- solid brand-dark-blue pill.
+   EDS does not auto-decorate these links as .button, so style the bare <a>. */
+.cards-category .cards-category-card-body p:last-child {
+  margin-top: 4px;
+}
+
+.cards-category .cards-category-card-body a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+  border-radius: 100px;
+  background-color: var(--brand-dark-blue);
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.cards-category .cards-category-card-body a:hover,
+.cards-category .cards-category-card-body a:focus-visible {
+  background-color: var(--brand-blue);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (width >= 600px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards-category .cards-category-card-image img {
+    max-width: none;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-category > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

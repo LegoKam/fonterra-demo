@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-470-yoghurt.html",
+  "path": "global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-470-yoghurt",
+  "timestamp": "2026-08-13T23:51:29.757Z",
+  "title": "Milk Protein Concentrates - Proteins | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

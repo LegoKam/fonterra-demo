@@ -1,0 +1,67 @@
+/*
+ * cards-value -- text-only value-proposition cards, displayed in a row.
+ * Source: NZMP "Supply Flexibility / Confidence in Delivery / Consistency in
+ * Quality" row (.multi-cols.show-border) on a pale grey band. No images, no
+ * per-card CTA; thin vertical dividers between items on desktop.
+ */
+
+.cards-value > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Single value item -- no card chrome (transparent, borderless) */
+.cards-value > ul > li {
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.cards-value .cards-value-card-body {
+  margin: 0;
+}
+
+/* Title */
+.cards-value .cards-value-card-body h3 {
+  margin: 0 0 12px;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: var(--heading-size-m);
+  line-height: 1.15;
+}
+
+/* Description */
+.cards-value .cards-value-card-body p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: var(--body-font-size-s);
+  line-height: 1.5;
+}
+
+@media (width >= 900px) {
+  .cards-value > ul {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .cards-value > ul > li {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 32px;
+  }
+
+  /* thin vertical dividers between items */
+  .cards-value > ul > li + li {
+    border-left: 1px solid #d9d9dd;
+  }
+}

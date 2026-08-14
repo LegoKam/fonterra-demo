@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/about-nzmp/news.html",
+  "path": "global/en/about-nzmp/news",
+  "timestamp": "2026-08-13T23:46:31.458Z",
+  "title": "NZMP Newsfeed: News, Updates & Events | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb"
+  ]
+}

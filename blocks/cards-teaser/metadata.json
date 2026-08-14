@@ -1,0 +1,42 @@
+{
+  "variantName": "cards-teaser",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+    "originPage": "NZMP category-landing page (Global Ingredients Network) - 'Learn more About NZMP' teaser grid",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "teaser-cards",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "large landscape photo + title + short description per card; the whole card links to the target page with a 'Learn more' affordance",
+    "itemCount": 4,
+    "layout": "2x2 grid",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional teaser-card grids (large photo + title + short description) where the whole card is a link",
+      "'learn more about' / 'explore' 2x2 or multi-up static card grids on a light background",
+      "cross-links to key destination pages with a lifestyle photo per card"
+    ],
+    "notSuitableFor": [
+      "navigational cards with a small circular icon + explicit Learn more button (use cards-category)",
+      "text-only value-proposition rows (use cards-value)",
+      "icon-led benefit callouts (use cards-benefit)",
+      "rotating horizontal teaser carousels with category tag + headline (use carousel-news)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/about-nzmp/global-ingredients"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

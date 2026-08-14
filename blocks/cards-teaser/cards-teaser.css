@@ -1,0 +1,108 @@
+/*
+ * cards-teaser -- NZMP "twoColStack" photo teaser grid.
+ * Source: NZMP "Learn more About NZMP" pageTeaser (Become an NZMP customer /
+ * Contact NZMP / How to Buy / NZMP Sales Network) on the Global Ingredients
+ * Network page. Each card = a large right-aligned landscape photo with a white
+ * content box (title + short copy + "Learn more") overlapping its bottom-left
+ * corner. The whole card is a single link. Values extracted from source
+ * computed styles.
+ */
+
+.cards-teaser > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.cards-teaser > ul > li {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Whole-card link */
+.cards-teaser .cards-teaser-card-link {
+  display: block;
+  color: var(--brand-dark-blue);
+  text-decoration: none;
+}
+
+/* Large landscape photo, right-aligned within the card (source: image 88% of
+   tile width, aligned to the tile's right edge). */
+.cards-teaser .cards-teaser-card-image {
+  width: 88%;
+  margin-left: auto;
+  line-height: 0;
+}
+
+.cards-teaser .cards-teaser-card-image p {
+  margin: 0;
+  line-height: 0;
+}
+
+.cards-teaser .cards-teaser-card-image img {
+  width: 100%;
+  aspect-ratio: 1.44;   /* source photo 461 x 320 */
+  object-fit: cover;
+  display: block;
+}
+
+/* White content box overlapping the bottom-left of the photo (source:
+   width ~65% of tile, margin-top -82px, 24px padding, flat white). */
+.cards-teaser .cards-teaser-card-body {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  width: 78%;
+  margin: -56px 0 0;
+  padding: 24px;
+  background-color: #fff;
+  text-align: left;
+}
+
+/* Title */
+.cards-teaser .cards-teaser-card-body h3 {
+  margin: 0;
+  color: var(--brand-dark-blue);
+  font-family: var(--body-font-family);
+  font-weight: 700;
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: 26px;
+  line-height: 1.12;
+}
+
+/* Description */
+.cards-teaser .cards-teaser-card-body p {
+  margin: 8px 0 0;
+  color: #2d2d2d;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* "Learn more" affordance -- flat dark-blue text link, no underline, no arrow */
+.cards-teaser .cards-teaser-card-body p:last-child {
+  margin-top: 16px;
+}
+
+.cards-teaser .cards-teaser-card-cta {
+  color: var(--brand-dark-blue);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (width >= 900px) {
+  .cards-teaser > ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+
+  .cards-teaser .cards-teaser-card-body {
+    width: 65%;
+    margin-top: -82px;
+  }
+}

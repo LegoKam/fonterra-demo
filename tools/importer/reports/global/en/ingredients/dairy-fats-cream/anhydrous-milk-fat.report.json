@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat.html",
+  "path": "global/en/ingredients/dairy-fats-cream/anhydrous-milk-fat",
+  "timestamp": "2026-08-13T23:49:20.764Z",
+  "title": "Anhydrous Milk Fat | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value"
+  ]
+}

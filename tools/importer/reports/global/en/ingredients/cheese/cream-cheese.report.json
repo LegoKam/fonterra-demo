@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/cheese/cream-cheese.html",
+  "path": "global/en/ingredients/cheese/cream-cheese",
+  "timestamp": "2026-08-13T23:48:35.558Z",
+  "title": "Cream Cheese - Ingredients & Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature"
+  ]
+}

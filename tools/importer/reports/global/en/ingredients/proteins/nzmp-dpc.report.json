@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/nzmp-dpc.html",
+  "path": "global/en/ingredients/proteins/nzmp-dpc",
+  "timestamp": "2026-08-13T23:52:10.880Z",
+  "title": "NZMP CrispBar Dairy Protein Crisp | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/price-risk-management.html",
+  "path": "global/en/solutions/price-risk-management",
+  "timestamp": "2026-08-13T23:55:19.165Z",
+  "title": "Price Risk Management | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "cards-category",
+    "cards-value",
+    "cards-value"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "variantName": "columns-banner",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+    "originPage": "NZMP category-landing page (Global Ingredients Network) - intro banner",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "category-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text cell (H1 + short green underline accent + one-line tagline) | large landscape companion image cell",
+    "columnCount": 2,
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "category / landing page intro banners (H1 + short tagline beside one large companion photo)",
+      "top-of-page two-column intros on a light banner tint, image-dominant on the right",
+      "mid-level section landing headers across the category-landing template"
+    ],
+    "notSuitableFor": [
+      "product summary heroes with an intro paragraph, features list, tag pills and a primary CTA (use columns-product)",
+      "informational image-left + heading/bullet-list features (use columns-feature)",
+      "full-bleed background-image hero banners (use hero / carousel-banner)",
+      "grids of repeating items (use cards)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/about-nzmp/global-ingredients"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

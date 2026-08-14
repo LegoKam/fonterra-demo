@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese.html",
+  "path": "global/en/ingredients/cheese/cheddar-cheese",
+  "timestamp": "2026-08-13T23:48:24.667Z",
+  "title": "Cheddar Cheese - Ingredients & Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

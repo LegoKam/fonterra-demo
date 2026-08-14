@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/repack-butter.html",
+  "path": "global/en/ingredients/dairy-fats-cream/repack-butter",
+  "timestamp": "2026-08-13T23:49:41.822Z",
+  "title": "Repack Butter - Ingredients & Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

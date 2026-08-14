@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-protein-expertise.html",
+  "path": "global/en/solutions/innovation-and-ingenuity/our-protein-expertise",
+  "timestamp": "2026-08-13T23:55:04.443Z",
+  "title": "Our Protein Expertise - Innovation & Expertise | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value"
+  ]
+}

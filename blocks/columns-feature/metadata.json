@@ -33,8 +33,12 @@
     ]
   },
   "usage": {
-    "pagesUsing": ["/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au"],
-    "reuseCount": 1,
+    "pagesUsing": [
+      "/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au",
+      "/global/en/about-nzmp/global-ingredients"
+    ],
+    "reuseCount": 2,
+    "reuseNote": "Reused on the category-landing page for the 'Our network is your advantage' image/video + heading + text intro (media-left/text-right).",
     "lastUsed": "2026-08-13T00:00:00.000Z"
   }
 }

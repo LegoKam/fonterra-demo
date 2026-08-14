@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+  "path": "global/en/about-nzmp/global-ingredients",
+  "timestamp": "2026-08-13T23:45:38.779Z",
+  "title": "NZMP's Global Ingredients Network | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "cards-category",
+    "cards-category",
+    "cards-value",
+    "cards-teaser"
+  ]
+}

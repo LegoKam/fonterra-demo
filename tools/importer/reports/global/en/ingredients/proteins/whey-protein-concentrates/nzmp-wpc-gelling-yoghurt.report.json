@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-wpc-gelling-yoghurt.html",
+  "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-wpc-gelling-yoghurt",
+  "timestamp": "2026-08-13T23:52:41.460Z",
+  "title": "Whey Protein Concentrates | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

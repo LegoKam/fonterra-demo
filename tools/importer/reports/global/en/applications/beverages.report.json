@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/beverages.html",
+  "path": "global/en/applications/beverages",
+  "timestamp": "2026-08-13T23:47:11.096Z",
+  "title": "Beverages | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "breadcrumb",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-teaser"
+  ]
+}
