@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/beverages/benefit-platforms/elevated-experiences.html",
+  "path": "global/en/applications/beverages/benefit-platforms/elevated-experiences",
+  "timestamp": "2026-08-14T02:21:34.450Z",
+  "title": "Beverages for Elevated Experiences | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

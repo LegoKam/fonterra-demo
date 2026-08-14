@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking.html",
+  "path": "global/en/applications/food-manufacture/applications/pizza-and-baking",
+  "timestamp": "2026-08-14T02:23:20.959Z",
+  "title": "Cheese for Pizza & Baking | NZMP Applications | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/acid-casein",
+  "timestamp": "2026-08-14T02:24:40.194Z",
+  "title": "Acid Casein - Ingredients & Products | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "carousel-news"
+  ]
+}

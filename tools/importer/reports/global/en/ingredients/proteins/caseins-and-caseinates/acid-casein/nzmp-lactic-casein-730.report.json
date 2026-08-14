@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-730.html",
   "path": "global/en/ingredients/proteins/caseins-and-caseinates/acid-casein/nzmp-lactic-casein-730",
-  "timestamp": "2026-08-13T23:50:51.273Z",
+  "timestamp": "2026-08-14T02:04:02.621Z",
   "title": "Caseins and Caseinates | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner"
   ]
 }

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/applications/medical-nutrition.html",
   "path": "global/en/applications/medical-nutrition",
-  "timestamp": "2026-08-13T23:47:39.833Z",
+  "timestamp": "2026-08-14T02:00:28.530Z",
   "title": "Medical Nutrition | NZMP Dairy Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-feature",
     "cards-value",
     "cards-teaser"

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4867.html",
   "path": "global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4867",
-  "timestamp": "2026-08-13T23:51:49.341Z",
+  "timestamp": "2026-08-14T02:05:08.359Z",
   "title": "Milk Protein Concentrates - Proteins | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature"

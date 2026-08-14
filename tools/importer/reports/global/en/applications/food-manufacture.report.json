@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/applications/food-manufacture.html",
   "path": "global/en/applications/food-manufacture",
-  "timestamp": "2026-08-13T23:47:30.462Z",
+  "timestamp": "2026-08-14T02:00:16.402Z",
   "title": "Food Manufacture | NZMP Dairy Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-feature"
   ]
 }

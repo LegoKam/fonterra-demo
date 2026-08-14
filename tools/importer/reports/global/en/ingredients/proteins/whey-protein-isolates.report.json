@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-isolates.html",
   "path": "global/en/ingredients/proteins/whey-protein-isolates",
-  "timestamp": "2026-08-13T23:52:48.058Z",
+  "timestamp": "2026-08-14T02:06:13.885Z",
   "title": "Whey Protein Isolates | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature",

@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/why-is-nzmp-iqf-naturally-good.html",
+  "path": "global/en/applications/food-manufacture/applications/pizza-and-baking/why-is-nzmp-iqf-naturally-good",
+  "timestamp": "2026-08-14T02:23:41.943Z",
+  "title": "Why is NZMP IQF Naturally Good? | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

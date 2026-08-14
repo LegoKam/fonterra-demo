@@ -328,6 +328,13 @@ main .section.blue {
   color: #fff;
 }
 
+/* Pale grey band (e.g. "Customer Benefits" on concept-detail pages) */
+main .section.grey {
+  margin: 0;
+  padding: 48px 0;
+  background-color: #f6f6f8;
+}
+
 /* On dark brand sections, headings and links invert to white for contrast */
 main .section.dark-blue h1,
 main .section.dark-blue h2,

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/functional-proteins.html",
   "path": "global/en/ingredients/proteins/functional-proteins",
-  "timestamp": "2026-08-13T23:50:58.239Z",
+  "timestamp": "2026-08-14T02:04:11.393Z",
   "title": "Functional Proteins - Ingredients & Products | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature"

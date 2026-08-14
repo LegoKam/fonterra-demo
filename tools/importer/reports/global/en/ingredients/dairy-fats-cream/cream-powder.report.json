@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-powder.html",
   "path": "global/en/ingredients/dairy-fats-cream/cream-powder",
-  "timestamp": "2026-08-13T23:49:34.663Z",
+  "timestamp": "2026-08-14T02:02:36.506Z",
   "title": "Cream Powder - Dairy Fats Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature"
   ]

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4424-yoghurt.html",
   "path": "global/en/ingredients/proteins/milk-protein-concentrates/nzmp-mpc-4424-yoghurt",
-  "timestamp": "2026-08-13T23:51:20.860Z",
+  "timestamp": "2026-08-14T02:04:36.008Z",
   "title": "Milk Protein Concentrates - Proteins | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature"

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options.html",
   "path": "global/en/ingredients/cheese/mozzarella-options",
-  "timestamp": "2026-08-13T23:48:44.089Z",
+  "timestamp": "2026-08-14T02:01:35.759Z",
   "title": "Mozzarella Cheese - Ingredients & Products | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "cards-value",

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/specialty/lactoferrin.html",
   "path": "global/en/ingredients/specialty/lactoferrin",
-  "timestamp": "2026-08-13T23:53:29.630Z",
+  "timestamp": "2026-08-14T02:07:03.459Z",
   "title": "Lactoferrin - Speciality Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature",

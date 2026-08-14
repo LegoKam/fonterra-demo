@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/hydrolysates.html",
   "path": "global/en/ingredients/proteins/hydrolysates",
-  "timestamp": "2026-08-13T23:51:04.924Z",
+  "timestamp": "2026-08-14T02:04:19.923Z",
   "title": "Hydrolysates - Ingredients & Products | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature",

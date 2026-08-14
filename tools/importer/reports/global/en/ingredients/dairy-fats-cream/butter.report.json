@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter.html",
   "path": "global/en/ingredients/dairy-fats-cream/butter",
-  "timestamp": "2026-08-13T23:49:27.460Z",
+  "timestamp": "2026-08-14T02:02:28.117Z",
   "title": "Butter - Ingredients & Products | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature",

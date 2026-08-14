@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/specialty/lactose.html",
   "path": "global/en/ingredients/specialty/lactose",
-  "timestamp": "2026-08-13T23:53:37.970Z",
+  "timestamp": "2026-08-14T02:07:11.601Z",
   "title": "Lactose - Speciality Ingredients | NZMP.com",
   "template": "category-landing",
   "blocks": [
-    "breadcrumb",
     "columns-banner",
     "columns-feature",
     "columns-feature",

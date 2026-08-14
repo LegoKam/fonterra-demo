@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/cognitive-health-wellbeing.html",
+  "path": "global/en/applications/consumer-milk-powders/benefit-platforms/cognitive-health-wellbeing",
+  "timestamp": "2026-08-14T02:22:14.399Z",
+  "title": "Consumer Milk Powders for Cognitive Health & Wellbeing | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

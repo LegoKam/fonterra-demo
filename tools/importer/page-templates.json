@@ -304,7 +304,105 @@
       ],
       "coverageGaps": [],
       "description": "Application concept/recipe detail layout with hero, description sections, and related-ingredient cards.",
-      "blocks": []
+      "blocks": [
+        {
+          "name": "columns-banner",
+          "instances": [
+            ".cq-dd-image.productBanner"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".imageTextOverlay"
+          ]
+        },
+        {
+          "name": "cards-value",
+          "instances": [
+            ".multicolumn-grid:not(:has(.cmp-multicolumn-grid__headline))"
+          ]
+        },
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".tileListing",
+            ".cmp-pageTeaser__slickCarousel"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Concept banner",
+          "selector": ".cq-dd-image.productBanner",
+          "style": null,
+          "blocks": [
+            "columns-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Overview",
+          "selector": [
+            "#gridsection-overview"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Customer Benefits",
+          "selector": [
+            "#gridsection-customer-benefits"
+          ],
+          "style": "grey",
+          "blocks": [
+            "cards-value"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Key Ingredients",
+          "selector": [
+            "#gridsection-key-ingredients"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Related Concept",
+          "selector": [
+            "#gridsection-related-concept"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Ask an Expert",
+          "selector": [
+            "#gridsection-ask-an-expert"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-value"
+          ],
+          "defaultContent": []
+        }
+      ]
     },
     {
       "name": "section-landing",
@@ -330,7 +428,40 @@
       ],
       "coverageGaps": [],
       "description": "Top-level section landing layout (e.g. Applications) with hero banner and category tile grid.",
-      "blocks": []
+      "blocks": [
+        {
+          "name": "carousel-news",
+          "instances": [
+            ".pageTeaser.list.parbase",
+            ".cmp-pageTeaser__default"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Intro",
+          "selector": [
+            "#gridsection-intro",
+            ".contentHolder"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Category tile grid",
+          "selector": [
+            ".pageTeaser.list.parbase"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-news"
+          ],
+          "defaultContent": []
+        }
+      ]
     },
     {
       "name": "application-product-detail",

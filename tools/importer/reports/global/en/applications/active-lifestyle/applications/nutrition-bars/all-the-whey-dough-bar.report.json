@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/all-the-whey-dough-bar.html",
+  "path": "global/en/applications/active-lifestyle/applications/nutrition-bars/all-the-whey-dough-bar",
+  "timestamp": "2026-08-14T02:20:15.460Z",
+  "title": "All the Whey Dough Bar | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

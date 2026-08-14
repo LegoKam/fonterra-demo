@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-muffin-mix.html",
+  "path": "global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-muffin-mix",
+  "timestamp": "2026-08-14T02:19:57.285Z",
+  "title": "High Protein Muffin Mix | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

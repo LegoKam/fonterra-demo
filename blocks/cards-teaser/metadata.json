@@ -37,10 +37,11 @@
   "usage": {
     "pagesUsing": [
       "/global/en/about-nzmp/global-ingredients",
-      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix"
+      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
+      "/global/en/applications"
     ],
-    "reuseCount": 2,
-    "lastUsed": "2026-08-14T00:00:00.000Z",
-    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the Key Ingredients ingredient teaser tile grid (large photo + title + short description, whole-card link)."
+    "reuseCount": 3,
+    "lastUsed": "2026-08-14T02:30:00.000Z",
+    "reuseNote": "section-landing (applications): Reused for the Applications category tile grid — a static grid of 7 tiles (large landscape photo + title link + short description, whole-card link to each sub-section page). ~100% similarity match (light/spacious/teaser-cards/large photo, whole-card link)."
   }
 }

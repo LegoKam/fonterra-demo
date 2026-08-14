@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix.html",
+  "path": "global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
+  "timestamp": "2026-08-14T02:19:37.894Z",
+  "title": "High Protein Brownie Mix | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

@@ -52,31 +52,46 @@ function resolveImage(scope, document, { imgSel, bgSel, alt }) {
   return null;
 }
 
-// Tile-carousel variant (e.g. related-products on ingredient pages):
-// `.tileCarousel__slick--tile` items, each an <a class="link"> wrapping an <img>
-// plus `.tileCarousel__slick--contents` (a `.small` category + `.headline` title).
-// Same carousel-news block/model as the news teaser, different source DOM.
+// Tile-carousel / card-grid variants that share the carousel-news 2-column
+// image+text block model but use different source DOM. Supported item selectors:
+//   .tileCarousel__slick--tile   related-products carousel (ingredient pages)
+//   .surestart-card              related-concept slick carousel + section-landing tile grid
+//                                (the actual card; querying it directly avoids matching the
+//                                 outer .pageteaser-tile__slick-tile wrapper twice)
+//   .tileListing__card           key-ingredients static tile grid (concept pages)
+const TILE_ITEM_SELECTOR = '.tileCarousel__slick--tile, .surestart-card, .tileListing__card';
+
 function parseTileCarousel(element, document) {
   const seen = new Set();
-  const tiles = Array.from(element.querySelectorAll('.tileCarousel__slick--tile'))
-    .filter((tile) => !tile.classList.contains('slick-cloned'))
-    .filter((tile) => {
-      const href = (tile.querySelector('a[href]') || {}).href || '';
-      const title = (tile.querySelector('.headline, h5, h4, h3') || {}).textContent || '';
-      const key = `${href}::${title.trim()}`;
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
+  // .tileListing__card is itself an <a>; the others contain descendant tiles.
+  // Filter slick clones by ANCESTOR — a .surestart-card inside a .slick-cloned wrapper
+  // does not itself carry the clone class.
+  let tiles = Array.from(element.querySelectorAll(TILE_ITEM_SELECTOR))
+    .filter((tile) => !tile.classList.contains('slick-cloned')
+      && !(tile.closest && tile.closest('.slick-cloned')));
+  // If the element itself is the single card (tileListing__card matched as root), include it.
+  if (tiles.length === 0 && element.matches && element.matches('.tileListing__card')) {
+    tiles = [element];
+  }
+  tiles = tiles.filter((tile) => {
+    const linkEl = tile.matches('a[href]') ? tile : tile.querySelector('a[href]');
+    const href = (linkEl || {}).href || (linkEl && linkEl.getAttribute ? linkEl.getAttribute('href') : '') || '';
+    const title = (tile.querySelector('.headline, h5, h4, h3, h2') || {}).textContent || '';
+    const key = `${href}::${title.trim()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 
   const cells = [];
   tiles.forEach((tile) => {
     const category = tile.querySelector('.small p, .small, .categoryTitle');
-    const title = tile.querySelector('.headline, h5, h4, h3');
-    const link = tile.querySelector('a[href]');
+    const title = tile.querySelector('.surestart-card__caption__title h4, .surestart-card__caption__title, .headline, h5, h4, h3, h2');
+    const copy = tile.querySelector('.surestart-card__caption__content, .copy, .tileListing__tiles--tile-contentWrapper .copy');
+    const linkEl = tile.matches('a[href]') ? tile : tile.querySelector('a[href]');
     const img = resolveImage(tile, document, {
       imgSel: 'img',
-      bgSel: '.tileCarousel__slick--image, [class*="image"]',
+      bgSel: '.tileCarousel__slick--image, .surestart-card__figure, .tileListing__tiles--tile-imageWrapper, [class*="image"]',
       alt: title ? title.textContent.trim() : '',
     });
 
@@ -86,11 +101,15 @@ function parseTileCarousel(element, document) {
     const contentNodes = [document.createComment(' field:content_text ')];
     if (category && category.textContent.trim()) contentNodes.push(category);
     if (title && title.textContent.trim()) contentNodes.push(title);
-    if (link) {
-      const a = document.createElement('a');
-      a.setAttribute('href', link.getAttribute('href'));
-      a.textContent = title ? title.textContent.trim() : link.getAttribute('href');
-      contentNodes.push(a);
+    if (copy && copy.textContent.trim()) contentNodes.push(copy);
+    if (linkEl) {
+      const href = linkEl.getAttribute('href');
+      if (href) {
+        const a = document.createElement('a');
+        a.setAttribute('href', href);
+        a.textContent = title ? title.textContent.trim() : href;
+        contentNodes.push(a);
+      }
     }
     if (img || title) cells.push([imageCell, contentNodes]);
   });
@@ -104,12 +123,16 @@ function parseTileCarousel(element, document) {
 }
 
 export default function parse(element, { document }) {
-  // Two supported source structures share the carousel-news block:
+  // Supported source structures that share the carousel-news block:
   //   1. `.latestNews__box` news teasers (homepage "Read the latest")
-  //   2. `.tileCarousel__slick--tile` product tiles (ingredient related-products)
+  //   2. tile/card grids: .tileCarousel__slick--tile (ingredient related-products),
+  //      .pageteaser-tile__slick-tile (concept related-concept), .tileListing__card
+  //      (concept key-ingredients). Handled by parseTileCarousel.
   // If there are no news boxes but there are tiles, use the tile path.
   const hasNewsBoxes = element.querySelector('.latestNews__box');
-  if (!hasNewsBoxes && element.querySelector('.tileCarousel__slick--tile')) {
+  const hasTiles = element.querySelector(TILE_ITEM_SELECTOR)
+    || (element.matches && element.matches('.tileListing__card'));
+  if (!hasNewsBoxes && hasTiles) {
     parseTileCarousel(element, document);
     return;
   }

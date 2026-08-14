@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/immunity.html",
+  "path": "global/en/applications/active-lifestyle/benefit-platforms/immunity",
+  "timestamp": "2026-08-14T02:21:10.345Z",
+  "title": "Immunity | NZMP Benefit Platforms | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

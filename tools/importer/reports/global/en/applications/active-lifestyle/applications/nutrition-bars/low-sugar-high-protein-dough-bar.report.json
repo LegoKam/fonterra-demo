@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/low-sugar-high-protein-dough-bar.html",
+  "path": "global/en/applications/active-lifestyle/applications/nutrition-bars/low-sugar-high-protein-dough-bar",
+  "timestamp": "2026-08-14T02:20:29.957Z",
+  "title": "High Protein Low Sugar Crispy Dough Bar | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

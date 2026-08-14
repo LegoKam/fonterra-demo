@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/food-manufacture/applications/meals-and-snacks.html",
+  "path": "global/en/applications/food-manufacture/applications/meals-and-snacks",
+  "timestamp": "2026-08-14T02:23:13.358Z",
+  "title": "Meals & Snacks - Our Food Manufacture Range | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

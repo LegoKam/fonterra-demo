@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/healthy-ageing.html",
+  "path": "global/en/applications/consumer-milk-powders/benefit-platforms/healthy-ageing",
+  "timestamp": "2026-08-14T02:22:28.564Z",
+  "title": "Consumer Milk Powders for Healthy Ageing | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news",
+    "carousel-news"
+  ]
+}
