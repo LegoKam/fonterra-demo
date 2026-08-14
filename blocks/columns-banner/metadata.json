@@ -36,10 +36,11 @@
   "usage": {
     "pagesUsing": [
       "/global/en/about-nzmp/global-ingredients",
-      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix"
+      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
+      "/global/en/ingredients/dairy-fats-cream/blends"
     ],
-    "reuseCount": 2,
+    "reuseCount": 3,
     "lastUsed": "2026-08-14T00:00:00.000Z",
-    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the product concept banner (H1 + green accent + one-line tagline beside a single large companion photo; no CTA/list/pills)."
+    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the product concept banner (H1 + green accent + one-line tagline beside a single large companion photo; no CTA/list/pills). | ingredient-category (dairy-fats-cream/blends): Reused for the 'Blends' category banner (H1 + green accent underline + one-line tagline beside a large companion photo on the ghost-white .categoryBanner band; no CTA)."
   }
 }

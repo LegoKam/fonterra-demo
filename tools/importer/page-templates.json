@@ -721,7 +721,44 @@
       ],
       "coverageGaps": [],
       "description": "Ingredient subcategory layout listing product variants within a family (e.g. dairy fats/cream blends).",
-      "blocks": []
+      "blocks": [
+        {
+          "name": "columns-banner",
+          "instances": [
+            ".cq-dd-image.categoryBanner"
+          ]
+        },
+        {
+          "name": "columns-feature",
+          "instances": [
+            ".imageTextOverlay"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Category banner",
+          "selector": ".cq-dd-image.categoryBanner",
+          "style": null,
+          "blocks": [
+            "columns-banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Feature panels",
+          "selector": [
+            ".contentHolder"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-feature"
+          ],
+          "defaultContent": []
+        }
+      ]
     },
     {
       "name": "resources-listing",

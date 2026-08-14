@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/cream-cheese.html",
+  "path": "global/en/ingredients/dairy-fats-cream/cream-cheese",
+  "timestamp": "2026-08-14T03:05:06.072Z",
+  "title": "Cream Cheese - Ingredients & Products | NZMP.com",
+  "template": "ingredient-category",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}
