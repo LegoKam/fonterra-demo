@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/new-zealand-cheeses/noble-cheese.html",
   "path": "global/en/ingredients/cheese/new-zealand-cheeses/noble-cheese",
-  "timestamp": "2026-08-13T21:18:23.064Z",
+  "timestamp": "2026-08-14T01:39:12.825Z",
   "title": "Noble™ Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

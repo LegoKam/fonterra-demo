@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/new-zealand-cheeses/egmont-cheese.html",
   "path": "global/en/ingredients/cheese/new-zealand-cheeses/egmont-cheese",
-  "timestamp": "2026-08-13T21:18:15.122Z",
+  "timestamp": "2026-08-14T01:39:05.359Z",
   "title": "Egmont™ Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

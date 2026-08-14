@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/mozzarella-curd.html",
   "path": "global/en/ingredients/cheese/mozzarella-options/mozzarella-curd",
-  "timestamp": "2026-08-13T21:17:39.974Z",
+  "timestamp": "2026-08-14T01:38:29.639Z",
   "title": "Mozzarella Curd | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",
