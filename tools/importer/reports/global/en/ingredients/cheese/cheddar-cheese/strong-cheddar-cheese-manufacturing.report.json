@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/strong-cheddar-cheese-manufacturing.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/strong-cheddar-cheese-manufacturing",
-  "timestamp": "2026-08-13T21:16:39.195Z",
+  "timestamp": "2026-08-14T01:37:28.686Z",
   "title": "Strong Cheddar Cheese for Manufacturing | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

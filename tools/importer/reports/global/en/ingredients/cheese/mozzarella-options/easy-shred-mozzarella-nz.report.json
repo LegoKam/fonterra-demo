@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/easy-shred-mozzarella-nz.html",
   "path": "global/en/ingredients/cheese/mozzarella-options/easy-shred-mozzarella-nz",
-  "timestamp": "2026-08-13T21:16:55.022Z",
+  "timestamp": "2026-08-14T01:37:44.937Z",
   "title": "Easy Shred Mozzarella | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",
