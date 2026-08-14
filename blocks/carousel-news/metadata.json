@@ -36,10 +36,11 @@
     "pagesUsing": [
       "/global/en",
       "/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au",
-      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix"
+      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
+      "/global/en/ingredients/specialty/probiotics"
     ],
-    "reuseCount": 3,
-    "lastUsed": "2026-08-14T00:00:00.000Z",
-    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the Related Concept teaser carousel (photo + headline + short description, prev/next arrows)."
+    "reuseCount": 4,
+    "lastUsed": "2026-08-14T03:15:00.000Z",
+    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the Related Concept teaser carousel (photo + headline + short description, prev/next arrows). | ingredient-listing (specialty/probiotics): Reused for both tabbed product-card grids (.tileListing__card - SureStart LactoB/BifidoB and LactoB/BifidoB HN019). The carousel-news parser's TILE_ITEM_SELECTOR already handles .tileListing__card, so the product tiles flatten into carousel-news blocks; the source tabs are flattened to headings. Parser->block contract governs reuse over the generic 'news' purpose label."
   }
 }

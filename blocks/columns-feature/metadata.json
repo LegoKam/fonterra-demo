@@ -37,10 +37,11 @@
       "/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-au",
       "/global/en/about-nzmp/global-ingredients",
       "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
-      "/global/en/ingredients/dairy-fats-cream/blends"
+      "/global/en/ingredients/dairy-fats-cream/blends",
+      "/global/en/ingredients/specialty/probiotics"
     ],
-    "reuseCount": 4,
-    "reuseNote": "Reused on the category-landing page for the 'Our network is your advantage' image/video + heading + text intro (media-left/text-right). | application-concept-detail (high-protein-brownie-mix): Reused for the Ask an Expert CTA band (lifestyle photo beside heading + paragraph + CTA link). | ingredient-category (dairy-fats-cream/blends): Reused for all four .imageTextOverlay feature panels (product image | heading + intro + bullets; the 'Characteristics' hero-imagery overlay; image | heading + paragraph; and heading + paragraph | image). Same image+text feature content model; the overlay is a CSS presentation.",
-    "lastUsed": "2026-08-14T00:00:00.000Z"
+    "reuseCount": 5,
+    "reuseNote": "Reused on the category-landing page for the 'Our network is your advantage' image/video + heading + text intro (media-left/text-right). | application-concept-detail (high-protein-brownie-mix): Reused for the Ask an Expert CTA band (lifestyle photo beside heading + paragraph + CTA link). | ingredient-category (dairy-fats-cream/blends): Reused for all four .imageTextOverlay feature panels (product image | heading + intro + bullets; the 'Characteristics' hero-imagery overlay; image | heading + paragraph; and heading + paragraph | image). Same image+text feature content model; the overlay is a CSS presentation. | ingredient-listing (specialty/probiotics): Reused for five .imageTextOverlay panels - the pageIntro ('Globally, 1 in 2 consumers...') and the four image-badge__v2 features ('The development of probiotics', 'The secret to success', 'Industry Involvement', 'Our approach to probiotics'). Same image+text feature model. ~95% match.",
+    "lastUsed": "2026-08-14T03:15:00.000Z"
   }
 }

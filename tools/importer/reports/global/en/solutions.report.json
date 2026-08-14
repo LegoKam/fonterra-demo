@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions.html",
+  "path": "global/en/solutions",
+  "timestamp": "2026-08-14T03:27:15.995Z",
+  "title": "NZMP Solutions | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "carousel-news",
+    "carousel-news"
+  ]
+}

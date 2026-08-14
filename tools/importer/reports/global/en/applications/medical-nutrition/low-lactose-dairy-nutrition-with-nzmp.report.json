@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/medical-nutrition/low-lactose-dairy-nutrition-with-nzmp.html",
+  "path": "global/en/applications/medical-nutrition/low-lactose-dairy-nutrition-with-nzmp",
+  "timestamp": "2026-08-14T03:28:06.346Z",
+  "title": "Low lactose dairy nutrition with NZMP | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-banner",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}
