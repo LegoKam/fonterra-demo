@@ -1,22 +1,37 @@
 /*
- * cards-value -- text-only value-proposition cards, displayed in a row.
+ * cards-value -- text-only value-proposition items in a row on a pale grey band.
  * Source: NZMP "Supply Flexibility / Confidence in Delivery / Consistency in
- * Quality" row (.multi-cols.show-border) on a pale grey band. No images, no
- * per-card CTA; thin vertical dividers between items on desktop.
+ * Quality" row (.multi-cols.show-border.cols-3) on a full-width #f6f6f8 band.
+ * No images, no icons, no per-card CTA. Centered text; thin 1px vertical
+ * dividers between items on desktop. All values from source computed styles.
  */
 
+/* Full-bleed pale grey band. The block shares its section with other blocks,
+   so the band is applied to the block itself and broken out of the 1200px
+   content wrapper with symmetric negative margins (no 100vw -> no scrollbar). */
+.cards-value {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 48px 0;
+  background-color: #f6f6f8; /* rgb(246, 246, 248) -- source band, no brand token */
+}
+
+/* Re-constrain content to the page content width and centre it. */
 .cards-value > ul {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-/* Single value item -- no card chrome (transparent, borderless) */
+/* Single value item -- no card chrome (transparent, borderless), centered. */
 .cards-value > ul > li {
   display: block;
+  position: relative;
   background: none;
   border: none;
   border-radius: 0;
@@ -30,38 +45,50 @@
 
 /* Title */
 .cards-value .cards-value-card-body h3 {
-  margin: 0 0 12px;
-  color: var(--heading-color);
+  margin: 0;
+  color: var(--heading-color); /* #2d2d2d */
   font-family: var(--heading-font-family);
-  font-weight: var(--heading-font-weight);
-  letter-spacing: var(--heading-letter-spacing);
-  font-size: var(--heading-size-m);
-  line-height: 1.15;
+  font-weight: var(--heading-font-weight); /* 900 */
+  letter-spacing: var(--heading-letter-spacing); /* -0.3px */
+  font-size: var(--heading-size-l); /* 26px */
+  line-height: 1.12; /* 29.12px / 26px */
 }
 
-/* Description */
+/* Description (source uses heading colour #2d2d2d for this copy, not body grey) */
 .cards-value .cards-value-card-body p {
   margin: 0;
-  color: var(--text-color);
-  font-size: var(--body-font-size-s);
-  line-height: 1.5;
+  color: var(--heading-color); /* #2d2d2d */
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s); /* 16px */
+  line-height: 1.5; /* 24px / 16px */
+}
+
+/* Inline links keep brand blue but are underlined, as in source */
+.cards-value .cards-value-card-body a:any-link {
+  color: var(--link-color); /* #263e81 */
+  text-decoration: underline;
 }
 
 @media (width >= 900px) {
   .cards-value > ul {
     flex-direction: row;
-    align-items: flex-start;
-    gap: 0;
+    align-items: stretch;
+    gap: 32px;
   }
 
   .cards-value > ul > li {
     flex: 1 1 0;
     min-width: 0;
-    padding: 0 32px;
   }
 
-  /* thin vertical dividers between items */
-  .cards-value > ul > li + li {
-    border-left: 1px solid #d9d9dd;
+  /* thin vertical divider centred in the 32px gutter between items */
+  .cards-value > ul > li + li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -16px;
+    width: 1px;
+    background-color: #bfbfbf; /* rgb(191, 191, 191) -- source divider */
   }
 }
