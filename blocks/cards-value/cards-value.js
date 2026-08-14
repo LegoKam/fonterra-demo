@@ -9,8 +9,14 @@ export default function decorate(block) {
     moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-value-card-image';
-      else div.className = 'cards-value-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) {
+        div.className = 'cards-value-card-image';
+      } else if (div.children.length === 0 && !div.textContent.trim()) {
+        /* text-only variant: drop the empty image cell so it adds no layout */
+        div.remove();
+      } else {
+        div.className = 'cards-value-card-body';
+      }
     });
     ul.append(li);
   });
