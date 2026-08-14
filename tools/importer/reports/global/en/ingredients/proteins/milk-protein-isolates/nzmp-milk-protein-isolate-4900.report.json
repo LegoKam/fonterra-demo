@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/milk-protein-isolates/nzmp-milk-protein-isolate-4900.html",
   "path": "global/en/ingredients/proteins/milk-protein-isolates/nzmp-milk-protein-isolate-4900",
-  "timestamp": "2026-08-13T21:32:11.864Z",
+  "timestamp": "2026-08-14T01:52:21.729Z",
   "title": "NZMP™ Milk Protein Isolate 4900 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

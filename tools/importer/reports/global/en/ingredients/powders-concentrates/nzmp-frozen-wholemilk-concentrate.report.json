@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/nzmp-frozen-wholemilk-concentrate.html",
   "path": "global/en/ingredients/powders-concentrates/nzmp-frozen-wholemilk-concentrate",
-  "timestamp": "2026-08-13T21:24:25.188Z",
+  "timestamp": "2026-08-14T01:44:33.033Z",
   "title": "Frozen Whole Milk Concentrate | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

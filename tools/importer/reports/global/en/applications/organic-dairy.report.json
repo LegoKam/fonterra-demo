@@ -1,0 +1,19 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/organic-dairy.html",
+  "path": "global/en/applications/organic-dairy",
+  "timestamp": "2026-08-14T03:55:55.671Z",
+  "title": "Organic Dairy Nutrition | NZMP Dairy Ingredients | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

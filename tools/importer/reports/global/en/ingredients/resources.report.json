@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/resources.html",
+  "path": "global/en/ingredients/resources",
+  "timestamp": "2026-08-14T03:28:15.724Z",
+  "title": "Publications & Product Specification Resources | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/specialty/probiotics/nzmp-lactob-hn001.html",
+  "path": "global/en/ingredients/specialty/probiotics/nzmp-lactob-hn001",
+  "timestamp": "2026-08-14T03:56:02.961Z",
+  "title": "Probiotic LactoB HN001™ | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-product",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "cards-value",
+    "carousel-news"
+  ]
+}

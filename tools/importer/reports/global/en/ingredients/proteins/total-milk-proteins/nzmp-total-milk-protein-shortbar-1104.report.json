@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/total-milk-proteins/nzmp-total-milk-protein-shortbar-1104.html",
   "path": "global/en/ingredients/proteins/total-milk-proteins/nzmp-total-milk-protein-shortbar-1104",
-  "timestamp": "2026-08-13T21:32:27.023Z",
+  "timestamp": "2026-08-14T01:52:37.097Z",
   "title": "SureProtein™ Total Milk Protein ShortBar 1104 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

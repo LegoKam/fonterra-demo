@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/wmp-uht-perform.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/wmp-uht-perform",
-  "timestamp": "2026-08-13T21:29:03.666Z",
+  "timestamp": "2026-08-14T01:49:12.961Z",
   "title": "Regular Whole Milk Powder UHT Perform - NZMP Ingredients | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

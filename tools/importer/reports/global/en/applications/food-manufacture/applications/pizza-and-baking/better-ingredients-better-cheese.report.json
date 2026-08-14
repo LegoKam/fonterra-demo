@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/food-manufacture/applications/pizza-and-baking/better-ingredients-better-cheese.html",
+  "path": "global/en/applications/food-manufacture/applications/pizza-and-baking/better-ingredients-better-cheese",
+  "timestamp": "2026-08-14T02:23:28.327Z",
+  "title": "Better ingredients, better cheese | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

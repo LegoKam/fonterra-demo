@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/organic-unsalted-butter.html",
   "path": "global/en/ingredients/dairy-fats-cream/butter/organic-unsalted-butter",
-  "timestamp": "2026-08-13T21:20:13.771Z",
+  "timestamp": "2026-08-14T01:40:57.923Z",
   "title": "Organic Unsalted Butter | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

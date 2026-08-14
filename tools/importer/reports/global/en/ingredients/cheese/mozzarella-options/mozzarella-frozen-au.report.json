@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/mozzarella-frozen-au.html",
   "path": "global/en/ingredients/cheese/mozzarella-options/mozzarella-frozen-au",
-  "timestamp": "2026-08-13T21:17:49.166Z",
+  "timestamp": "2026-08-14T01:38:39.928Z",
   "title": "Premium Mozzarella Frozen (Made in Australia) | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

@@ -1,0 +1,41 @@
+{
+  "variantName": "cards-value",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+    "originPage": "NZMP category-landing page (Global Ingredients Network) - value-proposition row",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "value-props",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "text-only card (bold H3 title + one-line description) per item; no image, no per-card CTA; vertical dividers between items",
+    "itemCount": 3,
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "text-only value-proposition / feature rows (title + one-line blurb, 2-4 uniform items)",
+      "'why choose us' style rows with no icons/images on a light or pale-grey band",
+      "centered multi-column callouts separated by thin vertical dividers"
+    ],
+    "notSuitableFor": [
+      "icon-led benefit cards (use cards-benefit)",
+      "navigational cards with a per-card image + Learn more CTA (use cards-category)",
+      "large-photo teaser cards (use cards-teaser)",
+      "side-by-side single features (use columns-feature)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/about-nzmp/global-ingredients"],
+    "reuseCount": 1,
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

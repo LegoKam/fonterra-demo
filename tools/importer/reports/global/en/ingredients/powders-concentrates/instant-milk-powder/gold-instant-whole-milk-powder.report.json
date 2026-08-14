@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/gold-instant-whole-milk-powder.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/gold-instant-whole-milk-powder",
-  "timestamp": "2026-08-13T21:23:03.328Z",
+  "timestamp": "2026-08-14T01:43:07.035Z",
   "title": "Gold Instant Whole Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

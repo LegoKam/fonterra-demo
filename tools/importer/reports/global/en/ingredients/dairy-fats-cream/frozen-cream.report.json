@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/frozen-cream.html",
+  "path": "global/en/ingredients/dairy-fats-cream/frozen-cream",
+  "timestamp": "2026-08-14T03:05:12.922Z",
+  "title": "Frozen Cream | NZMP.com",
+  "template": "ingredient-category",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

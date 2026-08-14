@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications.html",
+  "path": "global/en/applications/active-lifestyle/applications",
+  "timestamp": "2026-08-14T02:39:48.200Z",
+  "title": "Sports and Active Lifestyle Applications | NZMP.com",
+  "template": "section-landing",
+  "blocks": [
+    "carousel-news"
+  ]
+}

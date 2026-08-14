@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars.html",
+  "path": "global/en/applications/active-lifestyle/applications/nutrition-bars",
+  "timestamp": "2026-08-14T03:27:59.540Z",
+  "title": "Nutrition Bars | NZMP Applications | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

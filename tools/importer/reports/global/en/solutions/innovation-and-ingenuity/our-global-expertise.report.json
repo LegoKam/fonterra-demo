@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/innovation-and-ingenuity/our-global-expertise.html",
+  "path": "global/en/solutions/innovation-and-ingenuity/our-global-expertise",
+  "timestamp": "2026-08-14T02:07:51.063Z",
+  "title": "World-Leading Global Dairy Expertise | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-category",
+    "cards-teaser"
+  ]
+}

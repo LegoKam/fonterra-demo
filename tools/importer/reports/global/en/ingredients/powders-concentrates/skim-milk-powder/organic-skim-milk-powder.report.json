@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/skim-milk-powder/organic-skim-milk-powder.html",
   "path": "global/en/ingredients/powders-concentrates/skim-milk-powder/organic-skim-milk-powder",
-  "timestamp": "2026-08-13T21:24:54.988Z",
+  "timestamp": "2026-08-14T01:45:01.460Z",
   "title": "Organic Skim Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle.html",
+  "path": "global/en/applications/active-lifestyle",
+  "timestamp": "2026-08-14T01:59:45.531Z",
+  "title": "Active Lifestyle | NZMP Dairy Ingredients | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-feature",
+    "cards-teaser"
+  ]
+}

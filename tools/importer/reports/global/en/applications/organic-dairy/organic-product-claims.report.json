@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/organic-dairy/organic-product-claims.html",
+  "path": "global/en/applications/organic-dairy/organic-product-claims",
+  "timestamp": "2026-08-14T02:00:35.759Z",
+  "title": "Organic Product Claims | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-value"
+  ]
+}

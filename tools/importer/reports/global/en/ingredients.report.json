@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients.html",
+  "path": "global/en/ingredients",
+  "timestamp": "2026-08-14T02:41:05.384Z",
+  "title": "Ingredients | NZMP.com",
+  "template": "section-landing",
+  "blocks": [
+    "carousel-news"
+  ]
+}

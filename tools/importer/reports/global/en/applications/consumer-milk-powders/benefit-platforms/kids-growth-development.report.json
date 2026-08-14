@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/kids-growth-development.html",
+  "path": "global/en/applications/consumer-milk-powders/benefit-platforms/kids-growth-development",
+  "timestamp": "2026-08-14T02:22:42.867Z",
+  "title": "Consumer Milk Powders for Kids Growth & Development | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

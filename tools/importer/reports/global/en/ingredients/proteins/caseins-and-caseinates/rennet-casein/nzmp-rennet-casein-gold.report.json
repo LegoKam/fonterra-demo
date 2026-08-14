@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/nzmp-rennet-casein-gold.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/rennet-casein/nzmp-rennet-casein-gold",
+  "timestamp": "2026-08-14T02:25:04.827Z",
+  "title": "Rennet Casein - Ingredients & Products | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "carousel-news"
+  ]
+}

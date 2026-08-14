@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/mature-cheddar-cheese.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/mature-cheddar-cheese",
-  "timestamp": "2026-08-13T21:16:04.559Z",
+  "timestamp": "2026-08-14T01:36:54.630Z",
   "title": "Mature Cheddar | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

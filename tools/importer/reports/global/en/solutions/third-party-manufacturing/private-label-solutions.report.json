@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/third-party-manufacturing/private-label-solutions.html",
+  "path": "global/en/solutions/third-party-manufacturing/private-label-solutions",
+  "timestamp": "2026-08-14T02:09:09.627Z",
+  "title": "Our Private Label Solutions | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-teaser"
+  ]
+}

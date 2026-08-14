@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products.html",
+  "path": "global/en/applications/yoghurts-and-cultured-products",
+  "timestamp": "2026-08-14T02:01:05.942Z",
+  "title": "Yoghurts and Cultured Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "cards-teaser"
+  ]
+}

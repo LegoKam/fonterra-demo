@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-frozen.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/cheddar-cheese-frozen",
-  "timestamp": "2026-08-13T21:15:23.694Z",
+  "timestamp": "2026-08-14T01:36:15.923Z",
   "title": "Cheddar Cheese Frozen | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

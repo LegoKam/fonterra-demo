@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/price-risk-management/pricebreak.html",
+  "path": "global/en/solutions/price-risk-management/pricebreak",
+  "timestamp": "2026-08-14T03:27:49.629Z",
+  "title": "PriceBreak - Benefit From Lower Fixed Prices | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-banner",
+    "cards-category",
+    "cards-value",
+    "cards-value"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-817.html",
+  "path": "global/en/ingredients/specialty/hydrolysates/nzmp-whey-protein-hydrolysate-817",
+  "timestamp": "2026-08-14T02:06:44.578Z",
+  "title": "Hydrolysates - Specialty Ingredients | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

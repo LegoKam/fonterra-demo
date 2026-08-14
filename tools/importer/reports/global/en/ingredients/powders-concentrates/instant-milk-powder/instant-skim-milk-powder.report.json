@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/instant-skim-milk-powder.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/instant-skim-milk-powder",
-  "timestamp": "2026-08-13T21:23:11.088Z",
+  "timestamp": "2026-08-14T01:43:15.723Z",
   "title": "Instant Skim Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

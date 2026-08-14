@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-high-heat.html",
   "path": "global/en/ingredients/powders-concentrates/whole-milk-powder/regular-whole-milk-powder-high-heat",
-  "timestamp": "2026-08-13T21:27:51.758Z",
+  "timestamp": "2026-08-14T01:48:00.589Z",
   "title": "Regular Whole Milk Powder High Heat | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

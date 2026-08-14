@@ -1,0 +1,42 @@
+{
+  "variantName": "cards-category",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+    "originPage": "NZMP category-landing page (Global Ingredients Network) - sourcing-locations grid and global-experts grid",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "category-navigation",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "circular icon/portrait + title + optional short description + 'Learn more' CTA button per card; static light grid",
+    "itemCount": 4,
+    "buttonCount": 4,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "navigational 'child cards linking to sub-pages' grids on category/landing pages (icon + title + Learn more)",
+      "region / market / team grids with a circular icon or portrait and a per-card CTA",
+      "static light-background card grids of 2-4 uniform items (description optional per card)"
+    ],
+    "notSuitableFor": [
+      "icon-led benefit callouts WITHOUT a per-card CTA (use cards-benefit)",
+      "text-only value-proposition rows (use cards-value)",
+      "large-photo teaser cards with a whole-card link (use cards-teaser)",
+      "dark rotating category-tile carousels (use carousel-category)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/global/en/about-nzmp/global-ingredients"],
+    "reuseCount": 2,
+    "reuseNote": "Used twice on the origin page: the sourcing-locations grid and the global-experts grid.",
+    "lastUsed": "2026-08-13T00:00:00.000Z"
+  }
+}

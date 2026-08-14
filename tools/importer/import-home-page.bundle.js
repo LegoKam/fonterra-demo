@@ -247,7 +247,64 @@ var CustomImportScript = (() => {
     }
     return null;
   }
+  var TILE_ITEM_SELECTOR = ".tileCarousel__slick--tile, .surestart-card, .tileListing__card";
+  function parseTileCarousel(element, document) {
+    const seen = /* @__PURE__ */ new Set();
+    let tiles = Array.from(element.querySelectorAll(TILE_ITEM_SELECTOR)).filter((tile) => !tile.classList.contains("slick-cloned") && !(tile.closest && tile.closest(".slick-cloned")));
+    if (tiles.length === 0 && element.matches && element.matches(".tileListing__card")) {
+      tiles = [element];
+    }
+    tiles = tiles.filter((tile) => {
+      const linkEl = tile.matches("a[href]") ? tile : tile.querySelector("a[href]");
+      const href = (linkEl || {}).href || (linkEl && linkEl.getAttribute ? linkEl.getAttribute("href") : "") || "";
+      const title = (tile.querySelector(".headline, h5, h4, h3, h2") || {}).textContent || "";
+      const key = `${href}::${title.trim()}`;
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+    const cells = [];
+    tiles.forEach((tile) => {
+      const category = tile.querySelector(".small p, .small, .categoryTitle");
+      const title = tile.querySelector(".surestart-card__caption__title h4, .surestart-card__caption__title, .headline, h5, h4, h3, h2");
+      const copy = tile.querySelector(".surestart-card__caption__content, .copy, .tileListing__tiles--tile-contentWrapper .copy");
+      const linkEl = tile.matches("a[href]") ? tile : tile.querySelector("a[href]");
+      const img = resolveImage3(tile, document, {
+        imgSel: "img",
+        bgSel: '.tileCarousel__slick--image, .surestart-card__figure, .tileListing__tiles--tile-imageWrapper, [class*="image"]',
+        alt: title ? title.textContent.trim() : ""
+      });
+      let imageCell = "";
+      if (img) imageCell = [document.createComment(" field:media_image "), img];
+      const contentNodes = [document.createComment(" field:content_text ")];
+      if (category && category.textContent.trim()) contentNodes.push(category);
+      if (title && title.textContent.trim()) contentNodes.push(title);
+      if (copy && copy.textContent.trim()) contentNodes.push(copy);
+      if (linkEl) {
+        const href = linkEl.getAttribute("href");
+        if (href) {
+          const a = document.createElement("a");
+          a.setAttribute("href", href);
+          a.textContent = title ? title.textContent.trim() : href;
+          contentNodes.push(a);
+        }
+      }
+      if (img || title) cells.push([imageCell, contentNodes]);
+    });
+    if (cells.length === 0) {
+      element.replaceWith(...element.childNodes);
+      return;
+    }
+    const block = WebImporter.Blocks.createBlock(document, { name: "carousel-news", cells });
+    element.replaceWith(block);
+  }
   function parse4(element, { document }) {
+    const hasNewsBoxes = element.querySelector(".latestNews__box");
+    const hasTiles = element.querySelector(TILE_ITEM_SELECTOR) || element.matches && element.matches(".tileListing__card");
+    if (!hasNewsBoxes && hasTiles) {
+      parseTileCarousel(element, document);
+      return;
+    }
     const seen = /* @__PURE__ */ new Set();
     const boxes = Array.from(element.querySelectorAll(".latestNews__box")).filter((box) => !box.classList.contains("slick-cloned")).filter((box) => {
       const href = (box.querySelector("a[href]") || {}).href || "";
@@ -315,7 +372,15 @@ var CustomImportScript = (() => {
         // block, but there is no `form` component in the project, so md2jcr errors with
         // "The component 'Form' does not exist." Dropping the whole section keeps the
         // import clean until a real form component/handling is available.
-        ".emailsubscription.esBar"
+        ".emailsubscription.esBar",
+        // Breadcrumb navigation. Removed by request: it imported as a `breadcrumb`
+        // block, but there is no `Breadcrumb` component in the project, so md2jcr errors
+        // with "The component 'Breadcrumb' does not exist." Breadcrumbs are navigation
+        // chrome (regenerable from the page path), not authored content, so dropping
+        // them at import is the correct fix.
+        ".comp__breadcrumbs",
+        ".page.breadcrumbs",
+        ".breadcrumb"
       ]);
     }
     if (hookName === TransformHook.afterTransform) {

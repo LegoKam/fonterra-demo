@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates.html",
+  "path": "global/en/ingredients/proteins/caseins-and-caseinates/caseinates",
+  "timestamp": "2026-08-14T02:24:48.892Z",
+  "title": "Caseinates - Ingredients & Products | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/muscle-health.html",
+  "path": "global/en/applications/active-lifestyle/benefit-platforms/muscle-health",
+  "timestamp": "2026-08-14T03:55:34.058Z",
+  "title": "Muscle Health | NZMP Benefit Platforms | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

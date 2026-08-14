@@ -31,6 +31,24 @@
     ]
   },
   {
+    "id": "cards-category",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-teaser",
+    "components": [
+      "card"
+    ]
+  },
+  {
+    "id": "cards-value",
+    "components": [
+      "card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -52,6 +70,21 @@
     "id": "carousel-news",
     "components": [
       "carousel-news-item"
+    ]
+  },
+  {
+    "id": "columns-banner",
+    "components": [
+      "column"
+    ]
+  },
+  {
+    "id": "column",
+    "components": [
+      "text",
+      "image",
+      "button",
+      "title"
     ]
   },
   {

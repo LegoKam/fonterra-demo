@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/price-risk-management/priceindex.html",
+  "path": "global/en/solutions/price-risk-management/priceindex",
+  "timestamp": "2026-08-14T02:25:31.943Z",
+  "title": "PriceIndex - Get Price Transparency | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "cards-value"
+  ]
+}

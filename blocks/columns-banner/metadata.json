@@ -1,0 +1,47 @@
+{
+  "variantName": "columns-banner",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-08-13T00:00:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.nzmp.com/global/en/about-nzmp/global-ingredients.html",
+    "originPage": "NZMP category-landing page (Global Ingredients Network) - intro banner",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "category-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "text cell (H1 + short green underline accent + one-line tagline) | large landscape companion image cell",
+    "columnCount": 2,
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "category / landing page intro banners (H1 + short tagline beside one large companion photo)",
+      "top-of-page two-column intros on a light banner tint, image-dominant on the right",
+      "mid-level section landing headers across the category-landing template"
+    ],
+    "notSuitableFor": [
+      "product summary heroes with an intro paragraph, features list, tag pills and a primary CTA (use columns-product)",
+      "informational image-left + heading/bullet-list features (use columns-feature)",
+      "full-bleed background-image hero banners (use hero / carousel-banner)",
+      "grids of repeating items (use cards)"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [
+      "/global/en/about-nzmp/global-ingredients",
+      "/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-brownie-mix",
+      "/global/en/ingredients/dairy-fats-cream/blends",
+      "/global/en/ingredients/specialty/probiotics"
+    ],
+    "reuseCount": 4,
+    "lastUsed": "2026-08-14T03:15:00.000Z",
+    "reuseNote": "application-concept-detail (high-protein-brownie-mix): Reused for the product concept banner (H1 + green accent + one-line tagline beside a single large companion photo; no CTA/list/pills). | ingredient-category (dairy-fats-cream/blends): Reused for the 'Blends' category banner (H1 + green accent underline + one-line tagline beside a large companion photo on the ghost-white .categoryBanner band; no CTA). | ingredient-listing (specialty/probiotics): Reused for the 'Probiotics' category banner (H1 + green accent + one-line tagline beside a large lifestyle companion photo with NON-GMO badge on the ghost-white .categoryBanner band; no CTA). 100% match."
+  }
+}

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/premium-chilled-mozzarella.html",
   "path": "global/en/ingredients/cheese/mozzarella-options/premium-chilled-mozzarella",
-  "timestamp": "2026-08-13T21:18:08.123Z",
+  "timestamp": "2026-08-14T01:38:57.588Z",
   "title": "Premium Chilled Mozzarella | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

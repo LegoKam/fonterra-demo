@@ -1,0 +1,127 @@
+/*
+ * columns-banner -- category/landing intro banner.
+ * Source: NZMP .categoryBanner (nzmp.com global-ingredients), computed styles.
+ * Full-bleed ghost-white band. LEFT: H1 (brand blue) + green underline accent +
+ * intro copy. RIGHT: companion photo bleeding to the viewport's right edge.
+ * Mobile: image stacks on top, text below.
+ */
+
+.columns-banner {
+  /* NZMP category-banner tokens (exact computed values from source) */
+  --columns-banner-accent: #72be44;   /* green underline (.headline::after) */
+  --columns-banner-bg: #f7f7f9;        /* ghost-white band (bgGhostWhiteTwo) */
+  --columns-banner-copy-color: #2d2d2d;
+
+  position: relative;
+  background-color: var(--columns-banner-bg);
+  padding-bottom: 40px;
+}
+
+/* Full-bleed: neutralise the EDS section/wrapper max-width so the band and the
+   right-hand image can span edge to edge (source banner is full viewport width).
+   Selectors are scoped to this block's own section/wrapper and carry enough
+   specificity to beat the global `main > .section > div { max-width: 1200px }`. */
+main .section.columns-banner-container {
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+main .section.columns-banner-container > .columns-banner-wrapper {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile-first: image on top, text below */
+.columns-banner > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-banner-img-col {
+  order: -1;
+}
+
+.columns-banner-img-col img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Text cell (the one that is not the image column) */
+.columns-banner > div > div:not(.columns-banner-img-col) {
+  padding: 24px 24px 0;
+}
+
+/* H1 -- brand blue, heavy */
+.columns-banner h1 {
+  margin: 0;
+  color: var(--brand-blue);
+  font-family: var(--heading-font-family);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: 20px;
+  line-height: 1.35;
+}
+
+/* Green underline accent between the heading and the copy */
+.columns-banner h1::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 16px 0 24px;
+  background-color: var(--columns-banner-accent);
+}
+
+/* Intro copy */
+.columns-banner p {
+  margin: 0;
+  color: var(--columns-banner-copy-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.35;
+}
+
+@media (width >= 900px) {
+  .columns-banner {
+    min-height: 350px;
+    padding-bottom: 0;
+  }
+
+  /* Text sits in a page-width container; image is positioned separately */
+  .columns-banner > div {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 32px 0;
+  }
+
+  .columns-banner > div > div:not(.columns-banner-img-col) {
+    max-width: 400px;
+    padding: 0;
+  }
+
+  /* Right-hand image bleeds from the horizontal centre to the viewport edge */
+  .columns-banner-img-col {
+    position: absolute;
+    inset: 0 0 0 50%;
+    order: 0;
+  }
+
+  .columns-banner-img-col img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .columns-banner h1 {
+    font-size: 37px;
+    line-height: 1.1;
+  }
+
+  .columns-banner h1::after {
+    width: 84px;
+    margin: 24px 0 32px;
+  }
+}

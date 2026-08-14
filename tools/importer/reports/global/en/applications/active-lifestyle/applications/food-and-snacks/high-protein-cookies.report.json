@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-cookies.html",
+  "path": "global/en/applications/active-lifestyle/applications/food-and-snacks/high-protein-cookies",
+  "timestamp": "2026-08-14T02:19:44.824Z",
+  "title": "High Protein Cookies | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/yoghurts-and-cultured-products/benefit-platforms/fuel.html",
+  "path": "global/en/applications/yoghurts-and-cultured-products/benefit-platforms/fuel",
+  "timestamp": "2026-08-14T02:24:24.559Z",
+  "title": "Yoghurts and Cultured for Fuel | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/cheddar-cheese/coloured-cheddar-cheese.html",
   "path": "global/en/ingredients/cheese/cheddar-cheese/coloured-cheddar-cheese",
-  "timestamp": "2026-08-13T21:15:49.141Z",
+  "timestamp": "2026-08-14T01:36:40.029Z",
   "title": "Coloured Cheddar Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

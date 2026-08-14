@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/lactic-butter.html",
   "path": "global/en/ingredients/dairy-fats-cream/butter/lactic-butter",
-  "timestamp": "2026-08-13T21:19:57.225Z",
+  "timestamp": "2026-08-14T01:40:42.939Z",
   "title": "Lactic Butter | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

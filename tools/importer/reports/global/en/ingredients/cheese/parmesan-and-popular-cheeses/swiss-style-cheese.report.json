@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/swiss-style-cheese.html",
   "path": "global/en/ingredients/cheese/parmesan-and-popular-cheeses/swiss-style-cheese",
-  "timestamp": "2026-08-13T21:19:00.222Z",
+  "timestamp": "2026-08-14T01:39:45.410Z",
   "title": "Swiss-Style Cheese | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

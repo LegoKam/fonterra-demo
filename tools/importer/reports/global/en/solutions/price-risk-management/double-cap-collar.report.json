@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/solutions/price-risk-management/double-cap-collar.html",
+  "path": "global/en/solutions/price-risk-management/double-cap-collar",
+  "timestamp": "2026-08-14T03:27:40.013Z",
+  "title": "Double-Cap Collar - Customise Your Price Range | NZMP.com",
+  "template": "section-generic",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-category",
+    "cards-value"
+  ]
+}

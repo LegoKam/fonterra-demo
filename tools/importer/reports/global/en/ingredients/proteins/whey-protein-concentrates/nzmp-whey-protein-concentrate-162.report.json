@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-162.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-whey-protein-concentrate-162",
-  "timestamp": "2026-08-13T21:33:31.064Z",
+  "timestamp": "2026-08-14T01:53:41.522Z",
   "title": "NZMP™ Whey Protein Concentrate 162 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

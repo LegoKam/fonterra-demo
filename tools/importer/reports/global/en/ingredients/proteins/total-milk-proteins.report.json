@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/proteins/total-milk-proteins.html",
+  "path": "global/en/ingredients/proteins/total-milk-proteins",
+  "timestamp": "2026-08-14T03:05:27.726Z",
+  "title": "Total Milk Proteins - Ingredients & Products | NZMP.com",
+  "template": "ingredient-category",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

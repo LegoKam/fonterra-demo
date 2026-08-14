@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/lactose.html",
+  "path": "global/en/ingredients/powders-concentrates/lactose",
+  "timestamp": "2026-08-14T02:03:17.323Z",
+  "title": "Lactose - Ingredients & Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value"
+  ]
+}

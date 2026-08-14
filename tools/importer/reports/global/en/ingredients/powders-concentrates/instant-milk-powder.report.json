@@ -1,0 +1,16 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder.html",
+  "path": "global/en/ingredients/powders-concentrates/instant-milk-powder",
+  "timestamp": "2026-08-14T02:03:09.220Z",
+  "title": "Instant Milk Powder - Ingredients & Products | NZMP.com",
+  "template": "category-landing",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature"
+  ]
+}

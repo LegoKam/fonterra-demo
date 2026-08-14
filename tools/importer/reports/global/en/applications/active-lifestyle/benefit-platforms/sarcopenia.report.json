@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/benefit-platforms/sarcopenia.html",
+  "path": "global/en/applications/active-lifestyle/benefit-platforms/sarcopenia",
+  "timestamp": "2026-08-14T02:21:18.220Z",
+  "title": "Sarcopenia - Ingredients & Products By Application | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "cards-value"
+  ]
+}

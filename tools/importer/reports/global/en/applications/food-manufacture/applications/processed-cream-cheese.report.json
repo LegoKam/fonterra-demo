@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/food-manufacture/applications/processed-cream-cheese.html",
+  "path": "global/en/applications/food-manufacture/applications/processed-cream-cheese",
+  "timestamp": "2026-08-14T02:24:02.081Z",
+  "title": "Processed Cream Cheese | NZMP Ingredients | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature"
+  ]
+}

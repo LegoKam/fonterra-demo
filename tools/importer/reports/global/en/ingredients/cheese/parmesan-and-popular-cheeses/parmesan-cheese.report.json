@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/parmesan-and-popular-cheeses/parmesan-cheese.html",
   "path": "global/en/ingredients/cheese/parmesan-and-popular-cheeses/parmesan-cheese",
-  "timestamp": "2026-08-13T21:18:53.223Z",
+  "timestamp": "2026-08-14T01:39:38.760Z",
   "title": "Parmesan | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

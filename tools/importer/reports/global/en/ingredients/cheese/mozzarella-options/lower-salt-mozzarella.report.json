@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/cheese/mozzarella-options/lower-salt-mozzarella.html",
   "path": "global/en/ingredients/cheese/mozzarella-options/lower-salt-mozzarella",
-  "timestamp": "2026-08-13T21:17:22.024Z",
+  "timestamp": "2026-08-14T01:38:13.261Z",
   "title": "Lower Salt Mozzarella | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

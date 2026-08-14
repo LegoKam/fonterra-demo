@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/consumer-milk-powders/benefit-platforms/targeted-health.html",
+  "path": "global/en/applications/consumer-milk-powders/benefit-platforms/targeted-health",
+  "timestamp": "2026-08-14T02:22:50.393Z",
+  "title": "Consumer Milk Powders for Targeted Health | NZMP | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "columns-feature",
+    "columns-feature",
+    "carousel-news"
+  ]
+}

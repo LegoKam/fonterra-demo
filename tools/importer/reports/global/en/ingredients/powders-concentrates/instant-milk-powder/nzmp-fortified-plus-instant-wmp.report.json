@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-fortified-plus-instant-wmp.html",
   "path": "global/en/ingredients/powders-concentrates/instant-milk-powder/nzmp-fortified-plus-instant-wmp",
-  "timestamp": "2026-08-13T21:23:26.321Z",
+  "timestamp": "2026-08-14T01:43:31.943Z",
   "title": "Fortified+ Instant Whole Milk Powder | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",

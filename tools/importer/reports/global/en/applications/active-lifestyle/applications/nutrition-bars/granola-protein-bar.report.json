@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.nzmp.com/global/en/applications/active-lifestyle/applications/nutrition-bars/granola-protein-bar.html",
+  "path": "global/en/applications/active-lifestyle/applications/nutrition-bars/granola-protein-bar",
+  "timestamp": "2026-08-14T02:20:23.366Z",
+  "title": "Granola Protein Bar | NZMP.com",
+  "template": "application-concept-detail",
+  "blocks": [
+    "columns-banner",
+    "columns-feature",
+    "cards-value",
+    "cards-value",
+    "carousel-news",
+    "carousel-news",
+    "carousel-news"
+  ]
+}

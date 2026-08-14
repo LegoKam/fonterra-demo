@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/whey-protein-concentrates/nzmp-bioactive-whey-protein.html",
   "path": "global/en/ingredients/proteins/whey-protein-concentrates/nzmp-bioactive-whey-protein",
-  "timestamp": "2026-08-13T21:32:36.202Z",
+  "timestamp": "2026-08-14T01:52:45.939Z",
   "title": "Bioactive Whey Protein | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "carousel-news"
   ]

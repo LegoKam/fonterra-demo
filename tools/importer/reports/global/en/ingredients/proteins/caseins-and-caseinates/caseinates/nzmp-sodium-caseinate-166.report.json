@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-sodium-caseinate-166.html",
   "path": "global/en/ingredients/proteins/caseins-and-caseinates/caseinates/nzmp-sodium-caseinate-166",
-  "timestamp": "2026-08-13T21:29:52.923Z",
+  "timestamp": "2026-08-14T01:49:58.924Z",
   "title": "NZMP™ Sodium Caseinate 166 | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "cards-benefit",

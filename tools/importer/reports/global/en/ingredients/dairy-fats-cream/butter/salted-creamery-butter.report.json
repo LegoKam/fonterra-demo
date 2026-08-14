@@ -2,11 +2,10 @@
   "status": "success",
   "url": "https://www.nzmp.com/global/en/ingredients/dairy-fats-cream/butter/salted-creamery-butter.html",
   "path": "global/en/ingredients/dairy-fats-cream/butter/salted-creamery-butter",
-  "timestamp": "2026-08-13T21:20:38.728Z",
+  "timestamp": "2026-08-14T01:41:18.846Z",
   "title": "Salted Creamery Butter | NZMP.com",
   "template": "ingredient-product-detail",
   "blocks": [
-    "breadcrumb",
     "columns-product",
     "columns-feature",
     "columns-feature",
