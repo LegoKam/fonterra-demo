@@ -458,5 +458,25 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "newsfeed",
+    "fields": [
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title",
+        "valueType": "string",
+        "value": "Newsfeed"
+      },
+      {
+        "component": "number",
+        "name": "pagesize",
+        "label": "Page Size",
+        "valueType": "number",
+        "value": 6,
+        "description": "Number of articles shown per page"
+      }
+    ]
   }
 ]

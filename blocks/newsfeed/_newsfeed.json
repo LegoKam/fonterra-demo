@@ -1,0 +1,45 @@
+{
+  "definitions": [
+    {
+      "title": "Newsfeed",
+      "id": "newsfeed",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Newsfeed",
+              "model": "newsfeed",
+              "key-value": true,
+              "title": "Newsfeed",
+              "pagesize": 6
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "newsfeed",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title",
+          "valueType": "string",
+          "value": "Newsfeed"
+        },
+        {
+          "component": "number",
+          "name": "pagesize",
+          "label": "Page Size",
+          "valueType": "number",
+          "value": 6,
+          "description": "Number of articles shown per page"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
