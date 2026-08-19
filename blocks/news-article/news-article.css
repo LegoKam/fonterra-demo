@@ -75,13 +75,16 @@
 }
 
 .news-article-hero {
-  margin: 0 0 32px;
+  margin: 0 0 24px;
 }
 
 .news-article-hero img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 .news-article-body {

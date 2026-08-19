@@ -48,7 +48,7 @@ export default function decorate(block) {
   const titleCell = rows.title;
   const summaryCell = rows.summary;
   const bodyCell = rows.body;
-  const heroCell = rows.hero;
+  const heroCell = rows.imageurl || rows.hero;
   const heading = titleCell?.querySelector('h1') || titleCell;
   const titleText = heading?.textContent.trim() || '';
   const summaryText = summaryCell?.textContent.trim() || '';
@@ -80,16 +80,26 @@ export default function decorate(block) {
 
   if (heroCell) {
     heroCell.className = 'news-article-hero';
-    const img = heroCell.querySelector('img');
-    if (img && !img.getAttribute('src')) heroCell.remove();
+    let img = heroCell.querySelector('img');
+    const src = img?.getAttribute('src') || heroCell.textContent.trim();
+    if (!src) {
+      heroCell.remove();
+    } else if (!img) {
+      img = document.createElement('img');
+      img.src = src;
+      img.alt = titleText;
+      heroCell.replaceChildren(img);
+    } else {
+      img.alt = img.alt || titleText;
+    }
   }
 
   if (bodyCell) bodyCell.className = 'news-article-body';
 
   const parts = [nav, badge, title];
+  if (heroCell?.isConnected) parts.push(heroCell);
   if (summaryCell) parts.push(summaryCell);
   if (meta.textContent) parts.push(meta);
-  if (heroCell?.isConnected) parts.push(heroCell);
   if (bodyCell) parts.push(bodyCell);
 
   block.replaceChildren(...parts);

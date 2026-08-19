@@ -29,18 +29,18 @@
             <div>Slug</div>
             <div>{{slug}}</div>
           </div>
-          {{#heroImage}}
+          {{#imageUrl}}
           <div>
-            <div>Hero</div>
+            <div>Image URL</div>
             <div>
               <p>
                 <picture>
-                  <img src="{{_publishUrl}}" alt="{{title}}">
+                  <img src="{{{.}}}" alt="{{title}}">
                 </picture>
               </p>
             </div>
           </div>
-          {{/heroImage}}
+          {{/imageUrl}}
           <div>
             <div>Body</div>
             <div>{{{body.html}}}</div>

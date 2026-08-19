@@ -25,7 +25,9 @@ function readConfig(block) {
   return cfg;
 }
 
-function resolveImage(heroImage) {
+function resolveImage(item) {
+  const { imageUrl, heroImage } = item;
+  if (imageUrl) return imageUrl;
   if (!heroImage) return '';
   if (typeof heroImage === 'string') return heroImage;
   /* AEM GraphQL image refs use underscore-prefixed URLs */
@@ -62,7 +64,7 @@ function normalize(item) {
     date: formatDate(item.publishDate),
     readTime: formatReadTime(item.readTime),
     category: item.category || inferCategory(item),
-    image: resolveImage(item.heroImage),
+    image: resolveImage(item),
     href: item.slug ? `/global/en/news/${item.slug.toLowerCase()}` : '',
     published: item.publishDate ? Date.parse(item.publishDate) : 0,
   };
