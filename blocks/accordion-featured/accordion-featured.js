@@ -7,21 +7,33 @@
  * https://www.hlx.live/developer/block-collection/accordion
  */
 
+import { createOptimizedPicture } from '../../scripts/aem.js';
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
 export default function decorate(block) {
   const items = [];
 
   [...block.children].forEach((row) => {
+    // Image is optional (older 2-column content has none; authors may leave
+    // the image field empty). Find it by content, not column index.
+    const cols = [...row.children];
+    const imageCol = cols.find((col) => col.querySelector('picture'));
+    const [label, body] = cols.filter((col) => col !== imageCol && (
+      col.textContent.trim() || col.querySelector('a')
+    ));
+    if (!label || !body) return;
+
     // decorate accordion item label
-    const label = row.children[0];
     const summary = document.createElement('summary');
     summary.className = 'accordion-featured-item-label';
     summary.append(...label.childNodes);
 
-    // decorate accordion item body
-    const body = row.children[1];
+    // decorate accordion item body, leading with the image when present
     body.className = 'accordion-featured-item-body';
+    if (imageCol) {
+      imageCol.className = 'accordion-featured-item-image';
+      body.prepend(imageCol);
+    }
 
     // decorate accordion item
     const details = document.createElement('details');
@@ -30,6 +42,12 @@ export default function decorate(block) {
     details.append(summary, body);
     row.replaceWith(details);
     items.push(details);
+  });
+
+  block.querySelectorAll('picture > img').forEach((img) => {
+    const optimizedPic = createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }]);
+    moveInstrumentation(img, optimizedPic.querySelector('img'));
+    img.closest('picture').replaceWith(optimizedPic);
   });
 
   // One open at a time: opening an item closes the others.

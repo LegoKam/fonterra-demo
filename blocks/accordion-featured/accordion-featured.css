@@ -79,6 +79,17 @@
   padding: 16px 0 0;                           /* 16px gap below title */
 }
 
+/* Optional per-item image, leading the body when authored */
+.accordion-featured .accordion-featured-item-image {
+  margin: 0 0 24px;
+}
+
+.accordion-featured .accordion-featured-item-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Body copy paragraph */
 /* stylelint-disable-next-line no-descending-specificity */
 .accordion-featured .accordion-featured-item-body p {

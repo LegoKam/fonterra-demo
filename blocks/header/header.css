@@ -1,9 +1,11 @@
 :root {
   /* translucent so the page peeks through behind the open desktop mega
-     menu; solid for the mobile drill-down menu, a full-screen takeover */
+     menu; solid for the mobile drill-down menu, a full-screen takeover;
+     --nav-link-color is the top-bar link text, the same navy as the logo */
   --nav-megamenu-background-color: rgb(20 42 76 / 97%);
   --nav-mobile-menu-background-color: #142a4c;
   --nav-megamenu-color: #fff;
+  --nav-link-color: #142a4c;
 }
 
 /* header and nav layout: the wrapper stays fixed and above all page content,
@@ -155,9 +157,14 @@ header .nav-brand {
   line-height: 1;
 }
 
+/* the logo's circular icon sits above the "nzmp" wordmark rather than
+   around it, so centering the image's own bounding box (as flex would)
+   leaves the wordmark sitting visibly lower than the nav links next to
+   it; nudge up so the wordmark lines up with the nav text baseline */
 header nav .nav-brand img {
   width: 128px;
   height: auto;
+  transform: translateY(-8px);
 }
 
 /* sections */
@@ -387,6 +394,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     padding: 8px 0;
+    color: var(--nav-link-color);
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -397,6 +405,13 @@ header nav .nav-sections ul > li > ul > li {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+  }
+
+  /* the top-level bar stays clean, text-only (no chevron) — the mega menu
+     itself is the "this has children" affordance; nested levels inside it
+     keep their chevrons, styled further down */
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop::after {
+    display: none;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] {
@@ -494,4 +509,24 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+}
+
+header nav .nav-tools p {
+  margin: 0;
+}
+
+header nav .nav-tools .icon {
+  display: flex;
+}
+
+header nav .nav-tools .icon img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (width >= 900px) {
+  header nav .nav-tools {
+    display: flex;
+    align-items: center;
+  }
 }

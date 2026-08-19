@@ -38,6 +38,20 @@
       "id": "accordion-featured-item",
       "fields": [
         {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "label": "Alt",
+          "value": ""
+        },
+        {
           "component": "text",
           "valueType": "string",
           "name": "summary",
