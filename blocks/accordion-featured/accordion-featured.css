@@ -45,7 +45,6 @@
   padding: 0;
   cursor: pointer;
   list-style: none;
-  outline: none;
 }
 
 .accordion-featured .accordion-featured-item-label::-webkit-details-marker {
@@ -56,24 +55,22 @@
   content: '';
 }
 
-/* Title text (collapsed / default): heavy dark, faded */
+/* Title text (collapsed / default): muted, still WCAG AA for large text */
 .accordion-featured .accordion-featured-item-label p {
   margin: 0;
-  color: var(--heading-color);                 /* #2d2d2d */
+  color: var(--brand-inactive-text);
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size-xl);      /* 31px desktop / 28px mobile */
   font-weight: 900;
   line-height: 1.1;                            /* ~34.1px at 31px */
   letter-spacing: var(--heading-letter-spacing);
-  opacity: 0.25;
-  transition: opacity 0.2s, color 0.2s;
+  transition: color 0.2s;
 }
 
 /* Title text (open / active): brand arrow-blue, weight 800, full opacity */
 .accordion-featured .accordion-featured-item[open] .accordion-featured-item-label p {
-  color: var(--brand-arrow-blue);              /* #5091cd */
+  color: var(--brand-arrow-blue);
   font-weight: 800;
-  opacity: 1;
 }
 
 /* Body (only rendered when the item is open, natively via <details>) */
@@ -155,12 +152,11 @@
   object-fit: cover;
 }
 
-/* Collapsed hover: lift the fade slightly for affordance.
-   Placed last to satisfy no-descending-specificity ordering. */
+/* Collapsed hover/focus: darken toward heading color for affordance. */
 /* stylelint-disable-next-line no-descending-specificity */
 .accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:hover p,
 .accordion-featured .accordion-featured-item:not([open]) .accordion-featured-item-label:focus-visible p {
-  opacity: 0.5;
+  color: var(--heading-color);
 }
 
 /* Desktop: left copy column (~456px) + right featured image */

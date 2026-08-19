@@ -39,6 +39,16 @@ function showMedia(media, index) {
   });
 }
 
+function describeLearnMore(link, context) {
+  if (!link || !context) return;
+  if (!/^learn more$/i.test(link.textContent.trim())) return;
+  if (link.querySelector('.visually-hidden')) return;
+  const extra = document.createElement('span');
+  extra.className = 'visually-hidden';
+  extra.textContent = ` about ${context}`;
+  link.append(extra);
+}
+
 function adoptIntroHeading(block, copy) {
   const section = block.closest('.section');
   const headingWrap = section?.querySelector(':scope > .default-content-wrapper');
@@ -69,6 +79,8 @@ export default function decorate(block) {
     moveInstrumentation(row, details);
     details.className = 'accordion-featured-item';
     details.append(summary, body);
+    const labelText = summary.textContent.trim();
+    body.querySelectorAll('a').forEach((link) => describeLearnMore(link, labelText));
     list.append(details);
     items.push(details);
 

@@ -1,22 +1,18 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+function retagHeading(el, tagName) {
+  if (!el || el.tagName.toLowerCase() === tagName) return el;
+  const next = document.createElement(tagName);
+  [...el.attributes].forEach((attr) => next.setAttribute(attr.name, attr.value));
+  next.replaceChildren(...el.childNodes);
+  el.replaceWith(next);
+  return next;
+}
+
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel-news');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
   block.dataset.activeSlide = slideIndex;
-
-  const slides = block.querySelectorAll('.carousel-news-slide');
-
-  slides.forEach((aSlide, idx) => {
-    aSlide.setAttribute('aria-hidden', idx !== slideIndex);
-    aSlide.querySelectorAll('a').forEach((link) => {
-      if (idx !== slideIndex) {
-        link.setAttribute('tabindex', '-1');
-      } else {
-        link.removeAttribute('tabindex');
-      }
-    });
-  });
 
   const indicators = block.querySelectorAll('.carousel-news-slide-indicator');
   indicators.forEach((indicator, idx) => {
@@ -81,7 +77,10 @@ function createSlide(row, slideIndex, carouselId) {
     slide.append(column);
   });
 
-  const labeledBy = slide.querySelector('h1, h2, h3, h4, h5, h6');
+  const labeledBy = retagHeading(
+    slide.querySelector('h1, h2, h3, h4, h5, h6'),
+    'h4',
+  );
   if (labeledBy) {
     slide.setAttribute('aria-labelledby', labeledBy.getAttribute('id'));
   }

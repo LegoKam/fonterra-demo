@@ -1,5 +1,15 @@
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+function describeLearnMore(link, context) {
+  if (!link || !context) return;
+  if (!/^learn more$/i.test(link.textContent.trim())) return;
+  if (link.querySelector('.visually-hidden')) return;
+  const extra = document.createElement('span');
+  extra.className = 'visually-hidden';
+  extra.textContent = ` about ${context}`;
+  link.append(extra);
+}
+
 function updateActiveSlide(slide) {
   const block = slide.closest('.carousel-banner');
   const slideIndex = parseInt(slide.dataset.slideIndex, 10);
@@ -60,6 +70,14 @@ function bindEvents(block) {
     showSlide(block, parseInt(block.dataset.activeSlide, 10) + 1);
   });
 
+  block.addEventListener('keydown', (e) => {
+    if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+    if (!block.contains(e.target)) return;
+    e.preventDefault();
+    const current = parseInt(block.dataset.activeSlide, 10) || 0;
+    showSlide(block, e.key === 'ArrowLeft' ? current - 1 : current + 1);
+  });
+
   const slideObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) updateActiveSlide(entry.target);
@@ -84,6 +102,9 @@ function createSlide(row, slideIndex, carouselId) {
   const labeledBy = slide.querySelector('h1, h2, h3, h4, h5, h6');
   if (labeledBy) {
     slide.setAttribute('aria-labelledby', labeledBy.getAttribute('id'));
+    slide.querySelectorAll('a').forEach((link) => {
+      describeLearnMore(link, labeledBy.textContent.trim());
+    });
   }
 
   return slide;

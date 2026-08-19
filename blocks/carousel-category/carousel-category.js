@@ -85,6 +85,21 @@ function bindEvents(block) {
   window.addEventListener('resize', () => updateActiveSlide(block, getCenteredIndex(track)));
 }
 
+function retagHeading(el, tagName) {
+  if (!el || el.tagName.toLowerCase() === tagName) return el;
+  const next = document.createElement(tagName);
+  [...el.attributes].forEach((attr) => next.setAttribute(attr.name, attr.value));
+  next.replaceChildren(...el.childNodes);
+  el.replaceWith(next);
+  return next;
+}
+
+function promoteSectionHeading(block) {
+  const heading = block.closest('.section')
+    ?.querySelector(':scope > .default-content-wrapper h3');
+  retagHeading(heading, 'h2');
+}
+
 function createSlide(row, slideIndex, carouselId) {
   const slide = document.createElement('li');
   slide.dataset.slideIndex = slideIndex;
@@ -127,6 +142,7 @@ function createSlide(row, slideIndex, carouselId) {
 
 let carouselId = 0;
 export default async function decorate(block) {
+  promoteSectionHeading(block);
   carouselId += 1;
   block.setAttribute('id', `carousel-${carouselId}`);
   const rows = block.querySelectorAll(':scope > div');
