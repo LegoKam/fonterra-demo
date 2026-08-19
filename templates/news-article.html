@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {{#data.newsArticleList.items}}
     <title>{{title}}</title>
     <meta name="description" content="{{summary.plaintext}}">
-    {{/data.newsArticleList.items}}
   </head>
   <body>
     <header></header>
     <main>
-      {{#data.newsArticleList.items}}
       <div>
         <div class="news-article">
           <div>
@@ -50,7 +47,6 @@
           </div>
         </div>
       </div>
-      {{/data.newsArticleList.items}}
     </main>
     <footer></footer>
   </body>

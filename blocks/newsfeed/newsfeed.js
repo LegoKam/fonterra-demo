@@ -63,7 +63,7 @@ function normalize(item) {
     readTime: formatReadTime(item.readTime),
     category: item.category || inferCategory(item),
     image: resolveImage(item.heroImage),
-    href: item.slug ? `/global/en/news/${item.slug}` : '',
+    href: item.slug ? `/global/en/news/${item.slug.toLowerCase()}` : '',
     published: item.publishDate ? Date.parse(item.publishDate) : 0,
   };
 }
