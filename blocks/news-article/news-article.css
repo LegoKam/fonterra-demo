@@ -1,0 +1,127 @@
+.news-article {
+  max-width: 760px;
+}
+
+.news-article-nav {
+  margin: 0 0 24px;
+}
+
+.news-article-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand-dark-blue);
+  font-size: var(--body-font-size-s);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-article-nav a::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid currentcolor;
+  border-bottom: 2px solid currentcolor;
+  transform: rotate(45deg);
+}
+
+.news-article-nav a:hover {
+  text-decoration: underline;
+}
+
+.news-article-category {
+  display: inline-block;
+  margin: 0 0 16px;
+  padding: 6px 18px 6px 14px;
+  background-color: #d7c4a8;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--body-font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 100%, 0 100%);
+}
+
+.news-article h1 {
+  margin: 0 0 16px;
+  color: var(--brand-dark-blue);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-xl);
+  font-weight: 900;
+  letter-spacing: var(--heading-letter-spacing);
+  line-height: 1.15;
+}
+
+.news-article-summary {
+  margin: 0 0 16px;
+  color: var(--muted-color);
+  font-size: var(--body-font-size-m);
+  line-height: 1.5;
+}
+
+.news-article-summary p {
+  margin: 0;
+}
+
+.news-article-meta {
+  margin: 0 0 32px;
+  color: var(--muted-color);
+  font-size: var(--body-font-size-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.news-article-hero {
+  margin: 0 0 32px;
+}
+
+.news-article-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.news-article-body {
+  color: var(--text-color);
+}
+
+.news-article-body p {
+  margin: 0 0 1em;
+}
+
+.news-article-body h4 {
+  margin: 1.5em 0 0.5em;
+  color: var(--heading-color);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-s);
+  font-weight: 900;
+}
+
+.news-article-body table {
+  width: 100%;
+  margin: 0 0 1.5em;
+  border-collapse: collapse;
+  background-color: var(--light-color);
+}
+
+.news-article-body td,
+.news-article-body th {
+  padding: 12px 16px;
+  border-bottom: 1px solid #fff;
+  text-align: left;
+  vertical-align: top;
+  font-size: var(--body-font-size-s);
+}
+
+.news-article-body tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (width >= 900px) {
+  .news-article h1 {
+    font-size: 40px;
+  }
+}

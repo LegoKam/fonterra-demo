@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/global/en/news/",
+    "endpoint": "https://publish-p152232-e1579634.adobeaemcloud.com/graphql/execute.json/fonterra-demo/news-slug-lookup;slug={{id}}",
+    "regex": "/(?<=\\/news\\/)([^/]+)$/",
+    "template": "/templates/news-article.html",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "relativeURLPrefix": "https://publish-p152232-e1579634.adobeaemcloud.com"
+  }
+]
