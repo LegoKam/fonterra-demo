@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Food engineering specialists"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Food Engineers"
+    jcr:uuid="5fc88ef7-bbf3-4e0d-b98e-2fc34184b7b4"
+    sling:resourceType="cq/tagging/components/tag"/>

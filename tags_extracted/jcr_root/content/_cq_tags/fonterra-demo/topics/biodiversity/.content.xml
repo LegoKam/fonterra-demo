@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Supporting ecosystem biodiversity"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Biodiversity"
+    jcr:uuid="89ae62fb-e308-4ba7-a955-4d5c905b9ed9"
+    sling:resourceType="cq/tagging/components/tag"/>

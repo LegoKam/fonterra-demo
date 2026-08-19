@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Senior nutrition formulations"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Elderly Nutrition"
+    jcr:uuid="e4153e12-a3af-4fa2-bf0d-db3cd062e38e"
+    sling:resourceType="cq/tagging/components/tag"/>

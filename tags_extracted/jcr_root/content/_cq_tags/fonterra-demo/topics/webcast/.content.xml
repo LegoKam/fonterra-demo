@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Video web broadcast"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Webcast"
+    jcr:uuid="6c09e0e1-4c45-4577-b7cd-81ac15c48b95"
+    sling:resourceType="cq/tagging/components/tag"/>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="Research study with data findings"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="cq:Tag"
+    jcr:title="Data Study"
+    jcr:uuid="7ec68ee8-1e0b-4376-8c78-dfdefcbdfe97"
+    sling:resourceType="cq/tagging/components/tag"/>

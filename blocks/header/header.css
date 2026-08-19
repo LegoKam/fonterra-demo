@@ -1,9 +1,20 @@
-/* header and nav layout */
+:root {
+  /* translucent so the page peeks through behind the open desktop mega
+     menu; solid for the mobile drill-down menu, a full-screen takeover */
+  --nav-megamenu-background-color: rgb(20 42 76 / 97%);
+  --nav-mobile-menu-background-color: #142a4c;
+  --nav-megamenu-color: #fff;
+}
+
+/* header and nav layout: the wrapper stays fixed and above all page content,
+   including any block that sets its own z-index, so the header (and its
+   mega menu) is always on top and pinned to the top of the viewport */
 header .nav-wrapper {
   background-color: var(--background-color);
   width: 100%;
-  z-index: 2;
+  z-index: 200;
   position: fixed;
+  top: 0;
 }
 
 header nav {
@@ -31,10 +42,6 @@ header nav[aria-expanded='true'] {
 }
 
 @media (width >= 900px) {
-  header .nav-wrapper {
-    position: relative;
-  }
-
   header nav {
     display: flex;
     justify-content: space-between;
@@ -185,11 +192,161 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+/* mobile/tablet: the mega menu becomes a drill-down stack of full-screen
+   panels instead of the desktop's hover-driven flyouts. Tapping a nav-drop
+   pushes its children on top as their own screen (with a back button to go
+   up a level and a close button to dismiss the whole nav), so only one
+   screen of the mega menu is ever visible at a time — nothing gets
+   truncated or crowded, no matter how deep the tree goes. Every nav-drop's
+   label sits in a <p> (per the authored nav structure), so the chevron
+   lives there rather than on the <li> itself. */
+@media (width < 900px) {
+  header nav[aria-expanded='true'] .nav-sections {
+    background-color: var(--nav-mobile-menu-background-color);
+    color: var(--nav-megamenu-color);
+  }
+
+  header nav .nav-sections li {
+    border-bottom: 1px solid rgb(255 255 255 / 15%);
+  }
+
+  header nav .nav-sections li > p,
+  header nav .nav-sections li > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0;
+    padding: 16px 20px;
+  }
+
+  header nav .nav-sections a:any-link {
+    color: var(--nav-megamenu-color);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > p,
+  header nav .nav-sections .default-content-wrapper > ul > li > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  header nav .nav-sections .nav-drop {
+    cursor: pointer;
+  }
+
+  header nav .nav-sections .nav-drop > p::after,
+  header nav .nav-sections .nav-drop > a::after {
+    content: '';
+    flex: none;
+    width: 8px;
+    height: 8px;
+    border: 2px solid currentcolor;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+  }
+
+  /* each level's flyout is hidden until opened, then becomes a full-screen
+     panel that stacks above whichever screen was open before it. A fixed
+     descendant with z-index:auto isn't reliably painted above the (always
+     mounted, static) root list in every browser, so it needs an explicit
+     z-index — one flat value is enough regardless of nesting depth, since
+     a positioned element is always painted above its own ancestors. */
+  header nav .nav-sections .nav-drop > ul {
+    display: none;
+  }
+
+  header nav .nav-sections .nav-drop[aria-expanded='true'] > ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    background-color: var(--nav-mobile-menu-background-color);
+  }
+
+  /* drill-down screen chrome: a back/close bar plus the current level's
+     title, injected as the flyout's first item (see header.js) */
+  header nav .nav-sections .nav-drop-header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0;
+  }
+
+  header nav .nav-sections .nav-drop-header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgb(255 255 255 / 15%);
+    background-color: rgb(255 255 255 / 6%);
+  }
+
+  header nav .nav-sections .nav-drop-back,
+  header nav .nav-sections .nav-drop-close {
+    display: block;
+    border: 0;
+    padding: 4px;
+    background: none;
+    color: inherit;
+  }
+
+  header nav .nav-sections .nav-drop-back-icon,
+  header nav .nav-sections .nav-drop-close-icon {
+    display: block;
+    position: relative;
+    width: 12px;
+    height: 12px;
+  }
+
+  header nav .nav-sections .nav-drop-back-icon {
+    border: 2px solid currentcolor;
+    border-width: 2px 0 0 2px;
+    transform: rotate(-45deg);
+  }
+
+  header nav .nav-sections .nav-drop-close-icon::before,
+  header nav .nav-sections .nav-drop-close-icon::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: currentcolor;
+  }
+
+  header nav .nav-sections .nav-drop-close-icon::before {
+    transform: rotate(45deg);
+  }
+
+  header nav .nav-sections .nav-drop-close-icon::after {
+    transform: rotate(-45deg);
+  }
+
+  header nav .nav-sections .nav-drop-title {
+    margin: 0;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgb(255 255 255 / 15%);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
     visibility: visible;
     white-space: nowrap;
+  }
+
+  /* the drill-down back/close header is a mobile-only affordance */
+  header nav .nav-sections .nav-drop-header {
+    display: none;
   }
 
   header nav[aria-expanded='true'] .nav-sections {
@@ -198,27 +355,26 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .nav-drop {
     position: relative;
-    padding-right: 16px;
     cursor: pointer;
   }
 
+  /* chevron is a flex sibling of the label (not absolutely positioned),
+     so it always gets its own reserved space and never overlaps the text,
+     no matter the font, letter-spacing or label length */
   header nav .nav-sections .nav-drop::after {
     content: '';
+    flex: none;
     display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
     width: 6px;
     height: 6px;
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
+    transform: rotate(135deg);
+    transition: transform 0.15s ease;
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
     transform: rotate(315deg);
   }
 
@@ -230,39 +386,108 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
-    position: relative;
+    padding: 8px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    border-bottom: 2px solid transparent;
   }
 
+  header nav .nav-sections .default-content-wrapper > ul > li.nav-drop {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] {
+    color: var(--link-color);
+    border-bottom-color: var(--link-color);
+  }
+
+  /* mega menu: the level-1 flyout is a full-bleed dark panel below the nav,
+     positioned relative to .nav-wrapper (not the narrow trigger <li>).
+     It stays mounted at all times and is shown/hidden with opacity +
+     visibility instead of display:none, so hovering across the small gap
+     between the trigger and the panel can't cause it to flicker shut.
+     It's fixed (not absolute) so the panel spans the full viewport width,
+     rather than being confined to the trigger <li>'s positioned box, and
+     it reaches all the way to the bottom of the viewport (rather than
+     shrink-wrapping its content) so it always fully covers the page
+     underneath instead of letting content peek out past a shorter panel. */
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
-    display: none;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-    display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    inset: var(--nav-height) 0 0;
+    gap: 0;
+    margin: 0;
+    padding: 40px max(32px, calc((100% - 1200px) / 2 + 32px));
+    background-color: var(--nav-megamenu-background-color);
+    color: var(--nav-megamenu-color);
     white-space: initial;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+  header nav .nav-sections .default-content-wrapper > ul > li > ul a:any-link {
+    color: var(--nav-megamenu-color);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+    padding: 10px 0;
+    font-size: var(--body-font-size-m);
+  }
+
+  /* levels 3+ cascade to the right of their parent item as flyout panels */
+  header nav .nav-sections .default-content-wrapper > ul > li > ul li.nav-drop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+  }
+
+  /* nested chevrons point right, toward the flyout they open, and stay put
+     (the flyout itself is the open/closed indicator at these levels) */
+  header nav .nav-sections .default-content-wrapper > ul > li > ul li.nav-drop::after {
+    border-width: 0 2px 2px 0;
+    transform: rotate(-45deg);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul li > ul {
+    display: block;
+    position: absolute;
+    left: calc(100% + 32px);
+    top: -10px;
+    min-width: 240px;
+    padding: 4px 0 4px 24px;
+    border-left: 1px solid rgb(255 255 255 / 25%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul li > ul li {
+    padding: 6px 0;
+    font-size: var(--body-font-size-s);
+  }
+
+  /* expanded states last, so they reliably win over the collapsed rules above */
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > ul li[aria-expanded='true'] > ul {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 }
 

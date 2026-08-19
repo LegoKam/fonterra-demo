@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0"
+    jcr:created="{Date}2026-08-17T03:44:09.633Z"
+    jcr:createdBy="karadhak@adobe.com"
+    jcr:description="\0"
+    jcr:lastModified="{Date}2026-08-17T03:44:09.633Z"
+    jcr:lastModifiedBy="karadhak@adobe.com"
+    jcr:primaryType="vlt:PackageDefinition"
+    buildCount="1"
+    builtWith="Adobe Experience Manager-2026.8.27673.20260811T193135Z, aem-guides-2026.8.0.402, aem-reference-demos-2021.9.27.1, cif-2026.5.19.00, forms-2026.6.27.00"
+    group="my_packages"
+    lastUnwrapped="{Date}2026-08-17T03:44:09.633Z"
+    lastUnwrappedBy="karadhak@adobe.com"
+    lastWrapped="{Date}2026-08-17T03:44:09.633Z"
+    lastWrappedBy="karadhak@adobe.com"
+    name="tags"
+    version="\0">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            propertyRules="[]"
+            root="/content/cq:tags/fonterra-demo"
+            rules="[]"/>
+    </filter>
+</jcr:root>

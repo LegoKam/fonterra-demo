@@ -1,0 +1,34 @@
+<'sling'='http://sling.apache.org/jcr/sling/1.0'>
+<'nt'='http://www.jcp.org/jcr/nt/1.0'>
+<'cq'='http://www.day.com/jcr/cq/1.0'>
+<'mix'='http://www.jcp.org/jcr/mix/1.0'>
+<'rep'='internal'>
+
+[sling:Resource]
+  mixin
+  - sling:resourceType (string)
+
+[sling:Redirect] > sling:Resource
+  mixin
+  - sling:target (undefined)
+
+[sling:OrderedFolder] > sling:Folder
+  orderable
+  + * (nt:base) = sling:OrderedFolder version
+
+[sling:Folder] > nt:folder
+  - * (undefined) multiple
+  - * (undefined)
+  + * (nt:base) = sling:Folder version
+
+[cq:Tag] > mix:title, nt:hierarchyNode
+  orderable
+  - sling:resourceType (string) = 'cq/tagging/components/tag' mandatory autocreated
+  - * (undefined) multiple
+  - * (undefined)
+  + * (nt:base) = cq:Tag version
+
+[rep:RepoAccessControllable]
+  mixin
+  + rep:repoPolicy (rep:Policy) protected ignore
+

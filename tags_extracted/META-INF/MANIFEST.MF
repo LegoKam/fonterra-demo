@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Content-Package-Id: my_packages:tags
+Content-Package-Roots: /content/cq:tags/fonterra-demo
+Content-Package-Type: content
+
